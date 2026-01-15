@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "meister-kim",
     "firstName": "Meister",
@@ -7,23 +7,23 @@
     "role": "head-instructor",
     "programs": ["taekwondo"],
     "specialRoles": ["youth-protection-officer", "competition-judge"],
-    "bio": "5. Dan Taekwon-do, über 30 Jahre Erfahrung im traditionellen Taekwon-do. Leitet die Schule seit 2000.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "bio": "5. Dan Taekwon-do, Ã¼ber 30 Jahre Erfahrung im traditionellen Taekwon-do. Leitet die Schule seit 2000.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "kim meister"
   },
   {
     "id": "sabine-mueller",
     "firstName": "Sabine",
-    "lastName": "Müller",
-    "fullName": "Sabine Müller",
+    "lastName": "MÃ¼ller",
+    "fullName": "Sabine MÃ¼ller",
     "role": "instructor",
     "programs": ["taekwondo"],
     "specialRoles": ["first-aid-certified"],
     "bio": "3. Dan Taekwon-do, spezialisiert auf Kinder- und Jugendtraining.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
-    "sortKey": "müller sabine"
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "mÃ¼ller sabine"
   },
   {
     "id": "maria-rodriguez",
@@ -33,9 +33,9 @@
     "role": "instructor",
     "programs": ["zumba"],
     "specialRoles": ["first-aid-certified"],
-    "bio": "Zertifizierte Zumba-Instruktorin mit über 10 Jahren Erfahrung. Bringt lateinamerikanische Tanzkultur nach Ailingen.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "bio": "Zertifizierte Zumba-Instruktorin mit Ã¼ber 10 Jahren Erfahrung. Bringt lateinamerikanische Tanzkultur nach Ailingen.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "rodriguez maria"
   },
   {
@@ -47,8 +47,8 @@
     "programs": ["deepwork"],
     "specialRoles": ["first-aid-certified"],
     "bio": "Lizenzierter deepWORK Trainer. Fokus auf funktionelles Training und Ausdauer.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "weber thomas"
   },
   {
@@ -58,9 +58,9 @@
     "fullName": "Lisa Fischer",
     "role": "assistant",
     "programs": ["taekwondo"],
-    "bio": "1. Dan Taekwon-do, unterstützt im Kindertraining.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "bio": "1. Dan Taekwon-do, unterstÃ¼tzt im Kindertraining.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "fischer lisa"
   },
   {
@@ -71,8 +71,8 @@
     "role": "assistant",
     "programs": ["taekwondo", "deepwork"],
     "bio": "2. Dan Taekwon-do und Fitness-Enthusiast.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "bauer andreas"
   },
   {
@@ -83,9 +83,9 @@
     "role": "instructor",
     "programs": ["zumba", "deepwork"],
     "specialRoles": ["first-aid-certified"],
-    "bio": "Zertifizierte Trainerin für Zumba und deepWORK. Spezialisiert auf energiegeladene Gruppenkurse.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "bio": "Zertifizierte Trainerin fÃ¼r Zumba und deepWORK. Spezialisiert auf energiegeladene Gruppenkurse.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "schmidt claudia"
   },
   {
@@ -95,9 +95,159 @@
     "fullName": "Michael Hoffmann",
     "role": "assistant",
     "programs": ["taekwondo"],
-    "bio": "1. Dan Taekwon-do, unterstützt im Erwachsenentraining.",
-    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
-    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "bio": "1. Dan Taekwon-do, unterstÃ¼tzt im Erwachsenentraining.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
     "sortKey": "hoffmann michael"
+  },
+  {
+    "id": "julia-berger",
+    "firstName": "Julia",
+    "lastName": "Berger",
+    "fullName": "Julia Berger",
+    "role": "instructor",
+    "programs": ["taekwondo", "zumba"],
+    "specialRoles": ["youth-protection-officer"],
+    "bio": "2. Dan Taekwon-do, kombiniert traditionelle Kampfkunst mit modernem Fitness-Training.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "berger julia"
+  },
+  {
+    "id": "stefan-klein",
+    "firstName": "Stefan",
+    "lastName": "Klein",
+    "fullName": "Stefan Klein",
+    "role": "assistant",
+    "programs": ["deepwork"],
+    "bio": "Fitness-Coach mit Schwerpunkt auf funktionellem Training.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "klein stefan"
+  },
+  {
+    "id": "anna-wagner",
+    "firstName": "Anna",
+    "lastName": "Wagner",
+    "fullName": "Anna Wagner",
+    "role": "instructor",
+    "programs": ["zumba"],
+    "specialRoles": ["first-aid-certified"],
+    "bio": "Zertifizierte Zumba-Instruktorin, bringt Energie und SpaÃŸ in jede Stunde.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "wagner anna"
+  },
+  {
+    "id": "martin-schulz",
+    "firstName": "Martin",
+    "lastName": "Schulz",
+    "fullName": "Martin Schulz",
+    "role": "instructor",
+    "programs": ["taekwondo"],
+    "specialRoles": ["competition-judge"],
+    "bio": "4. Dan Taekwon-do, Wettkampfrichter und technischer Berater.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "schulz martin"
+  },
+  {
+    "id": "petra-zimmermann",
+    "firstName": "Petra",
+    "lastName": "Zimmermann",
+    "fullName": "Petra Zimmermann",
+    "role": "assistant",
+    "programs": ["zumba", "deepwork"],
+    "bio": "Fitness-Trainerin mit Leidenschaft fÃ¼r Tanzworkouts.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "zimmermann petra"
+  },
+  {
+    "id": "daniel-krause",
+    "firstName": "Daniel",
+    "lastName": "Krause",
+    "fullName": "Daniel Krause",
+    "role": "guest-instructor",
+    "programs": ["taekwondo"],
+    "bio": "Gasttrainer fÃ¼r Spezial-Seminare, 6. Dan Taekwon-do.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "krause daniel"
+  },
+  {
+    "id": "nina-hoffmann",
+    "firstName": "Nina",
+    "lastName": "Hoffmann",
+    "fullName": "Nina Hoffmann",
+    "role": "assistant",
+    "programs": ["taekwondo"],
+    "bio": "1. Dan Taekwon-do, unterstÃ¼tzt im Jugendtraining.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "hoffmann nina"
+  },
+  {
+    "id": "frank-becker",
+    "firstName": "Frank",
+    "lastName": "Becker",
+    "fullName": "Frank Becker",
+    "role": "instructor",
+    "programs": ["deepwork"],
+    "specialRoles": ["first-aid-certified"],
+    "bio": "Lizenzierter deepWORK Trainer mit Fokus auf Kraftausdauer.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "becker frank"
+  },
+  {
+    "id": "sarah-meyer",
+    "firstName": "Sarah",
+    "lastName": "Meyer",
+    "fullName": "Sarah Meyer",
+    "role": "instructor",
+    "programs": ["taekwondo", "deepwork"],
+    "specialRoles": ["first-aid-certified", "youth-protection-officer"],
+    "bio": "3. Dan Taekwon-do, verbindet traditionelle Techniken mit modernem Fitness-Training.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "meyer sarah"
+  },
+  {
+    "id": "oliver-jung",
+    "firstName": "Oliver",
+    "lastName": "Jung",
+    "fullName": "Oliver Jung",
+    "role": "assistant",
+    "programs": ["taekwondo"],
+    "bio": "2. Dan Taekwon-do, unterstÃ¼tzt bei PrÃ¼fungsvorbereitungen.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "jung oliver"
+  },
+  {
+    "id": "jessica-wolff",
+    "firstName": "Jessica",
+    "lastName": "Wolff",
+    "fullName": "Jessica Wolff",
+    "role": "instructor",
+    "programs": ["zumba"],
+    "bio": "Zertifizierte Zumba Gold Instruktorin fÃ¼r Ã¤ltere Teilnehmer.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "wolff jessica"
+  },
+  {
+    "id": "robert-lang",
+    "firstName": "Robert",
+    "lastName": "Lang",
+    "fullName": "Robert Lang",
+    "role": "assistant",
+    "programs": ["deepwork"],
+    "bio": "Fitness-Coach mit Schwerpunkt auf Core-Training.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.svg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.svg",
+    "sortKey": "lang robert"
   }
 ]
+
