@@ -94,16 +94,17 @@ export class ThemeService {
       // Update signal
       this.currentThemeSignal.set(theme);
 
-      // Apply theme class to body
+      // Apply theme class to body (only on client side)
       if (typeof document !== 'undefined') {
         const body = document.body;
         
-        // Remove both theme classes first
-        body.classList.remove('light-theme', 'dark-theme');
-        
-        // Add the new theme class (only add class for light theme, dark is default)
+        // Apply theme atomically - remove old, add new in one go
         if (theme === 'light') {
+          body.classList.remove('dark-theme');
           body.classList.add('light-theme');
+        } else {
+          body.classList.remove('light-theme');
+          body.classList.add('dark-theme');
         }
       }
 

@@ -23,10 +23,12 @@
         // Apply theme class immediately (before Angular loads)
         if (theme === 'light') {
           document.body.classList.add('light-theme');
+        } else {
+          document.body.classList.add('dark-theme');
         }
       } catch (e) {
-        // Fail silently if localStorage unavailable
-        console.warn('Theme initialization failed:', e);
+        // Fail silently if localStorage unavailable - default to dark
+        document.body.classList.add('dark-theme');
       }
     })();
   </script>
