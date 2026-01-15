@@ -8,15 +8,6 @@
     <!-- Filter Component -->
     <app-schedule-filter (filtersChange)="onFiltersChange($event)" />
 
-    <!-- Filtered Results Count -->
-    @if (filteredSessions().length > 0) {
-      <p class="results-count">
-        {{ filteredSessions().length }} {{ filteredSessions().length === 1 ? 
-          translationService.instant('schedule.filters.sessionFound') : 
-          translationService.instant('schedule.filters.sessionsFound') }}
-      </p>
-    }
-
     <!-- Taekwon-do Schedule -->
     @if (taekwondoSessions.length > 0) {
       <div id="taekwondo-schedule" class="schedule-block">
