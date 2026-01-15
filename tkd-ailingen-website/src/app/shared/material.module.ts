@@ -12,6 +12,8 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 const MATERIAL_MODULES = [
   MatToolbarModule,
@@ -25,6 +27,8 @@ const MATERIAL_MODULES = [
   MatFormFieldModule,
   MatSelectModule,
   MatInputModule,
+  MatChipsModule,
+  MatProgressSpinnerModule,
 ];
 
 /**
