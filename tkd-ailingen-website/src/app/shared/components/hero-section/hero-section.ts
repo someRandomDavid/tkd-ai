@@ -17,4 +17,15 @@ import { MaterialModule } from '@shared/material.module';
 })
 export class HeroSection {
   @Input() clubInfo?: ClubInfo;
+
+  /**
+   * Handle image load event - fade in once loaded
+   */
+  onImageLoad(event: Event): void {
+    const img = event.target as HTMLImageElement;
+    const picture = img.closest('.hero-image');
+    if (picture) {
+      picture.classList.add('loaded');
+    }
+  }
 }

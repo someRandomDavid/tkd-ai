@@ -12,6 +12,8 @@
       src="/assets/images/hero/hero_bg.JPG" 
       alt=""
       loading="eager"
-      fetchpriority="high">
+      fetchpriority="high"
+      (load)="onImageLoad($event)"
+      decoding="async">
   </picture>
 </section>
