@@ -26,24 +26,6 @@
               </div>
             </div>
 
-            <div class="session-row">
-              <mat-icon class="session-icon">place</mat-icon>
-              <div class="session-details">
-                <span class="session-label">{{ translationService.instant('schedule.location') }}:</span>
-                <span class="session-value">{{ session.location }}</span>
-              </div>
-            </div>
-
-            @if (session.instructor) {
-              <div class="session-row">
-                <mat-icon class="session-icon">person</mat-icon>
-                <div class="session-details">
-                  <span class="session-label">{{ translationService.instant('schedule.instructor') }}:</span>
-                  <span class="session-value">{{ session.instructor }}</span>
-                </div>
-              </div>
-            }
-
             <div class="session-level">
               <mat-icon>info</mat-icon>
               <span>{{ session.levelAgeGroup }}</span>
