@@ -3,7 +3,7 @@
 
 .welcome-section {
   padding: var(--spacing-8) var(--spacing-4);
-  background-color: var(--color-white);
+  background-color: var(--surface-card);
 
   @include mixins.tablet {
     padding: var(--spacing-10) var(--spacing-6);
@@ -20,7 +20,7 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
   margin: 0 0 var(--spacing-6) 0;
-  color: var(--color-black);
+  color: var(--text-primary);
 
   @include mixins.tablet {
     font-size: var(--font-size-3xl);
@@ -38,7 +38,7 @@
   line-height: var(--line-height-relaxed);
   text-align: center;
   margin: 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: var(--text-primary);
 
   @include mixins.tablet {
     font-size: var(--font-size-lg);
