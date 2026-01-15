@@ -5,6 +5,7 @@ import { NavigationItem } from '@shared/models';
 import { TranslationService } from '@core/services/translation.service';
 import { MatSidenav } from '@angular/material/sidenav';
 import { ThemeToggle } from '../theme-toggle/theme-toggle';
+import { LanguageToggle } from '../language-toggle/language-toggle';
 
 /**
  * Navigation header component with responsive menu
@@ -15,7 +16,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
  */
 @Component({
   selector: 'app-navigation-header',
-  imports: [CommonModule, MaterialModule, ThemeToggle],
+  imports: [CommonModule, MaterialModule, ThemeToggle, LanguageToggle],
   templateUrl: './navigation-header.html',
   styleUrl: './navigation-header.scss',
 })

@@ -97,7 +97,8 @@
   }
 }
 
-// Theme toggle visibility
+// Language and theme toggle visibility for mobile
+.mobile-language-toggle,
 .mobile-theme-toggle {
   display: block;
   margin-left: var(--spacing-1);
@@ -107,7 +108,8 @@
   }
 }
 
-// Desktop nav already includes theme toggle within it (visible ≥768px)
+// Desktop nav includes language and theme toggles (visible ≥768px)
+.desktop-nav app-language-toggle,
 .desktop-nav app-theme-toggle {
   margin-left: var(--spacing-2);
 }

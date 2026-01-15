@@ -20,6 +20,9 @@
         </a>
       }
       
+      <!-- Language Toggle Button -->
+      <app-language-toggle />
+      
       <!-- Theme Toggle Button -->
       <app-theme-toggle />
     </nav>
@@ -33,7 +36,8 @@
       <mat-icon>menu</mat-icon>
     </button>
     
-    <!-- Theme Toggle for Mobile (visible when menu button visible) -->
+    <!-- Language and Theme Toggle for Mobile (visible when menu button visible) -->
+    <app-language-toggle class="mobile-language-toggle" />
     <app-theme-toggle class="mobile-theme-toggle" />
   </div>
 </mat-toolbar>
