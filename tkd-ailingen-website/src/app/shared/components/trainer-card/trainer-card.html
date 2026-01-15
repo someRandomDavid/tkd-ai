@@ -23,17 +23,9 @@
 
   <mat-card-content>
     <h3 class="trainer-name">{{ trainer.fullName }}</h3>
-    
-    <!-- Role badge -->
-    <div class="trainer-role" *ngIf="trainer.role">
-      <mat-chip class="role-chip">
-        {{ translationService.instant('trainers.roles.' + trainer.role) }}
-      </mat-chip>
-    </div>
 
     <!-- Programs taught -->
     <div class="trainer-programs" *ngIf="trainer.programs.length > 0">
-      <span class="programs-label">{{ translationService.instant('trainers.programs') }}:</span>
       <div class="program-chips">
         <mat-chip 
           *ngFor="let program of trainer.programs" 
