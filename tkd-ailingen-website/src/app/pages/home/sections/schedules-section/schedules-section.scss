@@ -3,7 +3,7 @@
 
 .schedules-section {
   padding: var(--spacing-8) var(--spacing-4);
-  background-color: #f5f5f5;
+  background-color: var(--surface-bg);
 
   @include mixins.tablet {
     padding: var(--spacing-10) var(--spacing-6);
@@ -20,7 +20,7 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
   margin: 0 0 var(--spacing-3) 0;
-  color: var(--color-black);
+  color: var(--text-primary);
 
   @include mixins.tablet {
     font-size: var(--font-size-3xl);
@@ -32,7 +32,7 @@
   line-height: var(--line-height-relaxed);
   text-align: center;
   margin: 0 0 var(--spacing-8) 0;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--text-secondary);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
