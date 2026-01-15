@@ -39,7 +39,6 @@ export class Home implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log('HomePage ngOnInit started');
     // Load all data in parallel using firstValueFrom
     Promise.all([
       firstValueFrom(this.contentService.getClubInfo()),
@@ -49,27 +48,16 @@ export class Home implements OnInit {
       firstValueFrom(this.contentService.getCTAButtons()),
     ])
       .then(([clubInfo, nav, sessions, downloads, ctas]) => {
-        console.log('Data loaded successfully:', { clubInfo, nav, sessions, downloads, ctas });
         this.clubInfo = clubInfo;
         this.navItems = nav?.items || [];
         this.trainingSessions = sessions || [];
         this.downloadableForms = downloads?.forms || [];
         this.ctaButtons = ctas?.actions || [];
         this.loading = false;
-        console.log('Loading flag set to false:', this.loading);
-        console.log('Error flag:', this.error);
-        console.log('ClubInfo:', this.clubInfo);
         this.cdr.markForCheck();
-        console.log('markForCheck called');
       })
       .catch((err) => {
-        console.error('Failed to load data - FULL ERROR:', err);
-        console.error('Error details:', {
-          message: err.message,
-          status: err.status,
-          statusText: err.statusText,
-          url: err.url
-        });
+        console.error('Failed to load homepage data:', err);
         this.error = true;
         this.loading = false;
         this.cdr.markForCheck();
@@ -77,6 +65,6 @@ export class Home implements OnInit {
   }
 
   onNavigationClick(route: string): void {
-    console.log('Navigation clicked:', route);
+    // Navigation handled by NavigationHeader component
   }
 }

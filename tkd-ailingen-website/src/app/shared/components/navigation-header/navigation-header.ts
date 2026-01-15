@@ -76,21 +76,15 @@ export class NavigationHeader implements OnInit, OnDestroy {
   }
 
   onNavigationClick(item: NavigationItem): void {
-    console.log('NavigationHeader.onNavigationClick called with:', item);
     this.navigationClick.emit(item.routeOrAnchor);
-    console.log('Event emitted, routeOrAnchor:', item.routeOrAnchor);
     
     if (this.isBrowser && item.routeOrAnchor.startsWith('#')) {
       // Smooth scroll to anchor
       const targetId = item.routeOrAnchor.substring(1);
-      console.log('Looking for element with ID:', targetId);
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
-        console.log('Element found, scrolling to:', targetElement);
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        console.error('Element not found with ID:', targetId);
       }
       
       // Close mobile menu
