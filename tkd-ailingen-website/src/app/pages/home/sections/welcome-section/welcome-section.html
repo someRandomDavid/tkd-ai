@@ -1,0 +1,29 @@
+<section class="welcome-section" id="welcome">
+  <div class="welcome-container">
+    <h2 class="welcome-title">{{ translationService.instant('welcome.title') }}</h2>
+    
+    @if (clubInfo) {
+      <div class="welcome-content">
+        <p class="welcome-description">{{ clubInfo.description }}</p>
+
+        @if (clubInfo.programs && clubInfo.programs.length > 0) {
+          <div class="programs-grid">
+            @for (program of clubInfo.programs; track program.name) {
+              <mat-card class="program-card">
+                <mat-card-header>
+                  @if (program.icon) {
+                    <mat-icon class="program-icon">{{ program.icon }}</mat-icon>
+                  }
+                  <mat-card-title>{{ program.name }}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>{{ program.description }}</p>
+                </mat-card-content>
+              </mat-card>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+</section>

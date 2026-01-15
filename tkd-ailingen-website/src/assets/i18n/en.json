@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "training": "Training",
+    "taekwondo": "Taekwon-do",
+    "zumba": "Zumba",
+    "deepwork": "deepWORK",
+    "membership": "Membership",
+    "events": "Events",
+    "downloads": "Downloads",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "theme": {
+    "switchTo": "Switch to {{theme}}",
+    "dark": "dark mode",
+    "light": "light mode",
+    "current": "Current theme: {{theme}}",
+    "changed": "Theme changed to {{theme}}"
+  },
+  "hero": {
+    "clubName": "Taekwon-do Ailingen",
+    "tagline": "Traditional Martial Arts for All Ages"
+  },
+  "welcome": {
+    "title": "Welcome to Taekwon-do Ailingen",
+    "description": "Club description goes here..."
+  },
+  "schedule": {
+    "title": "Training Schedule",
+    "day": "Day",
+    "time": "Time",
+    "location": "Location",
+    "instructor": "Instructor",
+    "level": "Level",
+    "noSessions": "No training sessions available",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "sections": {
+      "trainingTitle": "Training Programs",
+      "taekwondoTitle": "Taekwon-do Schedule",
+      "zumbaTitle": "Zumba Schedule",
+      "deepworkTitle": "deepWORK Schedule"
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "description": "Here you can find important forms and documents for download.",
+    "memberRegistration": "Member Registration",
+    "fileSize": "File Size",
+    "noDownloads": "No downloads available",
+    "downloadButton": "Download"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "description": "Schedule a free trial class now or contact us for more information.",
+    "free-trial": {
+      "label": "Free Trial Class",
+      "aria": "Request a free trial class now"
+    },
+    "contact-us": {
+      "label": "Contact Us",
+      "aria": "Navigate to contact page"
+    }
+  },
+  "footer": {
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "download": "Download",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  }
+}

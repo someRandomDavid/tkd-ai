@@ -1,0 +1,63 @@
+<mat-toolbar class="navigation-header" color="primary" role="navigation">
+  <div class="header-content">
+    <!-- Logo/Club Name -->
+    <a href="/" class="logo-link">
+      <span class="club-name">{{ translationService.instant('hero.clubName') }}</span>
+    </a>
+
+    <!-- Desktop Navigation (≥768px) -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+      @for (item of navItems; track item.id) {
+        <a
+          [href]="item.routeOrAnchor"
+          (click)="onNavigationClick(item); $event.preventDefault()"
+          [class.active]="isActive(item)"
+          class="nav-link">
+          @if (item.icon) {
+            <mat-icon>{{ item.icon }}</mat-icon>
+          }
+          {{ translationService.instant('nav.' + item.id) }}
+        </a>
+      }
+      
+      <!-- Theme Toggle Button -->
+      <app-theme-toggle />
+    </nav>
+
+    <!-- Mobile Menu Button (<768px) -->
+    <button
+      mat-icon-button
+      class="mobile-menu-button"
+      (click)="toggleMenu()"
+      aria-label="Toggle navigation menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    
+    <!-- Theme Toggle for Mobile (visible when menu button visible) -->
+    <app-theme-toggle class="mobile-theme-toggle" />
+  </div>
+</mat-toolbar>
+
+<!-- Mobile Sidenav -->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" position="end" class="mobile-sidenav">
+    <mat-nav-list>
+      @for (item of navItems; track item.id) {
+        <a
+          mat-list-item
+          [href]="item.routeOrAnchor"
+          (click)="onNavigationClick(item); $event.preventDefault()"
+          [class.active]="isActive(item)">
+          @if (item.icon) {
+            <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+          }
+          <span matListItemTitle>{{ translationService.instant('nav.' + item.id) }}</span>
+        </a>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

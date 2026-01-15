@@ -1,0 +1,35 @@
+<section class="schedules-section" id="training-section">
+  <div class="schedules-container">
+    <h2 class="section-title">{{ translationService.instant('schedule.title') }}</h2>
+    <p class="section-description">
+      Unsere Trainingszeiten für alle Programme. Besuchen Sie uns zu einer kostenlosen Probestunde!
+    </p>
+
+    <!-- Taekwon-do Schedule -->
+    <div id="taekwondo-schedule" class="schedule-block">
+      <app-program-schedule
+        [sessions]="sessions"
+        programType="taekwondo"
+        programName="Taekwon-do"
+      />
+    </div>
+
+    <!-- Zumba Schedule -->
+    <div id="zumba-schedule" class="schedule-block">
+      <app-program-schedule
+        [sessions]="sessions"
+        programType="zumba"
+        programName="Zumba"
+      />
+    </div>
+
+    <!-- deepWORK Schedule -->
+    <div id="deepwork-schedule" class="schedule-block">
+      <app-program-schedule
+        [sessions]="sessions"
+        programType="deepwork"
+        programName="deepWORK"
+      />
+    </div>
+  </div>
+</section>

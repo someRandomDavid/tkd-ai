@@ -1,0 +1,35 @@
+<section class="hero-section" role="banner" aria-label="Hero section">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    @if (clubInfo) {
+      <h1 class="hero-title" id="hero-title">{{ clubInfo.name }}</h1>
+      <p class="hero-tagline">{{ clubInfo.tagline }}</p>
+    }
+  </div>
+  <!-- Hero image (optional - gracefully degrades to gradient if missing) -->
+  <picture class="hero-image" aria-hidden="true">
+    <source 
+      srcset="
+        /assets/images/hero/hero-bg-320w.webp 320w,
+        /assets/images/hero/hero-bg-768w.webp 768w,
+        /assets/images/hero/hero-bg-1024w.webp 1024w,
+        /assets/images/hero/hero-bg-1920w.webp 1920w
+      "
+      sizes="100vw"
+      type="image/webp">
+    <source
+      srcset="
+        /assets/images/hero/hero-bg-320w.jpg 320w,
+        /assets/images/hero/hero-bg-768w.jpg 768w,
+        /assets/images/hero/hero-bg-1024w.jpg 1024w,
+        /assets/images/hero/hero-bg-1920w.jpg 1920w
+      "
+      sizes="100vw"
+      type="image/jpeg">
+    <img 
+      src="/assets/images/hero/hero-bg-1024w.jpg" 
+      alt=""
+      loading="eager"
+      fetchpriority="high">
+  </picture>
+</section>

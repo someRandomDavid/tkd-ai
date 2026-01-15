@@ -1,0 +1,24 @@
+{
+  "actions": [
+    {
+      "id": "free-trial",
+      "label": "Kostenloses Probetraining",
+      "actionType": "mailto",
+      "destination": "mailto:info@tkd-ailingen.de?subject=Probetraining%20Anfrage",
+      "buttonStyle": "primary",
+      "priority": 1,
+      "icon": "sports_martial_arts",
+      "ariaLabel": "Jetzt kostenloses Probetraining anfragen"
+    },
+    {
+      "id": "contact-us",
+      "label": "Kontakt aufnehmen",
+      "actionType": "route",
+      "destination": "#contact-section",
+      "buttonStyle": "accent",
+      "priority": 2,
+      "icon": "email",
+      "ariaLabel": "Zur Kontaktseite navigieren"
+    }
+  ]
+}
