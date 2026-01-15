@@ -10,7 +10,8 @@
 /* ========================================
    DARK THEME (Default)
    ======================================== */
-:root {
+:root,
+body.dark-theme {
   /* Surface colors */
   --surface-bg: #000000;           /* Pure black background */
   --surface-card: #1a1a1a;         /* Dark gray for cards/elevated surfaces */
