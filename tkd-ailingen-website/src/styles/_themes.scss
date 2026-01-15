@@ -23,6 +23,7 @@
   
   /* Primary brand colors (red-based) */
   --primary-main: #dc143c;         /* Crimson red - main brand color */
+  --primary-rgb: 220, 20, 60;      /* RGB values for rgba usage */
   --primary-light: #ff4560;        /* Lighter red for hover states */
   --primary-dark: #b01030;         /* Darker red for active states */
   --primary-contrast: #ffffff;     /* White text on red backgrounds */
@@ -75,6 +76,7 @@ body.light-theme {
   
   /* Primary brand colors (red-based) */
   --primary-main: #c81e1e;         /* Strong red - main brand color */
+  --primary-rgb: 200, 30, 30;      /* RGB values for rgba usage */
   --primary-light: #e53935;        /* Lighter red for hover states */
   --primary-dark: #a31818;         /* Darker red for active states */
   --primary-contrast: #ffffff;     /* White text on red backgrounds */
