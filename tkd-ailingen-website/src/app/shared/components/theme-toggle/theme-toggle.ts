@@ -27,7 +27,7 @@ export class ThemeToggle implements OnInit {
   /**
    * Computed signal for current theme
    */
-  currentTheme = computed(() => this.themeService.getCurrentTheme());
+  currentTheme = this.themeService.getThemeSignal();
 
   /**
    * Handle toggle button click

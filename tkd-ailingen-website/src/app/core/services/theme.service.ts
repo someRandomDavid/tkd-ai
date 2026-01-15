@@ -58,6 +58,14 @@ export class ThemeService {
   }
 
   /**
+   * Get the current theme as a signal (reactive)
+   * @returns Signal containing current theme
+   */
+  getThemeSignal() {
+    return this.currentThemeSignal.asReadonly();
+  }
+
+  /**
    * Toggle between dark and light themes
    * @returns true if toggle was successful, false otherwise
    */
