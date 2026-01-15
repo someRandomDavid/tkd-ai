@@ -128,6 +128,22 @@
   }
 }
 
+.trainer-sessions {
+  .session-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .session-chip {
+    background: var(--surface-variant);
+    color: var(--text-primary);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+    height: auto;
+  }
+}
+
 .trainer-special-roles {
   .special-role-chips {
     display: flex;

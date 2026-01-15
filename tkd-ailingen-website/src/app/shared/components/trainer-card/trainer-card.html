@@ -37,6 +37,18 @@
       </div>
     </div>
 
+    <!-- Sessions for taekwondo trainers -->
+    <div class="trainer-sessions" *ngIf="trainer.sessions && trainer.sessions.length > 0">
+      <div class="session-chips">
+        <mat-chip 
+          *ngFor="let session of trainer.sessions" 
+          class="session-chip"
+        >
+          {{ session }}
+        </mat-chip>
+      </div>
+    </div>
+
     <!-- Special roles -->
     <div class="trainer-special-roles" *ngIf="trainer.specialRoles && trainer.specialRoles.length > 0">
       <div class="special-role-chips">

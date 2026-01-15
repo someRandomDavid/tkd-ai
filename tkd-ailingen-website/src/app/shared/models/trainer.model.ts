@@ -37,6 +37,9 @@ export interface Trainer {
   /** Programs this trainer teaches */
   programs: TrainerProgram[];
   
+  /** Session labels for taekwondo trainers (e.g., "Kinder 6-12 Jahre, Anfänger") */
+  sessions?: string[];
+  
   /** Special roles or certifications */
   specialRoles?: SpecialRole[];
   
