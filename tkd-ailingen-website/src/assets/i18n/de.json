@@ -33,6 +33,21 @@
     "instructor": "Trainer",
     "level": "Level",
     "noSessions": "Keine Trainingseinheiten verfügbar",
+    "filters": {
+      "programType": "Programm",
+      "all": "Alle Programme",
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK",
+      "search": "Suche",
+      "searchPlaceholder": "Nach Level, Trainer, Ort suchen...",
+      "clearSearch": "Suche löschen",
+      "clearAll": "Filter zurücksetzen",
+      "sessionFound": "Trainingseinheit gefunden",
+      "sessionsFound": "Trainingseinheiten gefunden",
+      "noResults": "Keine Trainingseinheiten gefunden",
+      "noResultsHint": "Versuchen Sie, Ihre Filter zu ändern oder zurückzusetzen"
+    },
     "days": {
       "monday": "Montag",
       "tuesday": "Dienstag",

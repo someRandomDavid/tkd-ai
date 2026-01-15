@@ -9,6 +9,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatRippleModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 
 const MATERIAL_MODULES = [
   MatToolbarModule,
@@ -19,6 +22,9 @@ const MATERIAL_MODULES = [
   MatListModule,
   MatMenuModule,
   MatRippleModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatInputModule,
 ];
 
 /**

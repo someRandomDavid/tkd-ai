@@ -8,3 +8,4 @@ export * from './training-session.model';
 export * from './downloadable-form.model';
 export * from './call-to-action.model';
 export * from './navigation-item.model';
+export * from './schedule-filters.model';

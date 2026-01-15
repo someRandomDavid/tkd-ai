@@ -1,0 +1,51 @@
+.schedule-filter {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--surface-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+
+  .filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+
+    .program-filter,
+    .search-filter {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .clear-filters-btn {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      mat-icon {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .filter-controls {
+      flex-direction: column;
+
+      .program-filter,
+      .search-filter {
+        width: 100%;
+      }
+
+      .clear-filters-btn {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  }
+}
