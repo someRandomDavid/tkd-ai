@@ -1,14 +1,16 @@
-<mat-list-item class="download-item" (click)="onDownload($event)">
-  <mat-icon matListItemIcon class="file-icon">{{ getFileIcon() }}</mat-icon>
-  <div matListItemTitle class="download-title">{{ form.formName }}</div>
-  <div matListItemLine class="download-description">{{ form.description }}</div>
-  <div matListItemLine class="download-meta">
-    <span class="file-type">{{ form.fileType.toUpperCase() }}</span>
-    @if (form.fileSize) {
-      <span class="file-size">{{ formatFileSize() }}</span>
-    }
+<div class="download-item" (click)="onDownload($event)">
+  <mat-icon class="file-icon">{{ getFileIcon() }}</mat-icon>
+  <div class="download-content">
+    <div class="download-title">{{ form.formName }}</div>
+    <div class="download-description">{{ form.description }}</div>
+    <div class="download-meta">
+      <span class="file-type">{{ form.fileType.toUpperCase() }}</span>
+      @if (form.fileSize) {
+        <span class="file-size">{{ formatFileSize() }}</span>
+      }
+    </div>
   </div>
-  <button mat-icon-button matListItemMeta aria-label="Download" class="download-button">
+  <button mat-icon-button aria-label="Download" class="download-button">
     <mat-icon>download</mat-icon>
   </button>
-</mat-list-item>
+</div>
