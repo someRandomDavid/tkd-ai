@@ -1,0 +1,11 @@
+<button
+  mat-icon-button
+  (click)="onToggle()"
+  [attr.aria-label]="getAriaLabel()"
+  [attr.aria-pressed]="currentTheme() === 'light'"
+  class="theme-toggle-button"
+  data-testid="theme-toggle-button"
+>
+  <mat-icon [attr.aria-hidden]="true">{{ getIcon() }}</mat-icon>
+</button>
+

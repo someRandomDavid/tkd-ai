@@ -1,0 +1,21 @@
+<section id="downloads-section" class="downloads-section">
+  <div class="container">
+    <h2 class="section-title">Downloads</h2>
+    <p class="section-description">
+      Hier finden Sie wichtige Formulare und Dokumente zum Download.
+    </p>
+
+    @if (forms.length > 0) {
+      <mat-list class="downloads-grid">
+        @for (form of forms; track form.id) {
+          <app-download-item 
+            [form]="form" 
+            (downloadClick)="onDownload($event)"
+          />
+        }
+      </mat-list>
+    } @else {
+      <p class="no-downloads">Keine Downloads verfügbar.</p>
+    }
+  </div>
+</section>

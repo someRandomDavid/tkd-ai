@@ -1,0 +1,47 @@
+{
+  "name": "Taekwon-do Ailingen",
+  "tagline": "Tradition, Disziplin, Stärke",
+  "description": "Willkommen bei Taekwon-do Ailingen! Seit über 20 Jahren bieten wir hochqualitatives Training in traditionellem Taekwon-do, Zumba und deepWORK in Ailingen bei Friedrichshafen. Unser Verein vereint sportliche Exzellenz mit Gemeinschaft und Respekt. Für Anfänger bis Fortgeschrittene, Kinder ab 6 Jahren und Erwachsene jeden Alters.",
+  "foundingYear": 2000,
+  "programs": [
+    {
+      "name": "Taekwon-do",
+      "description": "Traditionelle koreanische Kampfkunst mit Fokus auf Technik, Disziplin und Selbstverteidigung. Für alle Altersgruppen ab 6 Jahren.",
+      "icon": "sports_martial_arts"
+    },
+    {
+      "name": "Zumba",
+      "description": "Tanzen Sie sich fit! Dynamisches Fitness-Programm mit lateinamerikanischen Rhythmen. Spaß und Kondition für alle Fitnesslevel.",
+      "icon": "music_note"
+    },
+    {
+      "name": "deepWORK",
+      "description": "Athletisches Ganzkörper-Workout nach dem Yin-Yang-Prinzip. Funktionelles Training ohne Geräte für maximale Effektivität.",
+      "icon": "fitness_center"
+    }
+  ],
+  "contact": {
+    "address": {
+      "street": "Sporthalle Ailingen, Schulstraße 10",
+      "postalCode": "88048",
+      "city": "Friedrichshafen",
+      "country": "Deutschland"
+    },
+    "phone": "+49 7541 123456",
+    "email": "info@tkd-ailingen.de"
+  },
+  "socialMedia": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/tkd-ailingen",
+      "icon": "facebook",
+      "ariaLabel": "Besuchen Sie uns auf Facebook"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/tkd_ailingen",
+      "icon": "camera_alt",
+      "ariaLabel": "Folgen Sie uns auf Instagram"
+    }
+  ]
+}

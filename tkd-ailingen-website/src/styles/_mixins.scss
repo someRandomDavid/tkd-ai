@@ -1,0 +1,66 @@
+// Mobile-first responsive breakpoint mixins
+// Per constitution: 320px (mobile), 768px (tablet), 1024px (desktop)
+
+// Breakpoint values
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1280px;
+$breakpoint-xlarge: 1920px;
+
+// Mobile-first media query mixins
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: #{$breakpoint-xlarge}) {
+    @content;
+  }
+}
+
+// Max-width variants (use sparingly, mobile-first approach preferred)
+@mixin mobile-only {
+  @media (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+// Usage example:
+// .component {
+//   padding: 1rem; // Mobile default
+//   
+//   @include tablet {
+//     padding: 2rem; // Tablet and up
+//   }
+//   
+//   @include desktop {
+//     padding: 3rem; // Desktop and up
+//   }
+// }

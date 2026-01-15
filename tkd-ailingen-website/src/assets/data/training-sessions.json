@@ -1,0 +1,120 @@
+{
+  "lastUpdated": "2026-01-12",
+  "sessions": [
+    {
+      "id": "tkd-mon-kids",
+      "programType": "taekwondo",
+      "dayOfWeek": "monday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Meister Kim",
+      "levelAgeGroup": "Kinder 6-12 Jahre, Anfänger",
+      "maxParticipants": 20,
+      "notes": "Bitte Sportkleidung mitbringen"
+    },
+    {
+      "id": "tkd-mon-advanced",
+      "programType": "taekwondo",
+      "dayOfWeek": "monday",
+      "startTime": "18:15",
+      "endTime": "19:30",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Meister Kim",
+      "levelAgeGroup": "Jugendliche & Erwachsene, Fortgeschrittene",
+      "maxParticipants": 25
+    },
+    {
+      "id": "tkd-wed-kids",
+      "programType": "taekwondo",
+      "dayOfWeek": "wednesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Sabine Müller",
+      "levelAgeGroup": "Kinder 6-12 Jahre, Alle Level",
+      "maxParticipants": 20
+    },
+    {
+      "id": "tkd-wed-adults",
+      "programType": "taekwondo",
+      "dayOfWeek": "wednesday",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Meister Kim",
+      "levelAgeGroup": "Erwachsene, Alle Level",
+      "maxParticipants": 25,
+      "notes": "Probetraining jederzeit möglich"
+    },
+    {
+      "id": "tkd-fri-teens",
+      "programType": "taekwondo",
+      "dayOfWeek": "friday",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Meister Kim",
+      "levelAgeGroup": "Jugendliche 13-17 Jahre",
+      "maxParticipants": 20
+    },
+    {
+      "id": "zumba-tue",
+      "programType": "zumba",
+      "dayOfWeek": "tuesday",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Maria Rodriguez",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 30,
+      "notes": "Keine Vorkenntnisse erforderlich"
+    },
+    {
+      "id": "zumba-thu",
+      "programType": "zumba",
+      "dayOfWeek": "thursday",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Maria Rodriguez",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 30
+    },
+    {
+      "id": "zumba-sat",
+      "programType": "zumba",
+      "dayOfWeek": "saturday",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Maria Rodriguez",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 30,
+      "notes": "Perfekt für Wochenend-Workout"
+    },
+    {
+      "id": "deepwork-mon",
+      "programType": "deepwork",
+      "dayOfWeek": "monday",
+      "startTime": "19:45",
+      "endTime": "20:45",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Thomas Weber",
+      "levelAgeGroup": "Erwachsene, Mittleres bis hohes Fitnesslevel",
+      "maxParticipants": 25,
+      "notes": "Intensive Ganzkörper-Workout"
+    },
+    {
+      "id": "deepwork-thu",
+      "programType": "deepwork",
+      "dayOfWeek": "thursday",
+      "startTime": "19:15",
+      "endTime": "20:15",
+      "location": "Sporthalle Ailingen, Schulstraße 10",
+      "instructor": "Thomas Weber",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 25
+    }
+  ]
+}

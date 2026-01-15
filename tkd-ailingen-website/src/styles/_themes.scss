@@ -1,0 +1,106 @@
+/**
+ * Theme CSS Custom Properties (CSS Variables)
+ * 
+ * Dark theme (default): Optimized for low-light viewing with reduced blue light
+ * Light theme: Optimized for bright-light viewing with high contrast
+ * 
+ * Color palette based on black (#000000), white (#FFFFFF), red (#DC143C), and their shades
+ */
+
+/* ========================================
+   DARK THEME (Default)
+   ======================================== */
+:root {
+  /* Surface colors */
+  --surface-bg: #000000;           /* Pure black background */
+  --surface-card: #1a1a1a;         /* Dark gray for cards/elevated surfaces */
+  --surface-hover: #2a2a2a;        /* Hover state for surfaces */
+  
+  /* Text colors */
+  --text-primary: #ffffff;         /* White primary text */
+  --text-secondary: #b3b3b3;       /* Light gray secondary text */
+  --text-disabled: #666666;        /* Darker gray disabled text */
+  
+  /* Primary brand colors (red-based) */
+  --primary-main: #dc143c;         /* Crimson red - main brand color */
+  --primary-light: #ff4560;        /* Lighter red for hover states */
+  --primary-dark: #b01030;         /* Darker red for active states */
+  --primary-contrast: #ffffff;     /* White text on red backgrounds */
+  
+  /* Accent colors */
+  --accent-main: #ff1744;          /* Bright red accent */
+  --accent-light: #ff5252;         /* Light red accent */
+  --accent-dark: #d50000;          /* Dark red accent */
+  
+  /* Semantic colors */
+  --success: #4caf50;              /* Green for success states */
+  --warning: #ff9800;              /* Orange for warnings */
+  --error: #f44336;                /* Red for errors */
+  --info: #2196f3;                 /* Blue for info */
+  
+  /* Borders and dividers */
+  --border-color: #333333;         /* Dark border color */
+  --divider-color: #2a2a2a;        /* Subtle divider */
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.6);
+  
+  /* Overlay */
+  --overlay-bg: rgba(0, 0, 0, 0.8); /* Dark overlay for modals */
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+}
+
+/* ========================================
+   LIGHT THEME
+   ======================================== */
+body.light-theme {
+  /* Update color-scheme for browser UI */
+  color-scheme: light;
+  
+  /* Surface colors */
+  --surface-bg: #ffffff;           /* Pure white background */
+  --surface-card: #f5f5f5;         /* Light gray for cards/elevated surfaces */
+  --surface-hover: #e8e8e8;        /* Hover state for surfaces */
+  
+  /* Text colors */
+  --text-primary: #000000;         /* Black primary text */
+  --text-secondary: #4d4d4d;       /* Dark gray secondary text */
+  --text-disabled: #999999;        /* Medium gray disabled text */
+  
+  /* Primary brand colors (red-based) */
+  --primary-main: #c81e1e;         /* Strong red - main brand color */
+  --primary-light: #e53935;        /* Lighter red for hover states */
+  --primary-dark: #a31818;         /* Darker red for active states */
+  --primary-contrast: #ffffff;     /* White text on red backgrounds */
+  
+  /* Accent colors */
+  --accent-main: #d32f2f;          /* Red accent */
+  --accent-light: #e57373;         /* Light red accent */
+  --accent-dark: #b71c1c;          /* Dark red accent */
+  
+  /* Semantic colors */
+  --success: #2e7d32;              /* Darker green for better contrast */
+  --warning: #f57c00;              /* Darker orange for warnings */
+  --error: #c62828;                /* Darker red for errors */
+  --info: #1565c0;                 /* Darker blue for info */
+  
+  /* Borders and dividers */
+  --border-color: #d9d9d9;         /* Light border color */
+  --divider-color: #e8e8e8;        /* Subtle divider */
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  /* Overlay */
+  --overlay-bg: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for modals */
+  
+  /* Transitions remain the same */
+}

@@ -1,0 +1,135 @@
+@use '../../../../styles/variables' as vars;
+@use '../../../../styles/mixins' as mixins;
+
+.navigation-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  
+  // Override Material toolbar colors to use our theme
+  background-color: var(--primary-main) !important;
+  color: var(--primary-contrast) !important;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-2);
+
+  @include mixins.tablet {
+    padding: 0 var(--spacing-4);
+  }
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
+
+.club-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+
+  @include mixins.mobile-only {
+    font-size: var(--font-size-base);
+  }
+}
+
+// Desktop navigation (≥768px)
+.desktop-nav {
+  display: none;
+  gap: var(--spacing-1);
+
+  @include mixins.tablet {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-2) var(--spacing-3);
+  color: inherit;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-fast);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+
+  mat-icon {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+// Mobile menu button (<768px)
+.mobile-menu-button {
+  display: block;
+
+  @include mixins.tablet {
+    display: none;
+  }
+}
+
+// Theme toggle visibility
+.mobile-theme-toggle {
+  display: block;
+  margin-left: var(--spacing-1);
+
+  @include mixins.tablet {
+    display: none;
+  }
+}
+
+// Desktop nav already includes theme toggle within it (visible ≥768px)
+.desktop-nav app-theme-toggle {
+  margin-left: var(--spacing-2);
+}
+
+// Sidenav container
+.sidenav-container {
+  min-height: calc(100vh - 64px);
+}
+
+.mobile-sidenav {
+  width: 280px;
+  max-width: 80vw;
+
+  mat-nav-list {
+    padding-top: var(--spacing-2);
+  }
+
+  a[mat-list-item] {
+    &.active {
+      background-color: rgba(0, 0, 0, 0.05);
+      color: var(--color-primary);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+}

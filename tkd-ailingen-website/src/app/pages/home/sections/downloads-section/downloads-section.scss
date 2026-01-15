@@ -1,0 +1,57 @@
+.downloads-section {
+  padding: 48px 20px;
+  background-color: #fafafa;
+  scroll-margin-top: 80px; // Offset for fixed header
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #212121;
+    margin: 0 0 16px 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  .section-description {
+    font-size: 16px;
+    color: #757575;
+    text-align: center;
+    margin: 0 0 40px 0;
+    line-height: 1.6;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .downloads-grid {
+    display: grid;
+    grid-template-columns: 1fr; // Mobile: 1 column
+    gap: 0; // No gap since items have their own margin
+    padding: 0;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); // Desktop: 2 columns
+      gap: 24px;
+      
+      app-download-item {
+        margin-bottom: 0; // Remove margin in grid layout
+      }
+    }
+  }
+
+  .no-downloads {
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 16px;
+    padding: 40px 20px;
+  }
+}

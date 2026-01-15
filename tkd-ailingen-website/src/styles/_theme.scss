@@ -1,0 +1,26 @@
+// Material theme customization for Taekwon-do Ailingen
+// Using red, black, and white color palette per design spec
+@use '@angular/material' as mat;
+
+// Include Material core styles  
+@include mat.core();
+
+// Apply Material 3 theme - will use CSS variables approach
+// Defining club colors via CSS custom properties below
+
+// Custom theme variables for club colors
+// Red (#d32f2f), Black (#212121), White (#ffffff)
+:root {
+  --primary-color: #d32f2f;
+  --primary-dark: #b71c1c;
+  --primary-light: #ef5350;
+  --accent-color: #212121;
+  --accent-dark: #000000;
+  --accent-light: #424242;
+  --background-color: #ffffff;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.60);
+  --text-disabled: rgba(0, 0, 0, 0.38);
+  --text-on-primary: #ffffff;
+  --text-on-accent: #ffffff;
+}

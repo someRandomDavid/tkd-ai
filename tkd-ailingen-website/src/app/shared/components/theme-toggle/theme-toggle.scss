@@ -1,0 +1,44 @@
+/**
+ * Theme toggle button styles
+ * Ensures touch target size and smooth transitions
+ */
+
+.theme-toggle-button {
+  // Ensure minimum touch target size (44x44px per constitution)
+  min-width: 44px;
+  min-height: 44px;
+  
+  // Color transitions for smooth theme switching
+  transition: background-color var(--transition-normal),
+              color var(--transition-normal);
+  
+  // Ensure button is visible against toolbar background
+  // Override Material toolbar colors for visibility
+  color: rgba(255, 255, 255, 0.9) !important;
+  
+  // Focus indicator for keyboard navigation
+  &:focus-visible {
+    outline: 2px solid var(--primary-main);
+    outline-offset: 2px;
+  }
+  
+  // Hover state
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  // Icon transitions
+  mat-icon {
+    transition: transform var(--transition-fast);
+  }
+  
+  // Scale icon slightly on hover for visual feedback
+  &:hover mat-icon {
+    transform: scale(1.1);
+  }
+  
+  // Active state
+  &:active mat-icon {
+    transform: scale(0.95);
+  }
+}

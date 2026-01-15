@@ -10,3 +10,4 @@ export * from './call-to-action.model';
 export * from './navigation-item.model';
 export * from './schedule-filters.model';
 export * from './trainer.model';
+

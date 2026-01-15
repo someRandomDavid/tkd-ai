@@ -1,0 +1,23 @@
+{
+  "lastUpdated": "2026-01-12",
+  "forms": [
+    {
+      "id": "member-registration",
+      "label": "Mitgliedsantrag",
+      "description": "Formular zur Anmeldung als Vereinsmitglied. Bitte ausgef\u00fcllt zum ersten Training mitbringen.",
+      "fileUrl": "/assets/forms/member-registration.pdf",
+      "fileType": "pdf",
+      "fileSizeKB": 245,
+      "category": "membership"
+    },
+    {
+      "id": "int-bodensee-cup",
+      "label": "Anmeldung International Bodensee Cup",
+      "description": "Anmeldeformular f\u00fcr die Teilnahme am j\u00e4hrlichen International Bodensee Cup Turnier.",
+      "fileUrl": "/assets/forms/international-bodensee-cup-registration.pdf",
+      "fileType": "pdf",
+      "fileSizeKB": 312,
+      "category": "events"
+    }
+  ]
+}

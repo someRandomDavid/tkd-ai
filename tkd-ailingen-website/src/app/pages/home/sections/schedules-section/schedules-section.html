@@ -1,0 +1,62 @@
+<section class="schedules-section" id="training-section">
+  <div class="schedules-container">
+    <h2 class="section-title">{{ translationService.instant('schedule.title') }}</h2>
+    <p class="section-description">
+      Unsere Trainingszeiten für alle Programme. Besuchen Sie uns zu einer kostenlosen Probestunde!
+    </p>
+
+    <!-- Filter Component -->
+    <app-schedule-filter (filtersChange)="onFiltersChange($event)" />
+
+    <!-- Filtered Results Count -->
+    @if (filteredSessions().length > 0) {
+      <p class="results-count">
+        {{ filteredSessions().length }} {{ filteredSessions().length === 1 ? 
+          translationService.instant('schedule.filters.sessionFound') : 
+          translationService.instant('schedule.filters.sessionsFound') }}
+      </p>
+    }
+
+    <!-- Taekwon-do Schedule -->
+    @if (taekwondoSessions.length > 0) {
+      <div id="taekwondo-schedule" class="schedule-block">
+        <app-program-schedule
+          [sessions]="taekwondoSessions"
+          programType="taekwondo"
+          programName="Taekwon-do"
+        />
+      </div>
+    }
+
+    <!-- Zumba Schedule -->
+    @if (zumbaSessions.length > 0) {
+      <div id="zumba-schedule" class="schedule-block">
+        <app-program-schedule
+          [sessions]="zumbaSessions"
+          programType="zumba"
+          programName="Zumba"
+        />
+      </div>
+    }
+
+    <!-- deepWORK Schedule -->
+    @if (deepworkSessions.length > 0) {
+      <div id="deepwork-schedule" class="schedule-block">
+        <app-program-schedule
+          [sessions]="deepworkSessions"
+          programType="deepwork"
+          programName="deepWORK"
+        />
+      </div>
+    }
+
+    <!-- No Results Message -->
+    @if (filteredSessions().length === 0) {
+      <div class="no-results">
+        <mat-icon>search_off</mat-icon>
+        <p>{{ translationService.instant('schedule.filters.noResults') }}</p>
+        <p class="no-results-hint">{{ translationService.instant('schedule.filters.noResultsHint') }}</p>
+      </div>
+    }
+  </div>
+</section>

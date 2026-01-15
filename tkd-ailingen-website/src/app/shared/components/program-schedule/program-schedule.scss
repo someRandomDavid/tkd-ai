@@ -1,0 +1,120 @@
+@use '../../../../styles/variables' as vars;
+@use '../../../../styles/mixins' as mixins;
+
+.program-schedule {
+  margin-bottom: var(--spacing-8);
+}
+
+.program-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 var(--spacing-4) 0;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+
+  @include mixins.tablet {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+.no-sessions {
+  text-align: center;
+  padding: var(--spacing-6);
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mixins.desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.session-card {
+  mat-card-content {
+    padding: var(--spacing-3);
+  }
+}
+
+.session-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.session-icon {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.session-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-05);
+}
+
+.session-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.session-value {
+  font-size: var(--font-size-base);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.session-level {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  margin-top: var(--spacing-2);
+  padding: var(--spacing-2);
+  background-color: rgba(211, 47, 47, 0.1);
+  border-radius: 4px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  mat-icon {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-primary);
+  }
+}
+
+.session-notes {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-1);
+  margin-top: var(--spacing-2);
+  padding: var(--spacing-2);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-size: var(--font-size-sm);
+  color: rgba(0, 0, 0, 0.7);
+
+  mat-icon {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+}
