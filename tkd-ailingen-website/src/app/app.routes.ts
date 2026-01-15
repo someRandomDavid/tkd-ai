@@ -5,7 +5,7 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
-    title: 'Taekwon-do Ailingen - Tradition, Disziplin, Stärke',
+    title: 'Taekwon-do Ailingen e.V. - Tradition, Disziplin, Stärke',
   },
   {
     path: '**',

@@ -18,11 +18,11 @@
     "changed": "Theme changed to {{theme}}"
   },
   "hero": {
-    "clubName": "Taekwon-do Ailingen",
-    "tagline": "Traditional Martial Arts for All Ages"
+    "clubName": "Taekwon-do Ailingen e.V.",
+    "tagline": "Traditional martial arts for all ages"
   },
   "welcome": {
-    "title": "Welcome to Taekwon-do Ailingen",
+    "title": "Welcome to Taekwon-do Ailingen e.V.",
     "description": "Club description goes here..."
   },
   "schedule": {
