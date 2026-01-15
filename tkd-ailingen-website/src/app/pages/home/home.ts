@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef, NgZone } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { firstValueFrom } from 'rxjs';
 import { NavigationHeader } from '@app/shared/components/navigation-header/navigation-header';
@@ -35,8 +35,7 @@ export class Home implements OnInit {
 
   constructor(
     private contentService: ContentService,
-    private cdr: ChangeDetectorRef,
-    private zone: NgZone
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -50,29 +49,30 @@ export class Home implements OnInit {
       firstValueFrom(this.contentService.getCTAButtons()),
     ])
       .then(([clubInfo, nav, sessions, downloads, ctas]) => {
-        this.zone.run(() => {
-          console.log('Data loaded successfully:', { clubInfo, nav, sessions, downloads, ctas });
-          this.clubInfo = clubInfo;
-          this.navItems = nav?.items || [];
-          this.trainingSessions = sessions || [];
-          this.downloadableForms = downloads?.forms || [];
-          this.ctaButtons = ctas?.actions || [];
-          this.loading = false;
-          console.log('Loading flag set to false:', this.loading);
-        });
+        console.log('Data loaded successfully:', { clubInfo, nav, sessions, downloads, ctas });
+        this.clubInfo = clubInfo;
+        this.navItems = nav?.items || [];
+        this.trainingSessions = sessions || [];
+        this.downloadableForms = downloads?.forms || [];
+        this.ctaButtons = ctas?.actions || [];
+        this.loading = false;
+        console.log('Loading flag set to false:', this.loading);
+        console.log('Error flag:', this.error);
+        console.log('ClubInfo:', this.clubInfo);
+        this.cdr.markForCheck();
+        console.log('markForCheck called');
       })
       .catch((err) => {
-        this.zone.run(() => {
-          console.error('Failed to load data - FULL ERROR:', err);
-          console.error('Error details:', {
-            message: err.message,
-            status: err.status,
-            statusText: err.statusText,
-            url: err.url
-          });
-          this.error = true;
-          this.loading = false;
+        console.error('Failed to load data - FULL ERROR:', err);
+        console.error('Error details:', {
+          message: err.message,
+          status: err.status,
+          statusText: err.statusText,
+          url: err.url
         });
+        this.error = true;
+        this.loading = false;
+        this.cdr.markForCheck();
       });
   }
 
