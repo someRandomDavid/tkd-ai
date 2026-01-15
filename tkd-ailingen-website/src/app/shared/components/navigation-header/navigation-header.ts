@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter, ViewChild, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, Output, EventEmitter, ViewChild, OnInit, OnDestroy, PLATFORM_ID, Inject } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { MaterialModule } from '@shared/material.module';
 import { NavigationItem } from '@shared/models';
 import { TranslationService } from '@core/services/translation.service';
@@ -19,7 +19,7 @@ import { ThemeToggle } from '../theme-toggle/theme-toggle';
   templateUrl: './navigation-header.html',
   styleUrl: './navigation-header.scss',
 })
-export class NavigationHeader implements OnInit {
+export class NavigationHeader implements OnInit, OnDestroy {
   @Input() navItems: NavigationItem[] = [];
   @Output() navigationClick = new EventEmitter<string>();
   
@@ -27,20 +27,39 @@ export class NavigationHeader implements OnInit {
   
   activeSection = '';
   isMobile = false;
+  private isBrowser: boolean;
 
-  constructor(public translationService: TranslationService) {}
+  constructor(
+    public translationService: TranslationService,
+    @Inject(PLATFORM_ID) platformId: object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
   ngOnInit(): void {
-    this.checkViewport();
-    window.addEventListener('resize', () => this.checkViewport());
-    window.addEventListener('scroll', () => this.updateActiveSection());
+    if (this.isBrowser) {
+      this.checkViewport();
+      window.addEventListener('resize', () => this.checkViewport());
+      window.addEventListener('scroll', () => this.updateActiveSection());
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.isBrowser) {
+      window.removeEventListener('resize', () => this.checkViewport());
+      window.removeEventListener('scroll', () => this.updateActiveSection());
+    }
   }
 
   checkViewport(): void {
-    this.isMobile = window.innerWidth < 768;
+    if (this.isBrowser) {
+      this.isMobile = window.innerWidth < 768;
+    }
   }
 
   updateActiveSection(): void {
+    if (!this.isBrowser) return;
+    
     // Find which section is currently in view
     const sections = document.querySelectorAll('section[id]');
     const scrollPosition = window.scrollY + 100; // Offset for header height
@@ -61,7 +80,7 @@ export class NavigationHeader implements OnInit {
     this.navigationClick.emit(item.routeOrAnchor);
     console.log('Event emitted, routeOrAnchor:', item.routeOrAnchor);
     
-    if (item.routeOrAnchor.startsWith('#')) {
+    if (this.isBrowser && item.routeOrAnchor.startsWith('#')) {
       // Smooth scroll to anchor
       const targetId = item.routeOrAnchor.substring(1);
       console.log('Looking for element with ID:', targetId);

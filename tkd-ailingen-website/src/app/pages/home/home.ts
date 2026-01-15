@@ -57,8 +57,6 @@ export class Home implements OnInit {
         this.ctaButtons = ctas?.actions || [];
         this.loading = false;
         console.log('Loading flag set to false:', this.loading);
-        this.cdr.detectChanges();
-        console.log('Change detection triggered');
       })
       .catch((err) => {
         console.error('Failed to load data - FULL ERROR:', err);
