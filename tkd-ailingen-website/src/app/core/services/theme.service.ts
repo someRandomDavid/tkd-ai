@@ -80,6 +80,9 @@ export class ThemeService {
         return false;
       }
 
+      // Persist to localStorage FIRST
+      this.saveThemeToStorage(theme);
+
       // Update signal
       this.currentThemeSignal.set(theme);
 
@@ -95,9 +98,6 @@ export class ThemeService {
           body.classList.add('light-theme');
         }
       }
-
-      // Persist to localStorage
-      this.saveThemeToStorage(theme);
 
       return true;
     } catch (error) {
