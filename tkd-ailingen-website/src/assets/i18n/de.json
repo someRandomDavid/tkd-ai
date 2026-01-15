@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "training": "Training",
+    "taekwondo": "Taekwon-do",
+    "zumba": "Zumba",
+    "deepwork": "deepWORK",
+    "membership": "Mitgliedschaft",
+    "events": "Veranstaltungen",
+    "downloads": "Downloads",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "theme": {
+    "switchTo": "Zu {{theme}} wechseln",
+    "dark": "Dunkelmodus",
+    "light": "Hellmodus",
+    "current": "Aktuelles Theme: {{theme}}",
+    "changed": "Theme geändert zu {{theme}}"
+  },
+  "hero": {
+    "clubName": "Taekwon-do Ailingen",
+    "tagline": "Traditionelle Kampfkunst für alle Altersgruppen"
+  },
+  "welcome": {
+    "title": "Willkommen bei Taekwon-do Ailingen",
+    "description": "Hier kommt die Club-Beschreibung..."
+  },
+  "schedule": {
+    "title": "Trainingszeiten",
+    "day": "Tag",
+    "time": "Uhrzeit",
+    "location": "Ort",
+    "instructor": "Trainer",
+    "level": "Level",
+    "noSessions": "Keine Trainingseinheiten verfügbar",
+    "filters": {
+      "programType": "Programm",
+      "all": "Alle Programme",
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK",
+      "search": "Suche",
+      "searchPlaceholder": "Nach Level, Trainer, Ort suchen...",
+      "clearSearch": "Suche löschen",
+      "clearAll": "Filter zurücksetzen",
+      "sessionFound": "Trainingseinheit gefunden",
+      "sessionsFound": "Trainingseinheiten gefunden",
+      "noResults": "Keine Trainingseinheiten gefunden",
+      "noResultsHint": "Versuchen Sie, Ihre Filter zu ändern oder zurückzusetzen"
+    },
+    "days": {
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag"
+    },
+    "sections": {
+      "trainingTitle": "Trainingsangebot",
+      "taekwondoTitle": "Taekwon-do Trainingszeiten",
+      "zumbaTitle": "Zumba Trainingszeiten",
+      "deepworkTitle": "deepWORK Trainingszeiten"
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "description": "Hier finden Sie wichtige Formulare und Dokumente zum Download.",
+    "memberRegistration": "Mitgliedsantrag",
+    "fileSize": "Dateigröße",
+    "noDownloads": "Keine Downloads verfügbar",
+    "downloadButton": "Herunterladen"
+  },
+  "cta": {
+    "title": "Bereit zum Einstieg?",
+    "description": "Vereinbaren Sie jetzt ein kostenloses Probetraining oder kontaktieren Sie uns für weitere Informationen.",
+    "free-trial": {
+      "label": "Kostenloses Probetraining",
+      "aria": "Jetzt kostenloses Probetraining anfragen"
+    },
+    "contact-us": {
+      "label": "Kontakt aufnehmen",
+      "aria": "Zur Kontaktseite navigieren"
+    }
+  },
+  "footer": {
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "followUs": "Folgen Sie uns"
+  },
+  "trainers": {
+    "title": "Unser Trainerteam",
+    "subtitle": "Erfahrene und qualifizierte Trainer für Ihr Training",
+    "loading": "Trainer werden geladen...",
+    "loadError": "Fehler beim Laden der Trainer. Bitte versuchen Sie es später erneut.",
+    "noTrainers": "Keine Trainer verfügbar",
+    "photoAlt": "Foto von {{name}}",
+    "programs": "Programme",
+    "roles": {
+      "head-instructor": "Cheftrainer",
+      "instructor": "Trainer",
+      "assistant": "Assistent",
+      "youth-protection-officer": "Jugendschutzbeauftragter"
+    },
+    "programTypes": {
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK"
+    },
+    "specialRoles": {
+      "youth-protection-officer": "Jugendschutzbeauftragter",
+      "first-aid-certified": "Erste-Hilfe zertifiziert",
+      "competition-judge": "Wettkampfrichter"
+    }
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "download": "Herunterladen",
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten"
+  }
+}

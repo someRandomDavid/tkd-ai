@@ -1,0 +1,67 @@
+<mat-card class="trainer-card" [attr.data-trainer-id]="trainer.id">
+  <mat-card-header>
+    <div class="trainer-photo-container">
+      <picture>
+        <source 
+          *ngIf="trainer.photoWebP" 
+          [srcset]="trainer.photoWebP" 
+          type="image/webp"
+        />
+        <img 
+          [src]="trainer.photoUrl" 
+          [alt]="translationService.instant('trainers.photoAlt', { name: trainer.fullName })"
+          (error)="onImageError($event)"
+          loading="lazy"
+          class="trainer-photo"
+        />
+      </picture>
+      <div class="trainer-initials" [attr.aria-hidden]="true">
+        {{ trainerInitials }}
+      </div>
+    </div>
+  </mat-card-header>
+
+  <mat-card-content>
+    <h3 class="trainer-name">{{ trainer.fullName }}</h3>
+    
+    <!-- Role badge -->
+    <div class="trainer-role" *ngIf="trainer.role">
+      <mat-chip class="role-chip">
+        {{ translationService.instant('trainers.roles.' + trainer.role) }}
+      </mat-chip>
+    </div>
+
+    <!-- Programs taught -->
+    <div class="trainer-programs" *ngIf="trainer.programs.length > 0">
+      <span class="programs-label">{{ translationService.instant('trainers.programs') }}:</span>
+      <div class="program-chips">
+        <mat-chip 
+          *ngFor="let program of trainer.programs" 
+          class="program-chip"
+          [attr.data-program]="program"
+        >
+          {{ translationService.instant('trainers.programTypes.' + program) }}
+        </mat-chip>
+      </div>
+    </div>
+
+    <!-- Special roles -->
+    <div class="trainer-special-roles" *ngIf="trainer.specialRoles && trainer.specialRoles.length > 0">
+      <div class="special-role-chips">
+        <mat-chip 
+          *ngFor="let role of trainer.specialRoles" 
+          class="special-role-chip"
+          [attr.data-special-role]="role"
+        >
+          <mat-icon class="role-icon">verified</mat-icon>
+          {{ translationService.instant('trainers.specialRoles.' + role) }}
+        </mat-chip>
+      </div>
+    </div>
+
+    <!-- Bio (optional) -->
+    <p class="trainer-bio" *ngIf="trainer.bio">
+      {{ trainer.bio }}
+    </p>
+  </mat-card-content>
+</mat-card>

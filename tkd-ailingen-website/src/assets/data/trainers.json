@@ -1,0 +1,103 @@
+[
+  {
+    "id": "meister-kim",
+    "firstName": "Meister",
+    "lastName": "Kim",
+    "fullName": "Meister Kim",
+    "role": "head-instructor",
+    "programs": ["taekwondo"],
+    "specialRoles": ["youth-protection-officer", "competition-judge"],
+    "bio": "5. Dan Taekwon-do, über 30 Jahre Erfahrung im traditionellen Taekwon-do. Leitet die Schule seit 2000.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "kim meister"
+  },
+  {
+    "id": "sabine-mueller",
+    "firstName": "Sabine",
+    "lastName": "Müller",
+    "fullName": "Sabine Müller",
+    "role": "instructor",
+    "programs": ["taekwondo"],
+    "specialRoles": ["first-aid-certified"],
+    "bio": "3. Dan Taekwon-do, spezialisiert auf Kinder- und Jugendtraining.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "müller sabine"
+  },
+  {
+    "id": "maria-rodriguez",
+    "firstName": "Maria",
+    "lastName": "Rodriguez",
+    "fullName": "Maria Rodriguez",
+    "role": "instructor",
+    "programs": ["zumba"],
+    "specialRoles": ["first-aid-certified"],
+    "bio": "Zertifizierte Zumba-Instruktorin mit über 10 Jahren Erfahrung. Bringt lateinamerikanische Tanzkultur nach Ailingen.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "rodriguez maria"
+  },
+  {
+    "id": "thomas-weber",
+    "firstName": "Thomas",
+    "lastName": "Weber",
+    "fullName": "Thomas Weber",
+    "role": "instructor",
+    "programs": ["deepwork"],
+    "specialRoles": ["first-aid-certified"],
+    "bio": "Lizenzierter deepWORK Trainer. Fokus auf funktionelles Training und Ausdauer.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "weber thomas"
+  },
+  {
+    "id": "lisa-fischer",
+    "firstName": "Lisa",
+    "lastName": "Fischer",
+    "fullName": "Lisa Fischer",
+    "role": "assistant",
+    "programs": ["taekwondo"],
+    "bio": "1. Dan Taekwon-do, unterstützt im Kindertraining.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "fischer lisa"
+  },
+  {
+    "id": "andreas-bauer",
+    "firstName": "Andreas",
+    "lastName": "Bauer",
+    "fullName": "Andreas Bauer",
+    "role": "assistant",
+    "programs": ["taekwondo", "deepwork"],
+    "bio": "2. Dan Taekwon-do und Fitness-Enthusiast.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "bauer andreas"
+  },
+  {
+    "id": "claudia-schmidt",
+    "firstName": "Claudia",
+    "lastName": "Schmidt",
+    "fullName": "Claudia Schmidt",
+    "role": "instructor",
+    "programs": ["zumba", "deepwork"],
+    "specialRoles": ["first-aid-certified"],
+    "bio": "Zertifizierte Trainerin für Zumba und deepWORK. Spezialisiert auf energiegeladene Gruppenkurse.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "schmidt claudia"
+  },
+  {
+    "id": "michael-hoffmann",
+    "firstName": "Michael",
+    "lastName": "Hoffmann",
+    "fullName": "Michael Hoffmann",
+    "role": "assistant",
+    "programs": ["taekwondo"],
+    "bio": "1. Dan Taekwon-do, unterstützt im Erwachsenentraining.",
+    "photoUrl": "/assets/images/trainers/placeholder-instructor.jpg",
+    "photoWebP": "/assets/images/trainers/placeholder-instructor.webp",
+    "sortKey": "hoffmann michael"
+  }
+]

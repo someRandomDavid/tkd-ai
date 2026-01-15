@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "training": "Training",
+    "taekwondo": "Taekwon-do",
+    "zumba": "Zumba",
+    "deepwork": "deepWORK",
+    "membership": "Membership",
+    "events": "Events",
+    "downloads": "Downloads",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "theme": {
+    "switchTo": "Switch to {{theme}}",
+    "dark": "dark mode",
+    "light": "light mode",
+    "current": "Current theme: {{theme}}",
+    "changed": "Theme changed to {{theme}}"
+  },
+  "hero": {
+    "clubName": "Taekwon-do Ailingen",
+    "tagline": "Traditional Martial Arts for All Ages"
+  },
+  "welcome": {
+    "title": "Welcome to Taekwon-do Ailingen",
+    "description": "Club description goes here..."
+  },
+  "schedule": {
+    "title": "Training Schedule",
+    "day": "Day",
+    "time": "Time",
+    "location": "Location",
+    "instructor": "Instructor",
+    "level": "Level",
+    "noSessions": "No training sessions available",
+    "filters": {
+      "programType": "Program",
+      "all": "All Programs",
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK",
+      "search": "Search",
+      "searchPlaceholder": "Search by level, instructor, location...",
+      "clearSearch": "Clear search",
+      "clearAll": "Reset filters",
+      "sessionFound": "session found",
+      "sessionsFound": "sessions found",
+      "noResults": "No training sessions found",
+      "noResultsHint": "Try changing or resetting your filters"
+    },
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "sections": {
+      "trainingTitle": "Training Programs",
+      "taekwondoTitle": "Taekwon-do Schedule",
+      "zumbaTitle": "Zumba Schedule",
+      "deepworkTitle": "deepWORK Schedule"
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "description": "Here you can find important forms and documents for download.",
+    "memberRegistration": "Member Registration",
+    "fileSize": "File Size",
+    "noDownloads": "No downloads available",
+    "downloadButton": "Download"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "description": "Schedule a free trial class now or contact us for more information.",
+    "free-trial": {
+      "label": "Free Trial Class",
+      "aria": "Request a free trial class now"
+    },
+    "contact-us": {
+      "label": "Contact Us",
+      "aria": "Navigate to contact page"
+    }
+  },
+  "footer": {
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us"
+  },
+  "trainers": {
+    "title": "Our Trainer Team",
+    "subtitle": "Experienced and qualified trainers for your training",
+    "loading": "Loading trainers...",
+    "loadError": "Error loading trainers. Please try again later.",
+    "noTrainers": "No trainers available",
+    "photoAlt": "Photo of {{name}}",
+    "programs": "Programs",
+    "roles": {
+      "head-instructor": "Head Instructor",
+      "instructor": "Instructor",
+      "assistant": "Assistant",
+      "youth-protection-officer": "Youth Protection Officer"
+    },
+    "programTypes": {
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK"
+    },
+    "specialRoles": {
+      "youth-protection-officer": "Youth Protection Officer",
+      "first-aid-certified": "First Aid Certified",
+      "competition-judge": "Competition Judge"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "download": "Download",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  }
+}

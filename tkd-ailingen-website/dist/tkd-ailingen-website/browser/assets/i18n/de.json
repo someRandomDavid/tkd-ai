@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "training": "Training",
+    "taekwondo": "Taekwon-do",
+    "zumba": "Zumba",
+    "deepwork": "deepWORK",
+    "membership": "Mitgliedschaft",
+    "events": "Veranstaltungen",
+    "downloads": "Downloads",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "clubName": "Taekwon-do Ailingen",
+    "tagline": "Traditionelle Kampfkunst für alle Altersgruppen"
+  },
+  "welcome": {
+    "title": "Willkommen bei Taekwon-do Ailingen",
+    "description": "Hier kommt die Club-Beschreibung..."
+  },
+  "schedule": {
+    "title": "Trainingszeiten",
+    "day": "Tag",
+    "time": "Uhrzeit",
+    "location": "Ort",
+    "instructor": "Trainer",
+    "level": "Level"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "memberRegistration": "Mitgliedsantrag",
+    "fileSize": "Dateigröße"
+  },
+  "cta": {
+    "freeTrial": "Kostenloses Probetraining",
+    "contactUs": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "followUs": "Folgen Sie uns"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "download": "Herunterladen",
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten"
+  }
+}

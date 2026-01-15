@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "training": "Training",
+    "taekwondo": "Taekwon-do",
+    "zumba": "Zumba",
+    "deepwork": "deepWORK",
+    "membership": "Membership",
+    "events": "Events",
+    "downloads": "Downloads",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "clubName": "Taekwon-do Ailingen",
+    "tagline": "Traditional Martial Arts for All Ages"
+  },
+  "welcome": {
+    "title": "Welcome to Taekwon-do Ailingen",
+    "description": "Club description goes here..."
+  },
+  "schedule": {
+    "title": "Training Schedule",
+    "day": "Day",
+    "time": "Time",
+    "location": "Location",
+    "instructor": "Instructor",
+    "level": "Level"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "memberRegistration": "Member Registration",
+    "fileSize": "File Size"
+  },
+  "cta": {
+    "freeTrial": "Free Trial Class",
+    "contactUs": "Contact Us"
+  },
+  "footer": {
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "download": "Download",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  }
+}
