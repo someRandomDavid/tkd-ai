@@ -10,22 +10,22 @@
     {
       "id": "zumba",
       "label": "Zumba",
-      "routeOrAnchor": "#zumba-schedule",
+      "routeOrAnchor": "#welcome",
       "icon": "music_note",
       "order": 2
     },
     {
       "id": "deepwork",
       "label": "deepWORK",
-      "routeOrAnchor": "#deepwork-schedule",
+      "routeOrAnchor": "#welcome",
       "icon": "fitness_center",
       "order": 3
     },
     {
-      "id": "membership",
-      "label": "Mitgliedschaft",
-      "routeOrAnchor": "#downloads-section",
-      "icon": "card_membership",
+      "id": "news",
+      "label": "News",
+      "routeOrAnchor": "#news-section",
+      "icon": "article",
       "order": 4
     },
     {
@@ -36,18 +36,11 @@
       "order": 5
     },
     {
-      "id": "about",
-      "label": "Über uns",
-      "routeOrAnchor": "#welcome",
-      "icon": "info",
-      "order": 6
-    },
-    {
       "id": "contact",
       "label": "Kontakt",
       "routeOrAnchor": "#contact-section",
       "icon": "contact_mail",
-      "order": 7
+      "order": 6
     }
   ]
 }
