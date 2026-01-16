@@ -1,5 +1,13 @@
 {
   "routes": {
-    "/": {}
+    "/": {},
+    "/datenschutz": {},
+    "/disclaimer": {},
+    "/haftungsausschluss": {},
+    "/impressum": {},
+    "/imprint": {},
+    "/jugendschutz": {},
+    "/privacy": {},
+    "/youth-protection": {}
   }
 }

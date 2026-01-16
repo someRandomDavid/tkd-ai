@@ -1,28 +1,25 @@
 {
-  "name": "Taekwon-do Ailingen",
+  "name": "Taekwon-do Ailingen e.V.",
   "tagline": "Tradition, Disziplin, Stärke",
-  "description": "Willkommen bei Taekwon-do Ailingen! Seit über 20 Jahren bieten wir hochqualitatives Training in traditionellem Taekwon-do, Zumba und deepWORK in Ailingen bei Friedrichshafen. Unser Verein vereint sportliche Exzellenz mit Gemeinschaft und Respekt. Für Anfänger bis Fortgeschrittene, Kinder ab 6 Jahren und Erwachsene jeden Alters.",
+  "description": "Willkommen bei Taekwon-do Ailingen e.V.! Seit über 20 Jahren bieten wir hochqualitatives Training in traditionellem Taekwon-do, Zumba und deepWORK in Ailingen bei Friedrichshafen. Unser Verein vereint sportliche Exzellenz mit Gemeinschaft und Respekt. Für Anfänger bis Fortgeschrittene, Kinder ab 6 Jahren und Erwachsene jeden Alters.",
   "foundingYear": 2000,
   "programs": [
     {
-      "name": "Taekwon-do",
-      "description": "Traditionelle koreanische Kampfkunst mit Fokus auf Technik, Disziplin und Selbstverteidigung. Für alle Altersgruppen ab 6 Jahren.",
-      "icon": "sports_martial_arts"
-    },
-    {
       "name": "Zumba",
-      "description": "Tanzen Sie sich fit! Dynamisches Fitness-Programm mit lateinamerikanischen Rhythmen. Spaß und Kondition für alle Fitnesslevel.",
-      "icon": "music_note"
+      "description": "Ab September 2019 neuer Zumba-Kurs in Ailingen! Immer Dienstags und Donnerstags von 20 bis 21 Uhr in der Sporthalle Ailingen, Fohlenstrasse 19. Lust auf tanzen? Dann schau vorbei und lass dich von der guten Stimmung und Musik mitreißen. Gerne darfst du mal eine Schnupperstunde machen. Wir freuen uns auf dich!",
+      "icon": "music_note",
+      "imageUrl": "/assets/images/programs/zumba.jpg"
     },
     {
       "name": "deepWORK",
-      "description": "Athletisches Ganzkörper-Workout nach dem Yin-Yang-Prinzip. Funktionelles Training ohne Geräte für maximale Effektivität.",
-      "icon": "fitness_center"
+      "description": "Ihr wollt euch richtig auspowern, habt eure Prioritäten jedoch nicht beim Kampfsport? Dann schaut euch das an!",
+      "icon": "fitness_center",
+      "videoUrl": "https://www.facebook.com/121236051271978/videos/1561316020597300/"
     }
   ],
   "contact": {
     "address": {
-      "street": "Sporthalle Ailingen, Schulstraße 10",
+      "street": "In der Sporthalle Ailingen, Fohlenstrasse 19",
       "postalCode": "88048",
       "city": "Friedrichshafen",
       "country": "Deutschland"

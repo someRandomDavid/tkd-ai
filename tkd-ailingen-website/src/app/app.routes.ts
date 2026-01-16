@@ -57,9 +57,6 @@ export const routes: Routes = [
     component: NewsDetail,
     title: 'News - Taekwon-do Ailingen e.V.',
   },
-    redirectTo: 'jugendschutz',
-    pathMatch: 'full',
-  },
   {
     path: '**',
     redirectTo: '',

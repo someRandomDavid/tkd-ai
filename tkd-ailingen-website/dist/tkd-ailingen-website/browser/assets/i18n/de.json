@@ -10,12 +10,19 @@
     "about": "Über uns",
     "contact": "Kontakt"
   },
+  "theme": {
+    "switchTo": "Zu {{theme}} wechseln",
+    "dark": "Dunkelmodus",
+    "light": "Hellmodus",
+    "current": "Aktuelles Theme: {{theme}}",
+    "changed": "Theme geändert zu {{theme}}"
+  },
   "hero": {
-    "clubName": "Taekwon-do Ailingen",
+    "clubName": "Taekwon-do Ailingen e.V.",
     "tagline": "Traditionelle Kampfkunst für alle Altersgruppen"
   },
   "welcome": {
-    "title": "Willkommen bei Taekwon-do Ailingen",
+    "title": "Willkommen bei Taekwon-do Ailingen e.V.",
     "description": "Hier kommt die Club-Beschreibung..."
   },
   "schedule": {
@@ -24,16 +31,58 @@
     "time": "Uhrzeit",
     "location": "Ort",
     "instructor": "Trainer",
-    "level": "Level"
+    "level": "Level",
+    "noSessions": "Keine Trainingseinheiten verfügbar",
+    "filters": {
+      "programType": "Programm",
+      "all": "Alle Programme",
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK",
+      "search": "Suche",
+      "searchPlaceholder": "Nach Level, Trainer, Ort suchen...",
+      "clearSearch": "Suche löschen",
+      "clearAll": "Filter zurücksetzen",
+      "sessionFound": "Trainingseinheit gefunden",
+      "sessionsFound": "Trainingseinheiten gefunden",
+      "noResults": "Keine Trainingseinheiten gefunden",
+      "noResultsHint": "Versuchen Sie, Ihre Filter zu ändern oder zurückzusetzen"
+    },
+    "days": {
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag"
+    },
+    "sections": {
+      "trainingTitle": "Trainingsangebot",
+      "taekwondoTitle": "Taekwon-do Trainingszeiten",
+      "zumbaTitle": "Zumba Trainingszeiten",
+      "deepworkTitle": "deepWORK Trainingszeiten"
+    }
   },
   "downloads": {
     "title": "Downloads",
+    "description": "Hier finden Sie wichtige Formulare und Dokumente zum Download.",
     "memberRegistration": "Mitgliedsantrag",
-    "fileSize": "Dateigröße"
+    "fileSize": "Dateigröße",
+    "noDownloads": "Keine Downloads verfügbar",
+    "downloadButton": "Herunterladen"
   },
   "cta": {
-    "freeTrial": "Kostenloses Probetraining",
-    "contactUs": "Kontakt aufnehmen"
+    "title": "Bereit zum Einstieg?",
+    "description": "Vereinbaren Sie jetzt ein kostenloses Probetraining oder kontaktieren Sie uns für weitere Informationen.",
+    "free-trial": {
+      "label": "Kostenloses Probetraining",
+      "aria": "Jetzt kostenloses Probetraining anfragen"
+    },
+    "contact-us": {
+      "label": "Kontakt aufnehmen",
+      "aria": "Zur Kontaktseite navigieren"
+    }
   },
   "footer": {
     "address": "Adresse",
@@ -41,11 +90,130 @@
     "email": "E-Mail",
     "followUs": "Folgen Sie uns"
   },
+  "trainers": {
+    "title": "Unser Trainerteam",
+    "subtitle": "Erfahrene und qualifizierte Trainer für Ihr Training",
+    "loading": "Trainer werden geladen...",
+    "loadError": "Fehler beim Laden der Trainer. Bitte versuchen Sie es später erneut.",
+    "noTrainers": "Keine Trainer verfügbar",
+    "photoAlt": "Foto von {{name}}",
+    "programs": "Programme",
+    "roles": {
+      "head-instructor": "Cheftrainer",
+      "instructor": "Trainer",
+      "assistant": "Assistent",
+      "youth-protection-officer": "Jugendschutzbeauftragter"
+    },
+    "programTypes": {
+      "taekwondo": "Taekwon-do",
+      "zumba": "Zumba",
+      "deepwork": "deepWORK"
+    },
+    "specialRoles": {
+      "youth-protection-officer": "Jugendschutzbeauftragter",
+      "first-aid-certified": "Erste-Hilfe zertifiziert",
+      "competition-judge": "Wettkampfrichter"
+    }
+  },
   "common": {
     "learnMore": "Mehr erfahren",
     "readMore": "Weiterlesen",
     "download": "Herunterladen",
     "loading": "Lädt...",
     "error": "Ein Fehler ist aufgetreten"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "legalInfo": "Angaben gemäß § 5 TMG",
+    "legalReference": "Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.",
+    "board": "Vorstand",
+    "press": "Pressesprecherin",
+    "contact": "Kontakt",
+    "email": "E-Mail",
+    "registry": "Registereintrag",
+    "registryEntry": "Eintragung im Vereinsregister",
+    "registryCourt": "Registergericht",
+    "registryNumber": "Registernummer",
+    "responsible": "Verantwortlich für den Inhalt",
+    "responsibleReference": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+  },
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "liability": {
+      "title": "Haftung für Inhalte",
+      "content": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt."
+    },
+    "links": {
+      "title": "Haftung für Links",
+      "content": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar."
+    },
+    "copyright": {
+      "title": "Urheberrecht",
+      "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "responsible": "Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:",
+    "representedBy": "vertreten durch den 1. Vorstand",
+    "rights": {
+      "title": "Ihre Betroffenenrechte",
+      "intro": "Unter den angegebenen Kontaktdaten können Sie jederzeit folgende Rechte ausüben:",
+      "access": "Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung",
+      "rectification": "Berichtigung unrichtiger personenbezogener Daten",
+      "deletion": "Löschung Ihrer bei uns gespeicherten Daten",
+      "restriction": "Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen",
+      "objection": "Widerspruch gegen die Verarbeitung Ihrer Daten bei uns",
+      "portability": "Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben"
+    },
+    "purposes": {
+      "title": "Zwecke der Datenverarbeitung",
+      "content": "Wir verarbeiten Ihre personenbezogenen Daten nur zu den in dieser Datenschutzerklärung genannten Zwecken. Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den genannten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn Sie Ihre ausdrückliche Einwilligung dazu erteilt haben, die Verarbeitung zur Abwicklung eines Vertrags mit Ihnen erforderlich ist, die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, oder die Verarbeitung zur Wahrung berechtigter Interessen erforderlich ist."
+    },
+    "storage": {
+      "title": "Löschung bzw. Sperrung der Daten",
+      "content": "Wir halten uns an die Grundsätze der Datenvermeidung und Datensparsamkeit. Wir speichern Ihre personenbezogenen Daten daher nur so lange, wie dies zur Erreichung der hier genannten Zwecke erforderlich ist oder wie es die vom Gesetzgeber vorgesehenen vielfältigen Speicherfristen vorsehen. Nach Fortfall des jeweiligen Zweckes bzw. Ablauf dieser Fristen werden die entsprechenden Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Wie viele andere Webseiten verwenden wir auch so genannte Cookies. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet. Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen."
+    },
+    "contact": {
+      "title": "Kontaktformular",
+      "content": "Treten Sie bzgl. Fragen jeglicher Art per E-Mail oder Kontaktformular mit uns in Kontakt, erteilen Sie uns zum Zwecke der Kontaktaufnahme Ihre freiwillige Einwilligung. Hierfür ist die Angabe einer validen E-Mail-Adresse erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional."
+    },
+    "dataProtectionOfficer": {
+      "title": "Fragen an den Datenschutzbeauftragten"
+    }
+  },
+  "youthProtection": {
+    "title": "Jugendschutz",
+    "intro": "Bei Fragen rund um den Jugendschutz steht Ihnen unsere Jugendschutzbeauftragte gerne zur Verfügung:",
+    "officer": "Jugendschutzbeauftragte"
+  },
+  "news": {
+    "title": "Aktuelles & Neuigkeiten",
+    "description": "Bleiben Sie auf dem Laufenden über unsere Vereinsaktivitäten, Erfolge und Ankündigungen",
+    "readMore": "Weiterlesen",
+    "noNews": "Keine Neuigkeiten verfügbar",
+    "loading": "Neuigkeiten werden geladen...",
+    "notFound": "Neuigkeit nicht gefunden",
+    "notFoundMessage": "Die gesuchte Neuigkeit konnte nicht gefunden werden.",
+    "backToNews": "Zurück zu den Neuigkeiten",
+    "by": "von",
+    "categories": {
+      "event": "Veranstaltung",
+      "announcement": "Ankündigung",
+      "achievement": "Erfolg",
+      "general": "Allgemein"
+    },
+    "pagination": {
+      "label": "Neuigkeiten Navigation",
+      "itemsPerPage": "Artikel pro Seite",
+      "nextPage": "Nächste Seite",
+      "previousPage": "Vorherige Seite",
+      "firstPage": "Erste Seite",
+      "lastPage": "Letzte Seite"
+    }
   }
 }
