@@ -9,7 +9,7 @@
         @if (clubInfo.programs && clubInfo.programs.length > 0) {
           <div class="programs-grid">
             @for (program of clubInfo.programs; track program.name) {
-              <mat-card class="program-card">
+              <mat-card class="program-card" [id]="program.name.toLowerCase().replace(' ', '-')">
                 @if (program.imageUrl) {
                   <img mat-card-image [src]="program.imageUrl" [alt]="program.name" class="program-image">
                 }

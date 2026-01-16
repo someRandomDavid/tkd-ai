@@ -10,14 +10,14 @@
     {
       "id": "zumba",
       "label": "Zumba",
-      "routeOrAnchor": "#welcome",
+      "routeOrAnchor": "#zumba",
       "icon": "music_note",
       "order": 2
     },
     {
       "id": "deepwork",
       "label": "deepWORK",
-      "routeOrAnchor": "#welcome",
+      "routeOrAnchor": "#deepwork",
       "icon": "fitness_center",
       "order": 3
     },
