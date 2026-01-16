@@ -23,7 +23,7 @@
     },
     {
       "id": "news",
-      "label": "News",
+      "label": "Aktuelles und Neuigkeiten",
       "routeOrAnchor": "#news-section",
       "icon": "article",
       "order": 4
