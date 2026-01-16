@@ -92,38 +92,3 @@
     }
   ]
 }
-    },
-    {
-      "id": "news-007",
-      "title": "Erfolgreiche Teilnahme an regionaler Meisterschaft",
-      "date": "2024-05-15T10:00:00Z",
-      "excerpt": "Unsere Wettkämpfer haben bei der regionalen Taekwon-do Meisterschaft hervorragende Ergebnisse erzielt: 3x Gold, 4x Silber, 5x Bronze!",
-      "content": "Bei der regionalen Taekwon-do Meisterschaft in Stuttgart haben unsere Athleten eine beeindruckende Leistung gezeigt. Mit insgesamt 12 Medaillen (3x Gold, 4x Silber, 5x Bronze) haben wir unsere Position als einer der stärksten Vereine in der Region eindrucksvoll bestätigt. Besonders hervorzuheben ist die Leistung unserer Jugendmannschaft, die in allen Disziplinen auf dem Podium stand. Herzlichen Glückwunsch an alle Teilnehmer!",
-      "category": "achievement"
-    },
-    {
-      "id": "news-008",
-      "title": "Sommercamp 2024 - Jetzt anmelden!",
-      "date": "2024-06-01T10:00:00Z",
-      "excerpt": "Unser beliebtes Sommercamp für Kinder und Jugendliche findet vom 5. bis 9. August statt. Anmeldungen sind ab sofort möglich!",
-      "content": "Auch in diesem Jahr bieten wir wieder unser beliebtes Sommercamp für Kinder und Jugendliche von 8 bis 16 Jahren an. Vom 5. bis 9. August erwartet die Teilnehmer ein abwechslungsreiches Programm mit intensivem Taekwon-do Training, Spielen, Workshops und vielem mehr. Die Kosten betragen 150 Euro pro Teilnehmer (Mitglieder 120 Euro). Anmeldungen sind ab sofort per E-Mail möglich. Die Plätze sind begrenzt!",
-      "category": "event"
-    },
-    {
-      "id": "news-009",
-      "title": "Neue Mitgliedsbedingungen ab 2026",
-      "date": "2025-12-01T10:00:00Z",
-      "excerpt": "Ab dem 1. Januar 2026 gelten neue Mitgliedsbedingungen. Alle Mitglieder wurden per E-Mail informiert.",
-      "content": "Auf der Mitgliederversammlung im November 2025 wurden neue Mitgliedsbedingungen beschlossen, die ab dem 1. Januar 2026 in Kraft treten. Die wichtigsten Änderungen betreffen die Kündigungsfristen und die Beitragsstruktur für Familienmitgliedschaften. Alle Details finden sich in den aktualisierten Mitgliedsbedingungen, die auf unserer Website zum Download bereitstehen. Bei Fragen steht euch der Vorstand gerne zur Verfügung.",
-      "category": "announcement"
-    },
-    {
-      "id": "news-010",
-      "title": "Website-Relaunch erfolgreich abgeschlossen",
-      "date": "2026-01-10T10:00:00Z",
-      "excerpt": "Unsere neue Website ist online! Modernes Design, bessere Übersicht und optimiert für alle Geräte.",
-      "content": "Nach mehrmonatiger Entwicklungsarbeit freuen wir uns, euch unsere neue Website präsentieren zu können! Die Seite wurde komplett überarbeitet und bietet nun ein modernes Design, eine übersichtlichere Navigation und ist optimal für alle Geräte - vom Smartphone bis zum Desktop - optimiert. Ihr findet alle wichtigen Informationen zu unseren Trainingsangeboten, könnt Dokumente direkt herunterladen und euch über aktuelle Neuigkeiten informieren. Wir hoffen, die neue Website gefällt euch!",
-      "category": "announcement"
-    }
-  ]
-}
