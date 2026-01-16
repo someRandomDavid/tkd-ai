@@ -48,14 +48,14 @@
   }
 }
 
-// Desktop navigation (≥768px)
+// Desktop navigation (≥1024px for full menu, mobile button for <1024px)
 .desktop-nav {
   display: none;
-  gap: var(--spacing-1);
+  gap: var(--spacing-2);
+  align-items: center;
 
-  @include mixins.tablet {
+  @include mixins.desktop {
     display: flex;
-    align-items: center;
   }
 }
 
@@ -88,30 +88,30 @@
   }
 }
 
-// Mobile menu button (<768px)
+// Mobile menu button (<1024px)
 .mobile-menu-button {
   display: block;
 
-  @include mixins.tablet {
+  @include mixins.desktop {
     display: none;
   }
 }
 
-// Language and theme toggle visibility for mobile
+// Language and theme toggle visibility for mobile/tablet
 .mobile-language-toggle,
 .mobile-theme-toggle {
   display: block;
-  margin-left: var(--spacing-1);
+  margin-left: var(--spacing-2);
 
-  @include mixins.tablet {
+  @include mixins.desktop {
     display: none;
   }
 }
 
-// Desktop nav includes language and theme toggles (visible ≥768px)
+// Desktop nav includes language and theme toggles (visible ≥1024px)
 .desktop-nav app-language-toggle,
 .desktop-nav app-theme-toggle {
-  margin-left: var(--spacing-2);
+  margin-left: var(--spacing-3);
 }
 
 // Sidenav container
