@@ -1,0 +1,49 @@
+<footer class="footer" id="contact-section">
+  <div class="footer-content">
+    @if (contact) {
+      <div class="footer-section contact-section">
+        <h3 class="footer-title">{{ translationService.instant('footer.address') }}</h3>
+        <address class="contact-info">
+          <p>{{ contact.address.street }}</p>
+          <p>{{ contact.address.postalCode }} {{ contact.address.city }}</p>
+          <p>
+            <mat-icon aria-hidden="true">phone</mat-icon>
+            <a [href]="'tel:' + contact.phone" class="contact-link">{{ contact.phone }}</a>
+          </p>
+          <p>
+            <mat-icon aria-hidden="true">email</mat-icon>
+            <a [href]="'mailto:' + contact.email" class="contact-link">{{ contact.email }}</a>
+          </p>
+        </address>
+      </div>
+    }
+
+    @if (socialMedia.length > 0) {
+      <div class="footer-section social-section">
+        <h3 class="footer-title">{{ translationService.instant('footer.followUs') }}</h3>
+        <div class="social-links">
+          @for (link of socialMedia; track link.platform) {
+            <a 
+              [href]="link.url" 
+              [attr.aria-label]="link.ariaLabel || link.platform"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link">
+              <mat-icon>{{ link.icon }}</mat-icon>
+            </a>
+          }
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="footer-bottom">
+    <p class="copyright">
+      © {{ currentYear }} Taekwon-do Ailingen e.V. | 
+      <a routerLink="/impressum" class="footer-link">{{ translationService.instant('imprint.title') }}</a> | 
+      <a routerLink="/haftungsausschluss" class="footer-link">{{ translationService.instant('disclaimer.title') }}</a> | 
+      <a routerLink="/datenschutz" class="footer-link">{{ translationService.instant('privacy.title') }}</a> | 
+      <a routerLink="/jugendschutz" class="footer-link">{{ translationService.instant('youthProtection.title') }}</a>
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,158 @@
+{
+  "lastUpdated": "2026-01-15",
+  "sessions": [
+    {
+      "id": "tkd-tue-kids-beginners",
+      "programType": "taekwondo",
+      "dayOfWeek": "tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "levelAgeGroup": "Kinder 7-11 Anfänger",
+      "maxParticipants": 20
+    },
+    {
+      "id": "tkd-tue-competitors",
+      "programType": "taekwondo",
+      "dayOfWeek": "tuesday",
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "levelAgeGroup": "Wettkämpfer",
+      "maxParticipants": 25
+    },
+    {
+      "id": "tkd-wed-windel",
+      "programType": "taekwondo",
+      "dayOfWeek": "wednesday",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "levelAgeGroup": "Windelsportler",
+      "maxParticipants": 15
+    },
+    {
+      "id": "tkd-wed-youth-beginners",
+      "programType": "taekwondo",
+      "dayOfWeek": "wednesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "levelAgeGroup": "Jugend 11-15 Anfänger",
+      "maxParticipants": 20
+    },
+    {
+      "id": "tkd-wed-youth-advanced",
+      "programType": "taekwondo",
+      "dayOfWeek": "wednesday",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "levelAgeGroup": "Jugend 11-15 Fortgeschritten",
+      "maxParticipants": 20
+    },
+    {
+      "id": "tkd-wed-adults",
+      "programType": "taekwondo",
+      "dayOfWeek": "wednesday",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "levelAgeGroup": "Jugend ab 16 / Erwachsene",
+      "maxParticipants": 25
+    },
+    {
+      "id": "tkd-thu-bambini-advanced",
+      "programType": "taekwondo",
+      "dayOfWeek": "thursday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "levelAgeGroup": "Bambini 4-7 Fortgeschritten",
+      "maxParticipants": 15
+    },
+    {
+      "id": "tkd-thu-competitors",
+      "programType": "taekwondo",
+      "dayOfWeek": "thursday",
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "levelAgeGroup": "Wettkämpfer",
+      "maxParticipants": 25
+    },
+    {
+      "id": "tkd-fri-bambini-beginners",
+      "programType": "taekwondo",
+      "dayOfWeek": "friday",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "levelAgeGroup": "Bambini 4-7 Anfänger",
+      "maxParticipants": 15
+    },
+    {
+      "id": "tkd-fri-kids-beginners",
+      "programType": "taekwondo",
+      "dayOfWeek": "friday",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "levelAgeGroup": "Kinder 7-11 Anfänger",
+      "maxParticipants": 20
+    },
+    {
+      "id": "tkd-fri-kids-advanced",
+      "programType": "taekwondo",
+      "dayOfWeek": "friday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "levelAgeGroup": "Kinder 7-11 Fortgeschritten",
+      "maxParticipants": 20
+    },
+    {
+      "id": "tkd-fri-competitors",
+      "programType": "taekwondo",
+      "dayOfWeek": "friday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "levelAgeGroup": "Wettkämpfer",
+      "maxParticipants": 25
+    },
+    {
+      "id": "tkd-fri-adults",
+      "programType": "taekwondo",
+      "dayOfWeek": "friday",
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "levelAgeGroup": "Jugend ab 16 / Erwachsene",
+      "maxParticipants": 25
+    },
+    {
+      "id": "tkd-sat-competitors",
+      "programType": "taekwondo",
+      "dayOfWeek": "saturday",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "levelAgeGroup": "Wettkämpfer",
+      "maxParticipants": 25
+    },
+    {
+      "id": "deepwork-mon",
+      "programType": "deepwork",
+      "dayOfWeek": "monday",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 25
+    },
+    {
+      "id": "zumba-tue",
+      "programType": "zumba",
+      "dayOfWeek": "tuesday",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 30
+    },
+    {
+      "id": "zumba-thu",
+      "programType": "zumba",
+      "dayOfWeek": "thursday",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "maxParticipants": 30
+    }
+  ]
+}

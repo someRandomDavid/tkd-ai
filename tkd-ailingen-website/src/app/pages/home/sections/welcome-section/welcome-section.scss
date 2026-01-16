@@ -1,0 +1,109 @@
+@use '../../../../../styles/variables' as vars;
+@use '../../../../../styles/mixins' as mixins;
+
+.welcome-section {
+  padding: var(--spacing-8) var(--spacing-4);
+  background-color: var(--surface-card);
+
+  @include mixins.tablet {
+    padding: var(--spacing-10) var(--spacing-6);
+  }
+}
+
+.welcome-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin: 0 0 var(--spacing-6) 0;
+  color: var(--text-primary);
+
+  @include mixins.tablet {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.welcome-description {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+  margin: 0;
+  color: var(--text-primary);
+
+  @include mixins.tablet {
+    font-size: var(--font-size-lg);
+  }
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-4);
+
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.program-card {
+  .program-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  mat-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-3);
+  }
+
+  .program-icon {
+    color: var(--color-primary);
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  mat-card-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+  }
+
+  mat-card-content {
+    p {
+      margin: 0 0 var(--spacing-3) 0;
+      line-height: var(--line-height-relaxed);
+    }
+
+    .video-container {
+      margin-top: var(--spacing-3);
+      width: 100%;
+      aspect-ratio: 16/9;
+      
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: var(--border-radius-md);
+      }
+    }
+  }
+}

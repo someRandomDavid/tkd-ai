@@ -1,0 +1,25 @@
+<div class="home-page">
+  @if (loading) {
+    <div class="loading-container">
+      <p>Loading...</p>
+    </div>
+  } @else if (error) {
+    <div class="error-container">
+      <p>Failed to load content. Please try again later.</p>
+    </div>
+  } @else {
+    <app-navigation-header 
+      [navItems]="navItems"
+      (navigationClick)="onNavigationClick($event)">
+      <app-hero-section [clubInfo]="clubInfo" />
+      <app-welcome-section [clubInfo]="clubInfo" />
+      <app-news-section />
+      <app-schedules-section [sessions]="trainingSessions" />
+      <app-trainers-section />
+      <app-downloads-section [forms]="downloadableForms" />
+      <app-footer 
+        [contact]="clubInfo?.contact" 
+        [socialMedia]="clubInfo?.socialMedia || []" />
+    </app-navigation-header>
+  }
+</div>

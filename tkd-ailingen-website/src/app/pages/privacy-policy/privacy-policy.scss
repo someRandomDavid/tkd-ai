@@ -1,0 +1,104 @@
+.privacy-page {
+  min-height: 100vh;
+  background: var(--surface-bg);
+  padding: 6rem 2rem 4rem;
+
+  .privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .privacy-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .legal-text {
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .info-block {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+
+      p {
+        margin-bottom: 0.25rem;
+        color: var(--text-primary);
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+
+    ul {
+      margin: 1rem 0;
+      padding-left: 2rem;
+
+      li {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 5rem 1.5rem 3rem;
+
+    .page-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .privacy-section {
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

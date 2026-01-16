@@ -1,0 +1,85 @@
+{
+  "news": [
+    {
+      "id": "news-001",
+      "title": "Neue Zumba-Kurse starten im September 2019",
+      "date": "2019-09-01T10:00:00Z",
+      "excerpt": "Ab September bieten wir neue Zumba-Kurse für alle Fitnesslevel an. Jeden Dienstag und Donnerstag von 20 bis 21 Uhr in der Sporthalle Ailingen.",
+      "content": "Wir freuen uns, bekannt zu geben, dass ab September 2019 neue Zumba-Kurse in Ailingen starten! Die Kurse finden immer Dienstags und Donnerstags von 20 bis 21 Uhr in der Sporthalle Ailingen statt. Lust auf tanzen? Dann schau vorbei und lass dich von der guten Stimmung und Musik mitreißen. Gerne darfst du mal eine Schnupperstunde machen. Wir freuen uns auf dich!",
+      "category": "announcement",
+      "imageUrl": "/assets/images/programs/zumba.jpg"
+    },
+    {
+      "id": "news-002",
+      "title": "deepWORK Training jetzt verfügbar",
+      "date": "2020-03-15T10:00:00Z",
+      "excerpt": "Neu bei uns: deepWORK - das athletische Ganzkörper-Workout nach dem Yin-Yang-Prinzip. Perfekt für alle, die sich richtig auspowern wollen!",
+      "content": "Ihr wollt euch richtig auspowern, habt eure Prioritäten jedoch nicht beim Kampfsport? Dann ist unser neues deepWORK Training genau das Richtige für euch! deepWORK ist ein athletisches Ganzkörper-Workout, das funktionelles Training ohne Geräte mit dem Yin-Yang-Prinzip kombiniert. Kommt vorbei und probiert es aus!",
+      "category": "announcement"
+    },
+    {
+      "id": "news-003",
+      "title": "Erfolgreiche Gürtelprüfung im Taekwon-do",
+      "date": "2021-06-20T10:00:00Z",
+      "excerpt": "Herzlichen Glückwunsch an alle Teilnehmer der Gürtelprüfung! 15 Schüler haben erfolgreich ihre nächste Graduierung erreicht.",
+      "content": "Am vergangenen Samstag fand unsere halbjährliche Gürtelprüfung im Taekwon-do statt. Wir sind stolz darauf, berichten zu können, dass alle 15 Teilnehmer ihre Prüfung erfolgreich bestanden haben! Von Gelb bis zum 1. Dan waren alle Graduierungen vertreten. Ein besonderer Glückwunsch geht an unsere drei neuen Schwarzgurtträger. Weiter so!",
+      "category": "achievement"
+    },
+    {
+      "id": "news-004",
+      "title": "Vereinsfest 2022 - Ein voller Erfolg",
+      "date": "2022-07-10T10:00:00Z",
+      "excerpt": "Unser Sommerfest war ein voller Erfolg mit über 100 Gästen, tollen Vorführungen und viel Spaß für die ganze Familie.",
+      "content": "Bei strahlendem Sonnenschein feierten wir unser jährliches Vereinsfest mit über 100 Gästen. Neben beeindruckenden Taekwon-do Vorführungen gab es auch Zumba und deepWORK Schnupperstunden. Für das leibliche Wohl war bestens gesorgt und die Kinder hatten ihren Spaß bei verschiedenen Spielstationen. Vielen Dank an alle Helfer und Teilnehmer für diesen wunderschönen Tag!",
+      "category": "event"
+    },
+    {
+      "id": "news-005",
+      "title": "Neue Trainingszeiten ab Januar 2023",
+      "date": "2023-01-05T10:00:00Z",
+      "excerpt": "Ab dem neuen Jahr gibt es angepasste Trainingszeiten für einige unserer Kurse. Bitte beachtet die neuen Zeiten im Trainingsplan.",
+      "content": "Mit Beginn des neuen Jahres haben wir unsere Trainingszeiten optimiert, um allen Mitgliedern noch bessere Trainingsmöglichkeiten zu bieten. Die neuen Zeiten findet ihr in unserem aktuellen Trainingsplan. Wir bitten um Beachtung und freuen uns auf ein sportliches Jahr 2023 mit euch!",
+      "category": "announcement"
+    },
+    {
+      "id": "news-006",
+      "title": "Kinderschutzkonzept verabschiedet",
+      "date": "2023-03-20T10:00:00Z",
+      "excerpt": "Unser Verein hat ein umfassendes Kinderschutzkonzept entwickelt und verabschiedet. Die Sicherheit unserer jüngsten Mitglieder hat höchste Priorität.",
+      "content": "Wir freuen uns, bekannt zu geben, dass unser Verein ein umfassendes Kinderschutzkonzept entwickelt und verabschiedet hat. Das Konzept umfasst Verhaltensregeln, Schulungen für Trainer und klare Ansprechpartner. Unsere Jugendschutzbeauftragte Sabine Scharr steht für Fragen und Anliegen zur Verfügung. Das vollständige Konzept kann auf unserer Website eingesehen werden.",
+      "category": "announcement"
+    },
+    {
+      "id": "news-007",
+      "title": "Erfolgreiche Teilnahme an regionaler Meisterschaft",
+      "date": "2024-05-15T10:00:00Z",
+      "excerpt": "Unsere Wettkämpfer haben bei der regionalen Taekwon-do Meisterschaft hervorragende Ergebnisse erzielt: 3x Gold, 4x Silber, 5x Bronze!",
+      "content": "Bei der regionalen Taekwon-do Meisterschaft in Stuttgart haben unsere Athleten eine beeindruckende Leistung gezeigt. Mit insgesamt 12 Medaillen (3x Gold, 4x Silber, 5x Bronze) haben wir unsere Position als einer der stärksten Vereine in der Region eindrucksvoll bestätigt. Besonders hervorzuheben ist die Leistung unserer Jugendmannschaft, die in allen Disziplinen auf dem Podium stand. Herzlichen Glückwunsch an alle Teilnehmer!",
+      "category": "achievement"
+    },
+    {
+      "id": "news-008",
+      "title": "Sommercamp 2024 - Jetzt anmelden!",
+      "date": "2024-06-01T10:00:00Z",
+      "excerpt": "Unser beliebtes Sommercamp für Kinder und Jugendliche findet vom 5. bis 9. August statt. Anmeldungen sind ab sofort möglich!",
+      "content": "Auch in diesem Jahr bieten wir wieder unser beliebtes Sommercamp für Kinder und Jugendliche von 8 bis 16 Jahren an. Vom 5. bis 9. August erwartet die Teilnehmer ein abwechslungsreiches Programm mit intensivem Taekwon-do Training, Spielen, Workshops und vielem mehr. Die Kosten betragen 150 Euro pro Teilnehmer (Mitglieder 120 Euro). Anmeldungen sind ab sofort per E-Mail möglich. Die Plätze sind begrenzt!",
+      "category": "event"
+    },
+    {
+      "id": "news-009",
+      "title": "Neue Mitgliedsbedingungen ab 2026",
+      "date": "2025-12-01T10:00:00Z",
+      "excerpt": "Ab dem 1. Januar 2026 gelten neue Mitgliedsbedingungen. Alle Mitglieder wurden per E-Mail informiert.",
+      "content": "Auf der Mitgliederversammlung im November 2025 wurden neue Mitgliedsbedingungen beschlossen, die ab dem 1. Januar 2026 in Kraft treten. Die wichtigsten Änderungen betreffen die Kündigungsfristen und die Beitragsstruktur für Familienmitgliedschaften. Alle Details finden sich in den aktualisierten Mitgliedsbedingungen, die auf unserer Website zum Download bereitstehen. Bei Fragen steht euch der Vorstand gerne zur Verfügung.",
+      "category": "announcement"
+    },
+    {
+      "id": "news-010",
+      "title": "Website-Relaunch erfolgreich abgeschlossen",
+      "date": "2026-01-10T10:00:00Z",
+      "excerpt": "Unsere neue Website ist online! Modernes Design, bessere Übersicht und optimiert für alle Geräte.",
+      "content": "Nach mehrmonatiger Entwicklungsarbeit freuen wir uns, euch unsere neue Website präsentieren zu können! Die Seite wurde komplett überarbeitet und bietet nun ein modernes Design, eine übersichtlichere Navigation und ist optimal für alle Geräte - vom Smartphone bis zum Desktop - optimiert. Ihr findet alle wichtigen Informationen zu unseren Trainingsangeboten, könnt Dokumente direkt herunterladen und euch über aktuelle Neuigkeiten informieren. Wir hoffen, die neue Website gefällt euch!",
+      "category": "announcement"
+    }
+  ]
+}

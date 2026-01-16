@@ -1,0 +1,64 @@
+<section class="news-section" id="news-section">
+  <div class="news-container">
+    <h2 class="section-title">{{ translationService.instant('news.title') }}</h2>
+    <p class="section-description">
+      {{ translationService.instant('news.description') }}
+    </p>
+
+    @if (paginatedNews().length > 0) {
+      <div class="news-grid">
+        @for (newsItem of paginatedNews(); track newsItem.id) {
+          <mat-card class="news-card">
+            @if (newsItem.imageUrl) {
+              <img mat-card-image [src]="newsItem.imageUrl" [alt]="newsItem.title" class="news-image">
+            }
+            
+            <mat-card-header>
+              <mat-icon mat-card-avatar [class]="'category-icon category-' + newsItem.category">
+                {{ getCategoryIcon(newsItem.category) }}
+              </mat-icon>
+              <mat-card-title>{{ newsItem.title }}</mat-card-title>
+              <mat-card-subtitle>
+                <span class="news-date">{{ formatDate(newsItem.date) }}</span>
+                @if (newsItem.category) {
+                  <span class="news-category">
+                    {{ translationService.instant('news.categories.' + newsItem.category) }}
+                  </span>
+                }
+              </mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+              <p class="news-excerpt">{{ newsItem.excerpt }}</p>
+            </mat-card-content>
+
+            <mat-card-actions>
+              <button mat-button color="primary">
+                {{ translationService.instant('news.readMore') }}
+                <mat-icon>arrow_forward</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        }
+      </div>
+
+      <!-- Pagination -->
+      @if (totalPages() > 1) {
+        <mat-paginator
+          [length]="allNews().length"
+          [pageSize]="pageSize()"
+          [pageSizeOptions]="[6, 12, 24]"
+          [pageIndex]="currentPage()"
+          (page)="onPageChange($event)"
+          [attr.aria-label]="translationService.instant('news.pagination.label')"
+          class="news-paginator">
+        </mat-paginator>
+      }
+    } @else {
+      <div class="no-news">
+        <mat-icon>info</mat-icon>
+        <p>{{ translationService.instant('news.noNews') }}</p>
+      </div>
+    }
+  </div>
+</section>

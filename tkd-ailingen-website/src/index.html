@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TkdAilingenWebsite</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Inline theme loading to prevent FOUC (Flash of Unstyled Content) -->
+  <script>
+    (function() {
+      try {
+        const THEME_KEY = 'theme-preference';
+        const DEFAULT_THEME = 'dark';
+        const savedTheme = localStorage.getItem(THEME_KEY);
+        
+        // Validate saved theme
+        const theme = (savedTheme === 'dark' || savedTheme === 'light') ? savedTheme : DEFAULT_THEME;
+        
+        // Apply theme class immediately (before Angular loads)
+        if (theme === 'light') {
+          document.body.classList.add('light-theme');
+        } else {
+          document.body.classList.add('dark-theme');
+        }
+      } catch (e) {
+        // Fail silently if localStorage unavailable - default to dark
+        document.body.classList.add('dark-theme');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

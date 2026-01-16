@@ -1,0 +1,38 @@
+<div class="program-schedule">
+  @if (programName) {
+    <h3 class="program-title">{{ programName }}</h3>
+  }
+
+  @if (filteredSessions.length === 0) {
+    <p class="no-sessions">{{ translationService.instant('schedule.noSessions') || 'Keine Trainingszeiten verfügbar' }}</p>
+  } @else {
+    <div class="sessions-grid">
+      @for (session of filteredSessions; track session.id) {
+        <mat-card class="session-card">
+          <mat-card-content>
+            <div class="session-row">
+              <mat-icon class="session-icon">event</mat-icon>
+              <div class="session-details">
+                <span class="session-label">{{ translationService.instant('schedule.day') }}:</span>
+                <span class="session-value">{{ getDayName(session.dayOfWeek) }}</span>
+              </div>
+            </div>
+
+            <div class="session-row">
+              <mat-icon class="session-icon">schedule</mat-icon>
+              <div class="session-details">
+                <span class="session-label">{{ translationService.instant('schedule.time') }}:</span>
+                <span class="session-value">{{ session.startTime }} - {{ session.endTime }}</span>
+              </div>
+            </div>
+
+            <div class="session-level">
+              <mat-icon>info</mat-icon>
+              <span>{{ session.levelAgeGroup }}</span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  }
+</div>

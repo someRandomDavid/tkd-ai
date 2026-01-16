@@ -1,0 +1,39 @@
+<section class="trainers-section" id="trainers">
+  <div class="section-header">
+    <h2 class="section-title">{{ translationService.instant('trainers.title') }}</h2>
+    <p class="section-subtitle">{{ translationService.instant('trainers.subtitle') }}</p>
+  </div>
+
+  <!-- Loading state -->
+  @if (loading()) {
+    <div class="loading-container">
+      <mat-spinner diameter="48"></mat-spinner>
+      <p>{{ translationService.instant('trainers.loading') }}</p>
+    </div>
+  }
+
+  <!-- Error state -->
+  @if (error()) {
+    <div class="error-container">
+      <mat-icon class="error-icon">error_outline</mat-icon>
+      <p class="error-message">{{ translationService.instant(error()!) }}</p>
+    </div>
+  }
+
+  <!-- Trainers grid -->
+  @if (!loading() && !error() && trainers().length > 0) {
+    <div class="trainers-grid">
+      @for (trainer of trainers(); track trainer.id) {
+        <app-trainer-card [trainer]="trainer"></app-trainer-card>
+      }
+    </div>
+  }
+
+  <!-- Empty state -->
+  @if (!loading() && !error() && trainers().length === 0) {
+    <div class="empty-container">
+      <mat-icon class="empty-icon">people_outline</mat-icon>
+      <p>{{ translationService.instant('trainers.noTrainers') }}</p>
+    </div>
+  }
+</section>

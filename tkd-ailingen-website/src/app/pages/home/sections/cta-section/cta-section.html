@@ -1,0 +1,22 @@
+<section class="cta-section">
+  <div class="container">
+    <h2 class="section-title">{{ translationService.instant('cta.title') }}</h2>
+    <p class="section-description">{{ translationService.instant('cta.description') }}</p>
+
+    <div class="cta-buttons">
+      @for (button of buttons; track button.id) {
+        <button
+          mat-raised-button
+          [color]="button.buttonStyle"
+          [class]="'cta-button cta-button-' + button.buttonStyle"
+          (click)="onCTAClick(button)"
+          [attr.aria-label]="translationService.instant('cta.' + button.id + '.aria')">
+          @if (button.icon) {
+            <mat-icon>{{ button.icon }}</mat-icon>
+          }
+          {{ translationService.instant('cta.' + button.id + '.label') }}
+        </button>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+.language-toggle-button {
+  color: var(--text-primary);
+  
+  mat-icon {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &:hover {
+    background-color: var(--surface-hover);
+  }
+}
+
+::ng-deep .mat-mdc-menu-panel {
+  .mat-mdc-menu-item {
+    &.active {
+      background-color: var(--surface-hover);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    mat-icon {
+      color: var(--primary-main);
+      margin-right: 8px;
+    }
+  }
+}

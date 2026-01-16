@@ -1,0 +1,83 @@
+.youth-protection-page {
+  min-height: 100vh;
+  background: var(--surface-bg);
+  padding: 6rem 2rem 4rem;
+
+  .youth-protection-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .youth-protection-section {
+    margin-bottom: 2.5rem;
+
+    p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .contact-block {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+      }
+    }
+
+    .info-block {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+
+      p {
+        margin-bottom: 0.25rem;
+        color: var(--text-primary);
+        font-size: 1rem;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 5rem 1.5rem 3rem;
+
+    .page-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .youth-protection-section {
+      .contact-block {
+        h2 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

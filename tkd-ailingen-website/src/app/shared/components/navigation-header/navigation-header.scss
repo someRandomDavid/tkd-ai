@@ -1,0 +1,138 @@
+@use '../../../../styles/variables' as vars;
+@use '../../../../styles/mixins' as mixins;
+
+.navigation-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  
+  // Override Material toolbar colors to use our theme
+  background-color: var(--primary-main) !important;
+  color: var(--primary-contrast) !important;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-2);
+  min-height: 64px;
+
+  @include mixins.tablet {
+    padding: 0 var(--spacing-4);
+  }
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
+
+.club-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+
+  @include mixins.mobile-only {
+    font-size: var(--font-size-base);
+  }
+}
+
+// Mobile controls container - always visible with hamburger menu approach
+.mobile-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+// Desktop navigation - hidden (using hamburger menu for all screen sizes)
+// This scales infinitely and provides consistent UX across devices
+.desktop-nav {
+  display: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-1) var(--spacing-2);
+  color: inherit;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-fast);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+
+  mat-icon {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+// Mobile menu button - always visible
+.mobile-menu-button {
+  // Ensure proper touch target size
+  min-width: 48px;
+  min-height: 48px;
+  
+  mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// Language and theme toggle visibility - always visible
+.mobile-language-toggle,
+.mobile-theme-toggle {
+  // Ensure proper touch target size
+  ::ng-deep button {
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+// Sidenav container
+.sidenav-container {
+  min-height: calc(100vh - 64px);
+}
+
+.mobile-sidenav {
+  width: 280px;
+  max-width: 80vw;
+
+  mat-nav-list {
+    padding-top: var(--spacing-2);
+  }
+
+  a[mat-list-item] {
+    &.active {
+      background-color: rgba(0, 0, 0, 0.05);
+      color: var(--color-primary);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+}
