@@ -54,10 +54,9 @@
   @include mixins.tablet {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-6);
-  }
-
-  @include mixins.desktop {
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
