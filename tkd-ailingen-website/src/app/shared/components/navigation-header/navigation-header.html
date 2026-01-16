@@ -5,7 +5,7 @@
       <span class="club-name">{{ translationService.instant('hero.clubName') }}</span>
     </a>
 
-    <!-- Desktop Navigation (≥768px) -->
+    <!-- Desktop Navigation (≥1024px) -->
     <nav class="desktop-nav" aria-label="Main navigation">
       @for (item of navItems; track item.id) {
         <a
@@ -27,18 +27,21 @@
       <app-theme-toggle />
     </nav>
 
-    <!-- Mobile Menu Button (<768px) -->
-    <button
-      mat-icon-button
-      class="mobile-menu-button"
-      (click)="toggleMenu()"
-      aria-label="Toggle navigation menu">
-      <mat-icon>menu</mat-icon>
-    </button>
-    
-    <!-- Language and Theme Toggle for Mobile (visible when menu button visible) -->
-    <app-language-toggle class="mobile-language-toggle" />
-    <app-theme-toggle class="mobile-theme-toggle" />
+    <!-- Mobile Controls (<1024px) - Right-aligned group -->
+    <div class="mobile-controls">
+      <!-- Language and Theme Toggle for Mobile -->
+      <app-language-toggle class="mobile-language-toggle" />
+      <app-theme-toggle class="mobile-theme-toggle" />
+      
+      <!-- Mobile Menu Button (Burger) -->
+      <button
+        mat-icon-button
+        class="mobile-menu-button"
+        (click)="toggleMenu()"
+        aria-label="Toggle navigation menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
   </div>
 </mat-toolbar>
 

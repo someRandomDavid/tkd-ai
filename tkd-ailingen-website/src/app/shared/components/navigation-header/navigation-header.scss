@@ -20,6 +20,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-2);
+  min-height: 64px;
 
   @include mixins.tablet {
     padding: 0 var(--spacing-4);
@@ -31,6 +32,7 @@
   color: inherit;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 
   &:hover,
   &:focus {
@@ -45,6 +47,17 @@
 
   @include mixins.mobile-only {
     font-size: var(--font-size-base);
+  }
+}
+
+// Mobile controls container - groups toggles and burger menu
+.mobile-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  
+  @include mixins.desktop {
+    display: none;
   }
 }
 
@@ -90,21 +103,24 @@
 
 // Mobile menu button (<1024px)
 .mobile-menu-button {
-  display: block;
-
-  @include mixins.desktop {
-    display: none;
+  // Ensure proper touch target size
+  min-width: 48px;
+  min-height: 48px;
+  
+  mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 // Language and theme toggle visibility for mobile/tablet
 .mobile-language-toggle,
 .mobile-theme-toggle {
-  display: block;
-  margin-left: var(--spacing-2);
-
-  @include mixins.desktop {
-    display: none;
+  // Ensure proper touch target size
+  ::ng-deep button {
+    min-width: 48px;
+    min-height: 48px;
   }
 }
 
