@@ -40,7 +40,10 @@
   <div class="footer-bottom">
     <p class="copyright">
       © {{ currentYear }} Taekwon-do Ailingen e.V. | 
-      <a routerLink="/impressum" class="footer-link">{{ translationService.instant('imprint.title') }}</a>
+      <a routerLink="/impressum" class="footer-link">{{ translationService.instant('imprint.title') }}</a> | 
+      <a routerLink="/haftungsausschluss" class="footer-link">{{ translationService.instant('disclaimer.title') }}</a> | 
+      <a routerLink="/datenschutz" class="footer-link">{{ translationService.instant('privacy.title') }}</a> | 
+      <a routerLink="/jugendschutz" class="footer-link">{{ translationService.instant('youthProtection.title') }}</a>
     </p>
   </div>
 </footer>
