@@ -18,6 +18,20 @@
                 </mat-card-header>
                 <mat-card-content>
                   <p>{{ program.description }}</p>
+                  @if (program.videoUrl) {
+                    <div class="video-container">
+                      <iframe 
+                        [src]="getSafeVideoUrl(program.videoUrl)" 
+                        width="100%" 
+                        height="315"
+                        style="border:none;overflow:hidden" 
+                        scrolling="no" 
+                        frameborder="0" 
+                        allowfullscreen="true" 
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                      </iframe>
+                    </div>
+                  }
                 </mat-card-content>
               </mat-card>
             }

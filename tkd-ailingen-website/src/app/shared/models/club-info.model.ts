@@ -17,6 +17,7 @@ export interface ProgramInfo {
   name: string;
   description: string;
   icon?: string;
+  videoUrl?: string;
 }
 
 export interface ContactInfo {

@@ -11,13 +11,14 @@
     },
     {
       "name": "Zumba",
-      "description": "Tanzen Sie sich fit! Dynamisches Fitness-Programm mit lateinamerikanischen Rhythmen. Spaß und Kondition für alle Fitnesslevel.",
+      "description": "Lust auf tanzen? Dann schau vorbei und lass dich von der guten Stimmung und Musik mitreißen. Gerne darfst du mal eine Schnupperstunde machen. Wir freuen uns auf dich!",
       "icon": "music_note"
     },
     {
       "name": "deepWORK",
-      "description": "Athletisches Ganzkörper-Workout nach dem Yin-Yang-Prinzip. Funktionelles Training ohne Geräte für maximale Effektivität.",
-      "icon": "fitness_center"
+      "description": "Ihr wollt euch richtig auspowern, habt eure Prioritäten jedoch nicht beim Kampfsport? Dann schaut euch das an!",
+      "icon": "fitness_center",
+      "videoUrl": "https://www.facebook.com/121236051271978/videos/1561316020597300/"
     }
   ],
   "contact": {
