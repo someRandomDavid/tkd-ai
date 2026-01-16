@@ -50,26 +50,17 @@
   }
 }
 
-// Mobile controls container - groups toggles and burger menu
+// Mobile controls container - always visible with hamburger menu approach
 .mobile-controls {
   display: flex;
   align-items: center;
   gap: var(--spacing-1);
-  
-  @include mixins.large {
-    display: none;
-  }
 }
 
-// Desktop navigation (≥1280px for full menu with 8+ items)
+// Desktop navigation - hidden (using hamburger menu for all screen sizes)
+// This scales infinitely and provides consistent UX across devices
 .desktop-nav {
   display: none;
-  gap: var(--spacing-1);
-  align-items: center;
-
-  @include mixins.large {
-    display: flex;
-  }
 }
 
 .nav-link {
@@ -101,7 +92,7 @@
   }
 }
 
-// Mobile menu button (<1280px)
+// Mobile menu button - always visible
 .mobile-menu-button {
   // Ensure proper touch target size
   min-width: 48px;
@@ -114,7 +105,7 @@
   }
 }
 
-// Language and theme toggle visibility for mobile/tablet
+// Language and theme toggle visibility - always visible
 .mobile-language-toggle,
 .mobile-theme-toggle {
   // Ensure proper touch target size
@@ -122,12 +113,6 @@
     min-width: 48px;
     min-height: 48px;
   }
-}
-
-// Desktop nav includes language and theme toggles (visible ≥1280px)
-.desktop-nav app-language-toggle,
-.desktop-nav app-theme-toggle {
-  margin-left: var(--spacing-1);
 }
 
 // Sidenav container

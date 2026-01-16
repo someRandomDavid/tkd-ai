@@ -5,35 +5,13 @@
       <span class="club-name">{{ translationService.instant('hero.clubName') }}</span>
     </a>
 
-    <!-- Desktop Navigation (≥1280px) -->
-    <nav class="desktop-nav" aria-label="Main navigation">
-      @for (item of navItems; track item.id) {
-        <a
-          [href]="item.routeOrAnchor"
-          (click)="onNavigationClick(item); $event.preventDefault()"
-          [class.active]="isActive(item)"
-          class="nav-link">
-          @if (item.icon) {
-            <mat-icon>{{ item.icon }}</mat-icon>
-          }
-          {{ translationService.instant('nav.' + item.id) }}
-        </a>
-      }
-      
-      <!-- Language Toggle Button -->
-      <app-language-toggle />
-      
-      <!-- Theme Toggle Button -->
-      <app-theme-toggle />
-    </nav>
-
-    <!-- Mobile Controls (<1280px) - Right-aligned group -->
+    <!-- Navigation Controls - Always visible (hamburger menu approach) -->
     <div class="mobile-controls">
-      <!-- Language and Theme Toggle for Mobile -->
+      <!-- Language and Theme Toggle -->
       <app-language-toggle class="mobile-language-toggle" />
       <app-theme-toggle class="mobile-theme-toggle" />
       
-      <!-- Mobile Menu Button (Burger) -->
+      <!-- Hamburger Menu Button -->
       <button
         mat-icon-button
         class="mobile-menu-button"
