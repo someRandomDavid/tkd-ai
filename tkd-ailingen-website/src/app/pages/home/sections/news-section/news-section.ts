@@ -1,5 +1,6 @@
 import { Component, OnInit, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { MaterialModule } from '@shared/material.module';
 import { TranslationService } from '@core/services/translation.service';
@@ -11,7 +12,7 @@ import { NewsItem } from '@shared/models/news.model';
  */
 @Component({
   selector: 'app-news-section',
-  imports: [CommonModule, MaterialModule],
+  imports: [CommonModule, MaterialModule, RouterModule],
   templateUrl: './news-section.html',
   styleUrl: './news-section.scss',
 })

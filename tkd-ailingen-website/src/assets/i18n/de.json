@@ -196,6 +196,11 @@
     "description": "Bleiben Sie auf dem Laufenden über unsere Vereinsaktivitäten, Erfolge und Ankündigungen",
     "readMore": "Weiterlesen",
     "noNews": "Keine Neuigkeiten verfügbar",
+    "loading": "Neuigkeiten werden geladen...",
+    "notFound": "Neuigkeit nicht gefunden",
+    "notFoundMessage": "Die gesuchte Neuigkeit konnte nicht gefunden werden.",
+    "backToNews": "Zurück zu den Neuigkeiten",
+    "by": "von",
     "categories": {
       "event": "Veranstaltung",
       "announcement": "Ankündigung",

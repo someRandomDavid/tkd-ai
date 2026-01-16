@@ -196,6 +196,11 @@
     "description": "Stay updated with our club activities, achievements and announcements",
     "readMore": "Read more",
     "noNews": "No news available",
+    "loading": "Loading news...",
+    "notFound": "News not found",
+    "notFoundMessage": "The requested news article could not be found.",
+    "backToNews": "Back to news",
+    "by": "by",
     "categories": {
       "event": "Event",
       "announcement": "Announcement",

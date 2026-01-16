@@ -1,0 +1,62 @@
+<div class="news-detail-page">
+  @if (loading) {
+    <div class="loading-container">
+      <mat-icon>hourglass_empty</mat-icon>
+      <p>{{ translationService.instant('news.loading') }}</p>
+    </div>
+  } @else if (error || !newsItem) {
+    <div class="error-container">
+      <mat-icon>error_outline</mat-icon>
+      <h2>{{ translationService.instant('news.notFound') }}</h2>
+      <p>{{ translationService.instant('news.notFoundMessage') }}</p>
+      <button mat-raised-button color="primary" (click)="goBack()">
+        <mat-icon>arrow_back</mat-icon>
+        {{ translationService.instant('news.backToNews') }}
+      </button>
+    </div>
+  } @else {
+    <article class="news-article">
+      <header class="article-header">
+        <button mat-icon-button class="back-button" (click)="goBack()">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        
+        <div class="article-meta">
+          <div class="category-badge" [class]="'category-' + newsItem.category">
+            <mat-icon>{{ getCategoryIcon(newsItem.category) }}</mat-icon>
+            <span>{{ translationService.instant('news.categories.' + newsItem.category) }}</span>
+          </div>
+          <time class="article-date">{{ formatDate(newsItem.date) }}</time>
+        </div>
+
+        <h1 class="article-title">{{ newsItem.title }}</h1>
+
+        @if (newsItem.author) {
+          <p class="article-author">
+            {{ translationService.instant('news.by') }} {{ newsItem.author }}
+          </p>
+        }
+      </header>
+
+      @if (newsItem.imageUrl) {
+        <div class="article-image">
+          <img [src]="newsItem.imageUrl" [alt]="newsItem.title">
+        </div>
+      }
+
+      <div class="article-content">
+        <p class="article-excerpt">{{ newsItem.excerpt }}</p>
+        <div class="article-body">
+          {{ newsItem.content }}
+        </div>
+      </div>
+
+      <footer class="article-footer">
+        <button mat-raised-button color="primary" (click)="goBack()">
+          <mat-icon>arrow_back</mat-icon>
+          {{ translationService.instant('news.backToNews') }}
+        </button>
+      </footer>
+    </article>
+  }
+</div>

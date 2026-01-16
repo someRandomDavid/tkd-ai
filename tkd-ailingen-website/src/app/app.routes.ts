@@ -4,6 +4,7 @@ import { Imprint } from './pages/imprint/imprint';
 import { Disclaimer } from './pages/disclaimer/disclaimer';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { YouthProtection } from './pages/youth-protection/youth-protection';
+import { NewsDetail } from './pages/news-detail/news-detail';
 
 export const routes: Routes = [
   {
@@ -48,6 +49,14 @@ export const routes: Routes = [
   },
   {
     path: 'youth-protection',
+    redirectTo: 'jugendschutz',
+    pathMatch: 'full',
+  },
+  {
+    path: 'news/:id',
+    component: NewsDetail,
+    title: 'News - Taekwon-do Ailingen e.V.',
+  },
     redirectTo: 'jugendschutz',
     pathMatch: 'full',
   },
