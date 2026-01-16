@@ -5,6 +5,7 @@ import { NavigationHeader } from '@app/shared/components/navigation-header/navig
 import { HeroSection } from '@app/shared/components/hero-section/hero-section';
 import { WelcomeSection } from './sections/welcome-section/welcome-section';
 import { SchedulesSection } from './sections/schedules-section/schedules-section';
+import { NewsSection } from './sections/news-section/news-section';
 import { TrainersSection } from './sections/trainers-section/trainers-section';
 import { DownloadsSection } from './sections/downloads-section/downloads-section';
 import { Footer } from '@app/shared/components/footer/footer';
@@ -19,7 +20,7 @@ import { ClubInfo, NavigationItem, TrainingSession, DownloadableForm } from '@sh
  */
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, NavigationHeader, HeroSection, WelcomeSection, SchedulesSection, TrainersSection, DownloadsSection, Footer],
+  imports: [CommonModule, NavigationHeader, HeroSection, WelcomeSection, SchedulesSection, NewsSection, TrainersSection, DownloadsSection, Footer],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

@@ -190,5 +190,25 @@
     "title": "Jugendschutz",
     "intro": "Bei Fragen rund um den Jugendschutz steht Ihnen unsere Jugendschutzbeauftragte gerne zur Verfügung:",
     "officer": "Jugendschutzbeauftragte"
+  },
+  "news": {
+    "title": "Aktuelles & Neuigkeiten",
+    "description": "Bleiben Sie auf dem Laufenden über unsere Vereinsaktivitäten, Erfolge und Ankündigungen",
+    "readMore": "Weiterlesen",
+    "noNews": "Keine Neuigkeiten verfügbar",
+    "categories": {
+      "event": "Veranstaltung",
+      "announcement": "Ankündigung",
+      "achievement": "Erfolg",
+      "general": "Allgemein"
+    },
+    "pagination": {
+      "label": "Neuigkeiten Navigation",
+      "itemsPerPage": "Artikel pro Seite",
+      "nextPage": "Nächste Seite",
+      "previousPage": "Vorherige Seite",
+      "firstPage": "Erste Seite",
+      "lastPage": "Letzte Seite"
+    }
   }
 }
