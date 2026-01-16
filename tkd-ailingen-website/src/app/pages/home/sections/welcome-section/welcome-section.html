@@ -10,6 +10,9 @@
           <div class="programs-grid">
             @for (program of clubInfo.programs; track program.name) {
               <mat-card class="program-card">
+                @if (program.imageUrl) {
+                  <img mat-card-image [src]="program.imageUrl" [alt]="program.name" class="program-image">
+                }
                 <mat-card-header>
                   @if (program.icon) {
                     <mat-icon class="program-icon">{{ program.icon }}</mat-icon>

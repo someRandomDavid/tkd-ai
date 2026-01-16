@@ -12,7 +12,8 @@
     {
       "name": "Zumba",
       "description": "Ab September 2019 neuer Zumba-Kurs in Ailingen! Immer Dienstags und Donnerstags von 20 bis 21 Uhr in der Sporthalle Ailingen, Fohlenstrasse 19. Lust auf tanzen? Dann schau vorbei und lass dich von der guten Stimmung und Musik mitreißen. Gerne darfst du mal eine Schnupperstunde machen. Wir freuen uns auf dich!",
-      "icon": "music_note"
+      "icon": "music_note",
+      "imageUrl": "/assets/images/programs/zumba.jpg"
     },
     {
       "name": "deepWORK",
