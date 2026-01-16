@@ -13,6 +13,6 @@ import { TranslationService } from '@core/services/translation.service';
   styleUrl: './imprint.scss',
   standalone: true
 })
-export class ImprintPage {
+export class Imprint {
   constructor(public translationService: TranslationService) {}
 }
