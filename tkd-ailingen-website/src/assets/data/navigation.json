@@ -8,53 +8,46 @@
       "order": 1
     },
     {
-      "id": "taekwondo",
-      "label": "Taekwon-do",
-      "routeOrAnchor": "#taekwondo-schedule",
-      "icon": "sports_martial_arts",
-      "order": 2
-    },
-    {
       "id": "zumba",
       "label": "Zumba",
       "routeOrAnchor": "#zumba-schedule",
       "icon": "music_note",
-      "order": 3
+      "order": 2
     },
     {
       "id": "deepwork",
       "label": "deepWORK",
       "routeOrAnchor": "#deepwork-schedule",
       "icon": "fitness_center",
-      "order": 4
+      "order": 3
     },
     {
       "id": "membership",
       "label": "Mitgliedschaft",
       "routeOrAnchor": "#downloads-section",
       "icon": "card_membership",
-      "order": 5
+      "order": 4
     },
     {
       "id": "downloads",
       "label": "Downloads",
       "routeOrAnchor": "#downloads-section",
       "icon": "download",
-      "order": 6
+      "order": 5
     },
     {
       "id": "about",
       "label": "Über uns",
       "routeOrAnchor": "#welcome",
       "icon": "info",
-      "order": 7
+      "order": 6
     },
     {
       "id": "contact",
       "label": "Kontakt",
       "routeOrAnchor": "#contact-section",
       "icon": "contact_mail",
-      "order": 8
+      "order": 7
     }
   ]
 }
