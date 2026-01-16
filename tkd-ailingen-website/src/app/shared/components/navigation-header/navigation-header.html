@@ -5,7 +5,7 @@
       <span class="club-name">{{ translationService.instant('hero.clubName') }}</span>
     </a>
 
-    <!-- Desktop Navigation (≥1024px) -->
+    <!-- Desktop Navigation (≥1280px) -->
     <nav class="desktop-nav" aria-label="Main navigation">
       @for (item of navItems; track item.id) {
         <a
@@ -27,7 +27,7 @@
       <app-theme-toggle />
     </nav>
 
-    <!-- Mobile Controls (<1024px) - Right-aligned group -->
+    <!-- Mobile Controls (<1280px) - Right-aligned group -->
     <div class="mobile-controls">
       <!-- Language and Theme Toggle for Mobile -->
       <app-language-toggle class="mobile-language-toggle" />

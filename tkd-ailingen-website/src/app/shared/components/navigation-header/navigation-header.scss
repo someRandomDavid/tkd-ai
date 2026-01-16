@@ -56,18 +56,18 @@
   align-items: center;
   gap: var(--spacing-1);
   
-  @include mixins.desktop {
+  @include mixins.large {
     display: none;
   }
 }
 
-// Desktop navigation (≥1024px for full menu, mobile button for <1024px)
+// Desktop navigation (≥1280px for full menu with 8+ items)
 .desktop-nav {
   display: none;
-  gap: var(--spacing-2);
+  gap: var(--spacing-1);
   align-items: center;
 
-  @include mixins.desktop {
+  @include mixins.large {
     display: flex;
   }
 }
@@ -75,8 +75,8 @@
 .nav-link {
   display: flex;
   align-items: center;
-  gap: var(--spacing-1);
-  padding: var(--spacing-2) var(--spacing-3);
+  gap: var(--spacing-xs);
+  padding: var(--spacing-1) var(--spacing-2);
   color: inherit;
   text-decoration: none;
   border-radius: 4px;
@@ -101,7 +101,7 @@
   }
 }
 
-// Mobile menu button (<1024px)
+// Mobile menu button (<1280px)
 .mobile-menu-button {
   // Ensure proper touch target size
   min-width: 48px;
@@ -124,10 +124,10 @@
   }
 }
 
-// Desktop nav includes language and theme toggles (visible ≥1024px)
+// Desktop nav includes language and theme toggles (visible ≥1280px)
 .desktop-nav app-language-toggle,
 .desktop-nav app-theme-toggle {
-  margin-left: var(--spacing-3);
+  margin-left: var(--spacing-1);
 }
 
 // Sidenav container
