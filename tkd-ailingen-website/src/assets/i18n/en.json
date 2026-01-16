@@ -121,5 +121,20 @@
     "download": "Download",
     "loading": "Loading...",
     "error": "An error occurred"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "legalInfo": "Legal Information",
+    "legalReference": "Information obligation according to §5 E-Commerce Act, §14 Business Code, §63 Trade Regulations and disclosure obligation according to §25 Media Act.",
+    "board": "Board of Directors",
+    "press": "Press Contact",
+    "contact": "Contact",
+    "email": "Email",
+    "registry": "Registry Entry",
+    "registryEntry": "Registration in the Association Register",
+    "registryCourt": "Registry Court",
+    "registryNumber": "Registry Number",
+    "responsible": "Responsible for Content",
+    "responsibleReference": "Responsible for content according to § 55 Abs. 2 RStV"
   }
 }

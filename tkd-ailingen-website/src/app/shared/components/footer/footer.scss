@@ -113,3 +113,15 @@
   font-size: var(--font-size-sm);
   color: rgba(255, 255, 255, 0.7);
 }
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  
+  &:hover,
+  &:focus {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+}

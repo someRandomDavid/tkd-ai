@@ -38,6 +38,9 @@
   </div>
 
   <div class="footer-bottom">
-    <p class="copyright">© {{ currentYear }} Taekwon-do Ailingen e.V.</p>
+    <p class="copyright">
+      © {{ currentYear }} Taekwon-do Ailingen e.V. | 
+      <a routerLink="/impressum" class="footer-link">{{ translationService.instant('imprint.title') }}</a>
+    </p>
   </div>
 </footer>

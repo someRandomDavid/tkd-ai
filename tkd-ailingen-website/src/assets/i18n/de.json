@@ -121,5 +121,20 @@
     "download": "Herunterladen",
     "loading": "Lädt...",
     "error": "Ein Fehler ist aufgetreten"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "legalInfo": "Angaben gemäß § 5 TMG",
+    "legalReference": "Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.",
+    "board": "Vorstand",
+    "press": "Pressesprecherin",
+    "contact": "Kontakt",
+    "email": "E-Mail",
+    "registry": "Registereintrag",
+    "registryEntry": "Eintragung im Vereinsregister",
+    "registryCourt": "Registergericht",
+    "registryNumber": "Registernummer",
+    "responsible": "Verantwortlich für den Inhalt",
+    "responsibleReference": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
   }
 }
