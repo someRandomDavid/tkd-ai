@@ -1,23 +1,59 @@
 {
-  "lastUpdated": "2026-01-12",
+  "lastUpdated": "2026-01-16",
   "forms": [
     {
-      "id": "member-registration",
-      "label": "Mitgliedsantrag",
-      "description": "Formular zur Anmeldung als Vereinsmitglied. Bitte ausgef\u00fcllt zum ersten Training mitbringen.",
-      "fileUrl": "/assets/forms/member-registration.pdf",
+      "id": "anmeldeantrag",
+      "label": "Anmeldeantrag",
+      "description": "Formular zur Anmeldung als Vereinsmitglied. Bitte ausgefüllt zum ersten Training mitbringen.",
+      "fileUrl": "/assets/downloads/Anmeldeantrag.pdf",
       "fileType": "pdf",
-      "fileSizeKB": 245,
+      "fileSizeKB": 193,
       "category": "membership"
     },
     {
-      "id": "int-bodensee-cup",
-      "label": "Anmeldung International Bodensee Cup",
-      "description": "Anmeldeformular f\u00fcr die Teilnahme am j\u00e4hrlichen International Bodensee Cup Turnier.",
-      "fileUrl": "/assets/forms/international-bodensee-cup-registration.pdf",
+      "id": "mitgliedsbedingungen",
+      "label": "Mitgliedsbedingungen TKD 2026",
+      "description": "Allgemeine Mitgliedsbedingungen und Vereinsordnung für das Jahr 2026.",
+      "fileUrl": "/assets/downloads/Mitgliedsbedingungen_TKD_2026.pdf",
       "fileType": "pdf",
-      "fileSizeKB": 312,
-      "category": "events"
+      "fileSizeKB": 158,
+      "category": "membership"
+    },
+    {
+      "id": "kinderschutz",
+      "label": "Kinderschutzkonzept",
+      "description": "Konzept zum Schutz von Kindern und Jugendlichen im Verein.",
+      "fileUrl": "/assets/downloads/Kinderschutzkonzept_Taekwondo_Ailingen_eV.pdf",
+      "fileType": "pdf",
+      "fileSizeKB": 259,
+      "category": "policies"
+    },
+    {
+      "id": "notfallfahrplan",
+      "label": "Notfallfahrplan",
+      "description": "Handlungsanweisungen für Notfallsituationen während des Trainings.",
+      "fileUrl": "/assets/downloads/Notfallfahrplan.pdf",
+      "fileType": "pdf",
+      "fileSizeKB": 482,
+      "category": "policies"
+    },
+    {
+      "id": "ehrenkodex",
+      "label": "Ehrenkodex",
+      "description": "Verhaltenskodex und ethische Grundsätze für alle Vereinsmitglieder.",
+      "fileUrl": "/assets/downloads/Ehrenkodex.pdf",
+      "fileType": "pdf",
+      "fileSizeKB": 606,
+      "category": "policies"
+    },
+    {
+      "id": "verhaltensregeln-trainer",
+      "label": "Verhaltensregeln für Trainer und Helfer",
+      "description": "Verbindliche Verhaltensregeln für Trainer und Helfer zur Unterschrift.",
+      "fileUrl": "/assets/downloads/Verhaltensregeln-Trainer-und-Helfer_zur-Unterschrift.pdf",
+      "fileType": "pdf",
+      "fileSizeKB": 520,
+      "category": "policies"
     }
   ]
 }
