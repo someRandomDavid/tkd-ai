@@ -3,6 +3,19 @@
 
 :root {
   // Spacing scale (8px base unit - Material Design standard)
+  // Numeric scale matches named aliases for consistency
+  --spacing-0: 0;          // 0px
+  --spacing-1: 0.5rem;     // 8px  (same as --spacing-sm)
+  --spacing-2: 1rem;       // 16px (same as --spacing-md)
+  --spacing-3: 1.5rem;     // 24px (same as --spacing-lg)
+  --spacing-4: 2rem;       // 32px (same as --spacing-xl)
+  --spacing-5: 2.5rem;     // 40px
+  --spacing-6: 3rem;       // 48px (same as --spacing-xxl)
+  --spacing-8: 4rem;       // 64px (same as --spacing-xxxl)
+  --spacing-10: 5rem;      // 80px
+  --spacing-12: 6rem;      // 96px
+  
+  // Named spacing aliases (semantic use)
   --spacing-xs: 0.25rem;   // 4px
   --spacing-sm: 0.5rem;    // 8px
   --spacing-md: 1rem;      // 16px
