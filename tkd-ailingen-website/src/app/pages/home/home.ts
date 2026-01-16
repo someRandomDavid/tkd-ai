@@ -7,10 +7,9 @@ import { WelcomeSection } from './sections/welcome-section/welcome-section';
 import { SchedulesSection } from './sections/schedules-section/schedules-section';
 import { TrainersSection } from './sections/trainers-section/trainers-section';
 import { DownloadsSection } from './sections/downloads-section/downloads-section';
-import { CTASection } from './sections/cta-section/cta-section';
 import { Footer } from '@app/shared/components/footer/footer';
 import { ContentService } from '@core/services/content.service';
-import { ClubInfo, NavigationItem, TrainingSession, DownloadableForm, CTAButton } from '@shared/models';
+import { ClubInfo, NavigationItem, TrainingSession, DownloadableForm } from '@shared/models';
 
 /**
  * Homepage container component
@@ -20,7 +19,7 @@ import { ClubInfo, NavigationItem, TrainingSession, DownloadableForm, CTAButton 
  */
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, NavigationHeader, HeroSection, WelcomeSection, SchedulesSection, TrainersSection, DownloadsSection, CTASection, Footer],
+  imports: [CommonModule, NavigationHeader, HeroSection, WelcomeSection, SchedulesSection, TrainersSection, DownloadsSection, Footer],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
@@ -29,7 +28,6 @@ export class Home implements OnInit {
   navItems: NavigationItem[] = [];
   trainingSessions: TrainingSession[] = [];
   downloadableForms: DownloadableForm[] = [];
-  ctaButtons: CTAButton[] = [];
   loading = true;
   error = false;
 
@@ -45,14 +43,12 @@ export class Home implements OnInit {
       firstValueFrom(this.contentService.getNavigation()),
       firstValueFrom(this.contentService.getTrainingSessions()),
       firstValueFrom(this.contentService.getDownloads()),
-      firstValueFrom(this.contentService.getCTAButtons()),
     ])
-      .then(([clubInfo, nav, sessions, downloads, ctas]) => {
+      .then(([clubInfo, nav, sessions, downloads]) => {
         this.clubInfo = clubInfo;
         this.navItems = nav?.items || [];
         this.trainingSessions = sessions || [];
         this.downloadableForms = downloads?.forms || [];
-        this.ctaButtons = ctas?.actions || [];
         this.loading = false;
         this.cdr.markForCheck();
       })
