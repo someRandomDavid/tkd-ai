@@ -14,6 +14,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 const MATERIAL_MODULES = [
   MatToolbarModule,
@@ -29,6 +30,7 @@ const MATERIAL_MODULES = [
   MatInputModule,
   MatChipsModule,
   MatProgressSpinnerModule,
+  MatPaginatorModule,
 ];
 
 /**
