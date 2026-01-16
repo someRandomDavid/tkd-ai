@@ -16,7 +16,7 @@ import { NewsItem } from '@shared/models/news.model';
   styleUrl: './news-section.scss',
 })
 export class NewsSection implements OnInit {
-  private allNews = signal<NewsItem[]>([]);
+  allNews = signal<NewsItem[]>([]);
   
   // Pagination state
   currentPage = signal<number>(0);
