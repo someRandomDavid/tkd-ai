@@ -29,18 +29,25 @@
       "order": 4
     },
     {
+      "id": "instagram",
+      "label": "Instagram",
+      "routeOrAnchor": "#instagram-section",
+      "icon": "photo_camera",
+      "order": 5
+    },
+    {
       "id": "downloads",
       "label": "Downloads",
       "routeOrAnchor": "#downloads-section",
       "icon": "download",
-      "order": 5
+      "order": 6
     },
     {
       "id": "contact",
       "label": "Kontakt",
       "routeOrAnchor": "#contact-section",
       "icon": "contact_mail",
-      "order": 6
+      "order": 7
     }
   ]
 }

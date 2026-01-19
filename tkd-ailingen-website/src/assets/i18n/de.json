@@ -215,5 +215,12 @@
       "firstPage": "Erste Seite",
       "lastPage": "Letzte Seite"
     }
+  },
+  "instagram": {
+    "title": "Folge uns auf Instagram",
+    "description": "Bleib auf dem Laufenden mit den neuesten Fotos und Videos aus unserem Training, Events und der Community.",
+    "loading": "Instagram-Posts werden geladen...",
+    "retry": "Erneut versuchen",
+    "noPosts": "Keine Posts gefunden"
   }
 }
