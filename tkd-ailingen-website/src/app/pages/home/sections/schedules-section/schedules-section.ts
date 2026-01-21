@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@shared/material.module';
 import { ProgramSchedule } from '@app/shared/components/program-schedule/program-schedule';
 import { ScheduleFilter } from '@app/shared/components/schedule-filter/schedule-filter';
-import { TrainingSession, ScheduleFilters, DEFAULT_FILTERS } from '@shared/models';
+import { TrainingSession, ScheduleFilters, DEFAULT_FILTERS, DayOfWeek } from '@shared/models';
 import { TranslationService } from '@core/services/translation.service';
 
 /**
@@ -31,20 +31,32 @@ export class SchedulesSection {
         return false;
       }
 
-      // Search text filter (searches in multiple fields)
+      // Search text filter (searches level, day, and time only)
+      // Supports comma-separated terms (e.g., "donn, bam" for Donnerstag + Bambini)
       if (currentFilters.searchText) {
-        const searchLower = currentFilters.searchText.toLowerCase();
+        const translatedDay = this.translationService.instant(`schedule.days.${session.dayOfWeek}`);
         const searchableText = [
           session.levelAgeGroup,
-          session.instructor,
-          session.location,
-          session.notes,
+          session.dayOfWeek, // English key (e.g., "friday")
+          translatedDay, // Translated day (e.g., "Freitag")
+          session.startTime,
+          session.endTime,
         ]
           .filter(Boolean)
           .join(' ')
           .toLowerCase();
 
-        if (!searchableText.includes(searchLower)) {
+        // Split by comma and check that ALL terms match (AND logic)
+        const searchTerms = currentFilters.searchText
+          .split(',')
+          .map(term => term.trim().toLowerCase())
+          .filter(term => term.length > 0);
+
+        const allTermsMatch = searchTerms.every(term => 
+          searchableText.includes(term)
+        );
+
+        if (!allTermsMatch) {
           return false;
         }
       }

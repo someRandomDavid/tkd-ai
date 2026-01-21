@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { TranslationService } from '@core/services/translation.service';
+import { MaterialModule } from '@shared/material.module';
 
 /**
  * Disclaimer/Haftungsausschluss page component
@@ -8,11 +9,22 @@ import { TranslationService } from '@core/services/translation.service';
  */
 @Component({
   selector: 'app-disclaimer',
-  imports: [CommonModule],
+  imports: [CommonModule, MaterialModule],
   templateUrl: './disclaimer.html',
   styleUrl: './disclaimer.scss',
   standalone: true
 })
 export class Disclaimer {
-  constructor(public translationService: TranslationService) {}
+  constructor(
+    public translationService: TranslationService,
+    private location: Location
+  ) {}
+
+  goBack(): void {
+    this.location.back();
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

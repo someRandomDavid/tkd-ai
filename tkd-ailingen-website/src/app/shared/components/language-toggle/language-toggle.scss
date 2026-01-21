@@ -1,5 +1,8 @@
 .language-toggle-button {
-  color: var(--text-primary);
+  // Keep icon white in header (overridden by parent context)
+  // When in header (navigation-header), stays white
+  // When in other contexts, uses default text color
+  color: inherit;
   
   mat-icon {
     font-size: 1.5rem;
@@ -8,7 +11,7 @@
   }
 
   &:hover {
-    background-color: var(--surface-hover);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 

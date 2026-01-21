@@ -76,7 +76,10 @@ export class NavigationHeader implements OnInit, OnDestroy {
     });
   }
 
-  onNavigationClick(item: NavigationItem): void {
+  onNavigationClick(event: Event, item: NavigationItem): void {
+    event.preventDefault();
+    event.stopPropagation();
+    
     this.navigationClick.emit(item.routeOrAnchor);
     
     if (this.isBrowser && item.routeOrAnchor.startsWith('#')) {
@@ -95,7 +98,11 @@ export class NavigationHeader implements OnInit, OnDestroy {
     }
   }
 
-  toggleMenu(): void {
+  toggleMenu(event?: Event): void {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
     if (this.sidenav) {
       this.sidenav.toggle();
     }
@@ -106,5 +113,22 @@ export class NavigationHeader implements OnInit, OnDestroy {
       return this.activeSection === item.routeOrAnchor.substring(1);
     }
     return false;
+  }
+
+  /**
+   * Scroll to top of page when club name is clicked
+   */
+  scrollToTop(event: Event): void {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    if (this.isBrowser) {
+      try {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (error) {
+        // Fallback for browsers that don't support smooth scrolling
+        window.scrollTo(0, 0);
+      }
+    }
   }
 }

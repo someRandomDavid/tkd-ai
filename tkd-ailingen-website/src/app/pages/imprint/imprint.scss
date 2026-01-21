@@ -3,6 +3,34 @@
   background: var(--surface-bg);
   padding: 6rem 2rem 4rem;
 
+  .back-button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 999;
+    background-color: var(--surface-bg);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-md);
+    
+    &:hover {
+      background-color: var(--surface-hover);
+    }
+  }
+
+  .scroll-top-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background-color: var(--primary-main);
+    color: var(--primary-contrast);
+    box-shadow: var(--shadow-md);
+    
+    &:hover {
+      background-color: var(--primary-dark);
+    }
+  }
+
   .imprint-container {
     max-width: 800px;
     margin: 0 auto;

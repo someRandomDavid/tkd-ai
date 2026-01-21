@@ -17,10 +17,16 @@ The Instagram section is currently displaying **mock data** (sample images from 
 
 ### Step 1: Create a Facebook App
 1. Go to [Facebook Developers](https://developers.facebook.com/)
-2. Click "My Apps" → "Create App"
-3. Choose "Consumer" as app type
-4. Fill in app details (name, contact email)
-5. Click "Create App"
+2. Log in with your Facebook account (create one if needed)
+3. Click the green **"Create App"** button (top right corner)
+   - If you have existing apps, it might be under a dropdown menu
+4. Choose **"Other"** → **"Next"**
+5. Choose **"Consumer"** as app type → **"Next"**
+6. Fill in app details:
+   - **App name**: e.g., "Taekwondo Ailingen Website"
+   - **App contact email**: Your email address
+7. Click **"Create App"**
+8. Complete security check if prompted
 
 ### Step 2: Add Instagram Basic Display
 1. In your app dashboard, click "Add Product"

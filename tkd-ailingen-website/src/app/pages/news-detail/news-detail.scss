@@ -5,10 +5,34 @@
   min-height: 100vh;
   background-color: var(--surface-bg);
   padding: var(--spacing-4);
+  position: relative;
 
   @include mixins.tablet {
     padding: var(--spacing-6);
   }
+}
+
+.back-button,
+.scroll-top-button {
+  position: fixed;
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+
+  mat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.back-button {
+  top: 1rem;
+  left: 1rem;
+}
+
+.scroll-top-button {
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .loading-container,
@@ -56,10 +80,6 @@
 
   @include mixins.tablet {
     padding: var(--spacing-6);
-  }
-
-  .back-button {
-    margin-bottom: var(--spacing-3);
   }
 
   .article-meta {
@@ -164,31 +184,38 @@
     font-size: var(--font-size-base);
     line-height: var(--line-height-relaxed);
     color: var(--text-primary);
-    white-space: pre-wrap;
 
-    p {
+    ::ng-deep p {
       margin: 0 0 var(--spacing-3) 0;
 
       &:last-child {
         margin-bottom: 0;
       }
     }
-  }
-}
 
-.article-footer {
-  padding: var(--spacing-4);
-  border-top: 1px solid var(--border-color);
-  display: flex;
-  justify-content: center;
+    ::ng-deep strong {
+      font-weight: var(--font-weight-bold);
+      color: var(--text-primary);
+      display: block;
+      margin: var(--spacing-4) 0 var(--spacing-2) 0;
+      font-size: var(--font-size-lg);
+    }
 
-  @include mixins.tablet {
-    padding: var(--spacing-6);
-  }
+    ::ng-deep ul {
+      margin: var(--spacing-2) 0 var(--spacing-3) 0;
+      padding-left: var(--spacing-4);
+      list-style: disc;
 
-  button {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-1);
+      li {
+        margin: var(--spacing-1) 0;
+        line-height: var(--line-height-relaxed);
+      }
+    }
+
+    ::ng-deep br {
+      display: block;
+      margin: var(--spacing-1) 0;
+      content: "";
+    }
   }
 }

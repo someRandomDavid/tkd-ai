@@ -24,11 +24,29 @@ export class WelcomeSection {
   ) {}
 
   /**
-   * Sanitize video URL for Facebook embed
+   * Sanitize video URL for embed (YouTube)
    */
   getSafeVideoUrl(url: string): SafeResourceUrl {
-    // Convert Facebook video URL to embed format
-    const embedUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(url)}&show_text=false&width=560`;
+    let embedUrl: string;
+    
+    if (url.includes('youtube.com') || url.includes('youtu.be')) {
+      // Convert YouTube URL to embed format
+      const videoId = this.extractYouTubeId(url);
+      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    } else {
+      // Default: assume it's already an embed URL
+      embedUrl = url;
+    }
+    
     return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
+  }
+
+  /**
+   * Extract YouTube video ID from URL
+   */
+  private extractYouTubeId(url: string): string {
+    const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[7].length === 11) ? match[7] : '';
   }
 }

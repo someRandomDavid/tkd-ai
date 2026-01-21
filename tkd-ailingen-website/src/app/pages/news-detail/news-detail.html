@@ -1,26 +1,22 @@
 <div class="news-detail-page">
-  @if (loading) {
-    <div class="loading-container">
-      <mat-icon>hourglass_empty</mat-icon>
-      <p>{{ translationService.instant('news.loading') }}</p>
-    </div>
-  } @else if (error || !newsItem) {
+  <button mat-fab class="back-button" (click)="goBack()" [attr.aria-label]="translationService.instant('common.back') || 'Back'">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  
+  <button mat-fab class="scroll-top-button" (click)="scrollToTop()" [attr.aria-label]="translationService.instant('common.scrollToTop') || 'Scroll to top'">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
+
+
+  @if (error) {
     <div class="error-container">
       <mat-icon>error_outline</mat-icon>
       <h2>{{ translationService.instant('news.notFound') }}</h2>
       <p>{{ translationService.instant('news.notFoundMessage') }}</p>
-      <button mat-raised-button color="primary" (click)="goBack()">
-        <mat-icon>arrow_back</mat-icon>
-        {{ translationService.instant('news.backToNews') }}
-      </button>
     </div>
-  } @else {
+  } @else if (newsItem) {
     <article class="news-article">
-      <header class="article-header">
-        <button mat-icon-button class="back-button" (click)="goBack()">
-          <mat-icon>arrow_back</mat-icon>
-        </button>
-        
+      <header class="article-header">        
         <div class="article-meta">
           <div class="category-badge" [class]="'category-' + newsItem.category">
             <mat-icon>{{ getCategoryIcon(newsItem.category) }}</mat-icon>
@@ -46,17 +42,8 @@
 
       <div class="article-content">
         <p class="article-excerpt">{{ newsItem.excerpt }}</p>
-        <div class="article-body">
-          {{ newsItem.content }}
-        </div>
+        <div class="article-body" [innerHTML]="formatContent(newsItem.content)"></div>
       </div>
-
-      <footer class="article-footer">
-        <button mat-raised-button color="primary" (click)="goBack()">
-          <mat-icon>arrow_back</mat-icon>
-          {{ translationService.instant('news.backToNews') }}
-        </button>
-      </footer>
     </article>
   }
 </div>

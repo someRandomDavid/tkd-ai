@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 import { MaterialModule } from '@shared/material.module';
 import { TranslationService } from '@core/services/translation.service';
+import { NewsService } from '@core/services/news.service';
 import { NewsItem } from '@shared/models/news.model';
 
 /**
@@ -16,44 +18,57 @@ import { NewsItem } from '@shared/models/news.model';
   templateUrl: './news-detail.html',
   styleUrl: './news-detail.scss',
 })
-export class NewsDetail implements OnInit {
+export class NewsDetail implements OnInit, OnDestroy {
   newsItem?: NewsItem;
-  loading = true;
   error = false;
+  private routeSubscription?: Subscription;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private http: HttpClient,
+    private newsService: NewsService,
+    private sanitizer: DomSanitizer,
     public translationService: TranslationService
   ) {}
 
   ngOnInit(): void {
-    const newsId = this.route.snapshot.paramMap.get('id');
-    if (newsId) {
-      this.loadNewsItem(newsId);
-    } else {
-      this.error = true;
-      this.loading = false;
-    }
+    // Subscribe to route params to handle navigation between news items
+    this.routeSubscription = this.route.paramMap.subscribe(params => {
+      const newsId = params.get('id');
+      
+      // Scroll to top when navigating to a new news item
+      window.scrollTo({ top: 0 });
+      
+      // Reset state
+      this.error = false;
+      this.newsItem = undefined;
+      
+      if (newsId) {
+        this.loadNewsItem(newsId);
+      } else {
+        this.error = true;
+      }
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.routeSubscription?.unsubscribe();
   }
 
   private loadNewsItem(id: string): void {
-    this.http.get<{ news: NewsItem[] }>('/assets/data/news.json')
-      .subscribe({
-        next: (data) => {
-          this.newsItem = data.news.find(item => item.id === id);
-          if (!this.newsItem) {
-            this.error = true;
-          }
-          this.loading = false;
-        },
-        error: (error) => {
-          console.error('Error loading news:', error);
+    this.newsService.getNewsById(id).subscribe({
+      next: (item) => {
+        if (item) {
+          this.newsItem = item;
+        } else {
           this.error = true;
-          this.loading = false;
         }
-      });
+      },
+      error: (err) => {
+        console.error('Error loading news item:', err);
+        this.error = true;
+      }
+    });
   }
 
   getCategoryIcon(category?: string): string {
@@ -79,5 +94,37 @@ export class NewsDetail implements OnInit {
 
   goBack(): void {
     this.router.navigate(['/'], { fragment: 'news-section' });
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /**
+   * Format content with markdown-like syntax to HTML
+   */
+  formatContent(content: string): SafeHtml {
+    let html = content
+      // Convert **bold** to <strong>
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      // Convert bullet points
+      .replace(/^- (.+)$/gm, '<li>$1</li>')
+      // Wrap paragraphs
+      .split('\n\n')
+      .map(paragraph => {
+        paragraph = paragraph.trim();
+        if (!paragraph) return '';
+        
+        // Check if paragraph contains list items
+        if (paragraph.includes('<li>')) {
+          return '<ul>' + paragraph + '</ul>';
+        }
+        
+        // Regular paragraph
+        return '<p>' + paragraph.replace(/\n/g, '<br>') + '</p>';
+      })
+      .join('');
+    
+    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 }

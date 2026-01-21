@@ -6,6 +6,9 @@
     "deepwork": "deepWORK",
     "membership": "Mitgliedschaft",
     "events": "Veranstaltungen",
+    "news": "Aktuelles und Neuigkeiten",
+    "instagram": "Instagram",
+    "trainers": "Trainerteam",
     "downloads": "Downloads",
     "about": "Über uns",
     "contact": "Kontakt"
@@ -40,7 +43,7 @@
       "zumba": "Zumba",
       "deepwork": "deepWORK",
       "search": "Suche",
-      "searchPlaceholder": "Nach Level, Trainer, Ort suchen...",
+      "searchPlaceholder": "Nach Level, Tag, Uhrzeit suchen...",
       "clearSearch": "Suche löschen",
       "clearAll": "Filter zurücksetzen",
       "sessionFound": "Trainingseinheit gefunden",
@@ -98,6 +101,12 @@
     "noTrainers": "Keine Trainer verfügbar",
     "photoAlt": "Foto von {{name}}",
     "programs": "Programme",
+    "search": {
+      "placeholder": "Trainer suchen",
+      "hint": "Name, Programm, Training, Rolle...",
+      "clearSearch": "Suche löschen",
+      "tip": "Tipp: Verwenden Sie Kommas, um nach mehreren Begriffen zu suchen (UND-Verknüpfung)"
+    },
     "roles": {
       "head-instructor": "Cheftrainer",
       "instructor": "Trainer",

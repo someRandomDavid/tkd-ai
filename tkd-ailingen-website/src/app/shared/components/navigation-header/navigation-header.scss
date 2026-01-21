@@ -22,6 +22,12 @@
   padding: 0 var(--spacing-2);
   min-height: 64px;
 
+  // Ensure all buttons and icons stay white in both themes
+  button,
+  mat-icon {
+    color: white !important;
+  }
+
   @include mixins.tablet {
     padding: 0 var(--spacing-4);
   }
@@ -33,10 +39,28 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  border-radius: 4px;
+  padding: var(--spacing-xs) var(--spacing-1);
+  margin-left: calc(-1 * var(--spacing-1));
+  transition: opacity 0.2s ease, background-color 0.2s ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:focus-visible {
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -97,11 +121,17 @@
   // Ensure proper touch target size
   min-width: 48px;
   min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   mat-icon {
     font-size: 24px;
     width: 24px;
     height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -112,23 +142,48 @@
   ::ng-deep button {
     min-width: 48px;
     min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    mat-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
 // Sidenav container
 .sidenav-container {
   min-height: calc(100vh - 64px);
+  position: relative;
+  
+  ::ng-deep .mat-drawer-content {
+    overflow: visible !important;
+    position: relative !important;
+  }
+  
+  ::ng-deep .mat-drawer-backdrop {
+    position: fixed !important;
+  }
 }
 
 .mobile-sidenav {
   width: 280px;
   max-width: 80vw;
+  position: fixed !important;
+  top: 64px !important;
+  bottom: 0 !important;
+  height: calc(100vh - 64px) !important;
 
   mat-nav-list {
     padding-top: var(--spacing-2);
   }
 
   a[mat-list-item] {
+    cursor: pointer;
+    
     &.active {
       background-color: rgba(0, 0, 0, 0.05);
       color: var(--color-primary);

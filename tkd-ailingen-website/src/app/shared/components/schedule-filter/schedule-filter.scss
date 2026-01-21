@@ -17,6 +17,27 @@
       min-width: 200px;
     }
 
+    // Ensure search field matches dropdown height
+    .search-filter {
+      ::ng-deep {
+        .mat-mdc-text-field-wrapper {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .mat-mdc-form-field-flex {
+          align-items: center;
+          height: 56px; // Match Material select height
+        }
+
+        .mat-mdc-form-field-infix {
+          padding-top: 16px;
+          padding-bottom: 16px;
+          min-height: auto;
+        }
+      }
+    }
+
     .clear-filters-btn {
       margin-top: 8px;
       display: flex;

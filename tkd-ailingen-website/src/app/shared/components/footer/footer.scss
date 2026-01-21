@@ -2,8 +2,8 @@
 @use '../../../../styles/mixins' as mixins;
 
 .footer {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: #000000;
+  color: #ffffff;
   padding: var(--spacing-6) var(--spacing-4);
   scroll-margin-top: 80px; // Offset for fixed header
 
@@ -35,7 +35,7 @@
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
   margin: 0;
-  color: var(--color-primary);
+  color: #dc143c;
 }
 
 .contact-info {
@@ -47,23 +47,33 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-2);
+    line-height: 1.5; // Match icon height for proper alignment
   }
 
   mat-icon {
     font-size: 1.25rem;
     width: 1.25rem;
     height: 1.25rem;
+    line-height: 1.25rem; // Match font-size
+    flex-shrink: 0;
+    // Ensure perfect vertical alignment with text
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .contact-link {
-  color: var(--color-white);
+  color: #ffffff;
   text-decoration: none;
   transition: color var(--transition-fast);
+  line-height: 1.5; // Match parent line-height
+  display: inline-block;
+  min-height: unset; // Override global link min-height for inline text alignment
 
   &:hover,
   &:focus {
-    color: var(--color-primary);
+    color: #dc143c;
     text-decoration: underline;
   }
 }
@@ -77,17 +87,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--touch-target);
-  height: var(--touch-target);
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-white);
+  color: #ffffff;
   text-decoration: none;
   transition: all var(--transition-fast);
+  flex-shrink: 0;
 
   &:hover,
   &:focus {
-    background-color: var(--color-primary);
+    background-color: #dc143c;
     transform: translateY(-2px);
   }
 
@@ -95,6 +108,9 @@
     font-size: 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -121,7 +137,7 @@
   
   &:hover,
   &:focus {
-    color: var(--color-primary);
+    color: #dc143c;
     text-decoration: underline;
   }
 }

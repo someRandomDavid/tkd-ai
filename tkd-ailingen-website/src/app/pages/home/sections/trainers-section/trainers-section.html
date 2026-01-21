@@ -1,7 +1,36 @@
 <section class="trainers-section" id="trainers">
   <div class="section-header">
-    <h2 class="section-title">{{ translationService.instant('trainers.title') }}</h2>
+    <h2 class="section-title" (click)="scrollToTop()" (keydown.enter)="scrollToTop()" (keydown.space)="scrollToTop(); $event.preventDefault()" role="button" tabindex="0">{{ translationService.instant('trainers.title') }}</h2>
     <p class="section-subtitle">{{ translationService.instant('trainers.subtitle') }}</p>
+  </div>
+
+  <!-- Search Filter -->
+  <div class="search-container">
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-label>{{ translationService.instant('trainers.search.placeholder') }}</mat-label>
+      <input 
+        matInput 
+        type="text"
+        [value]="searchQuery()"
+        (input)="onSearchChange($any($event.target).value)"
+        [placeholder]="translationService.instant('trainers.search.hint')"
+      />
+      <mat-icon matPrefix>search</mat-icon>
+      @if (searchQuery()) {
+        <button 
+          mat-icon-button 
+          matSuffix 
+          (click)="clearSearch()"
+          [attr.aria-label]="translationService.instant('trainers.search.clearSearch')">
+          <mat-icon>close</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+    @if (searchQuery()) {
+      <p class="search-hint">
+        {{ translationService.instant('trainers.search.tip') }}
+      </p>
+    }
   </div>
 
   <!-- Loading state -->

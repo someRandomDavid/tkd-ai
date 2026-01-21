@@ -5,8 +5,8 @@
     "zumba": "Zumba",
     "deepwork": "deepWORK",
     "membership": "Membership",
-    "events": "Events",
-    "downloads": "Downloads",
+    "events": "Events",    "news": "News",
+    "instagram": "Instagram",    "trainers": "Trainer Team",    "downloads": "Downloads",
     "about": "About",
     "contact": "Contact"
   },
@@ -40,7 +40,7 @@
       "zumba": "Zumba",
       "deepwork": "deepWORK",
       "search": "Search",
-      "searchPlaceholder": "Search by level, instructor, location...",
+      "searchPlaceholder": "Search by level, day, time...",
       "clearSearch": "Clear search",
       "clearAll": "Reset filters",
       "sessionFound": "session found",
@@ -98,6 +98,12 @@
     "noTrainers": "No trainers available",
     "photoAlt": "Photo of {{name}}",
     "programs": "Programs",
+    "search": {
+      "placeholder": "Search trainers",
+      "hint": "Name, program, session, role...",
+      "clearSearch": "Clear search",
+      "tip": "Tip: Use commas to search for multiple terms (AND logic)"
+    },
     "roles": {
       "head-instructor": "Head Instructor",
       "instructor": "Instructor",

@@ -1,9 +1,15 @@
 <mat-toolbar class="navigation-header" color="primary" role="navigation">
   <div class="header-content">
     <!-- Logo/Club Name -->
-    <a href="/" class="logo-link">
+    <div class="logo-link" 
+         (click)="scrollToTop($event)"
+         (keydown.enter)="scrollToTop($event)"
+         (keydown.space)="scrollToTop($event)"
+         role="button"
+         tabindex="0"
+         [attr.aria-label]="translationService.instant('nav.scrollToTop')">
       <span class="club-name">{{ translationService.instant('hero.clubName') }}</span>
-    </a>
+    </div>
 
     <!-- Navigation Controls - Always visible (hamburger menu approach) -->
     <div class="mobile-controls">
@@ -15,8 +21,9 @@
       <button
         mat-icon-button
         class="mobile-menu-button"
-        (click)="toggleMenu()"
-        aria-label="Toggle navigation menu">
+        (click)="toggleMenu($event)"
+        aria-label="Toggle navigation menu"
+        type="button">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
@@ -24,15 +31,21 @@
 </mat-toolbar>
 
 <!-- Mobile Sidenav -->
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #sidenav mode="over" position="end" class="mobile-sidenav">
+<mat-sidenav-container class="sidenav-container" autosize>
+  <mat-sidenav 
+    #sidenav 
+    mode="over" 
+    position="end" 
+    class="mobile-sidenav"
+    [autoFocus]="false">
     <mat-nav-list>
       @for (item of navItems; track item.id) {
         <a
           mat-list-item
-          [href]="item.routeOrAnchor"
-          (click)="onNavigationClick(item); $event.preventDefault()"
-          [class.active]="isActive(item)">
+          (click)="onNavigationClick($event, item)"
+          [class.active]="isActive(item)"
+          role="button"
+          tabindex="0">
           @if (item.icon) {
             <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
           }

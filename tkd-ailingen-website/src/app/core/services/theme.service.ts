@@ -43,8 +43,22 @@ export class ThemeService {
       themeToApply = DEFAULT_THEME;
     }
     
-    // Update signal without reapplying body class (already applied by inline script)
+    // Update signal
     this.currentThemeSignal.set(themeToApply);
+    
+    // Ensure body class is applied (in case inline script was bypassed or cleared)
+    if (typeof document !== 'undefined') {
+      const body = document.body;
+      
+      // Apply theme atomically - remove old, add new in one go
+      if (themeToApply === 'light') {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+      } else {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+      }
+    }
     
     return themeToApply;
   }

@@ -1,4 +1,12 @@
 <div class="disclaimer-page">
+  <button mat-fab class="back-button" (click)="goBack()" [attr.aria-label]="translationService.instant('common.back') || 'Back'">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  
+  <button mat-fab class="scroll-top-button" (click)="scrollToTop()" [attr.aria-label]="translationService.instant('common.scrollToTop') || 'Scroll to top'">
+    <mat-icon>arrow_upward</mat-icon>
+  </button>
+  
   <div class="disclaimer-container">
     <h1 class="page-title">{{ translationService.instant('disclaimer.title') }}</h1>
     

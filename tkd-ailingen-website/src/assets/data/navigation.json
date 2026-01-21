@@ -23,31 +23,31 @@
     },
     {
       "id": "news",
-      "label": "Aktuelles und Neuigkeiten",
+      "label": "nav.news",
       "routeOrAnchor": "#news-section",
       "icon": "article",
       "order": 4
     },
     {
-      "id": "instagram",
-      "label": "Instagram",
-      "routeOrAnchor": "#instagram-section",
-      "icon": "photo_camera",
-      "order": 5
+      "id": "trainers",
+      "label": "nav.trainers",
+      "routeOrAnchor": "#trainers",
+      "icon": "people",
+      "order": 6
     },
     {
       "id": "downloads",
       "label": "Downloads",
       "routeOrAnchor": "#downloads-section",
       "icon": "download",
-      "order": 6
+      "order": 7
     },
     {
       "id": "contact",
       "label": "Kontakt",
       "routeOrAnchor": "#contact-section",
       "icon": "contact_mail",
-      "order": 7
+      "order": 8
     }
   ]
 }

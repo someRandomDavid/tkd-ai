@@ -1,9 +1,9 @@
 import { Component, OnInit, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { MaterialModule } from '@shared/material.module';
 import { TranslationService } from '@core/services/translation.service';
+import { NewsService } from '@core/services/news.service';
 import { NewsItem } from '@shared/models/news.model';
 
 /**
@@ -35,7 +35,7 @@ export class NewsSection implements OnInit {
   });
 
   constructor(
-    private http: HttpClient,
+    private newsService: NewsService,
     public translationService: TranslationService
   ) {}
 
@@ -44,14 +44,10 @@ export class NewsSection implements OnInit {
   }
 
   private loadNews(): void {
-    this.http.get<{ news: NewsItem[] }>('/assets/data/news.json')
+    this.newsService.getNewsSortedByDate()
       .subscribe({
-        next: (data) => {
-          // Sort by date descending (newest first)
-          const sorted = [...data.news].sort((a, b) => 
-            new Date(b.date).getTime() - new Date(a.date).getTime()
-          );
-          this.allNews.set(sorted);
+        next: (news) => {
+          this.allNews.set(news);
         },
         error: (error) => {
           console.error('Error loading news:', error);

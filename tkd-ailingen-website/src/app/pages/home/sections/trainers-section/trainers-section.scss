@@ -14,6 +14,17 @@
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .section-subtitle {
@@ -22,11 +33,56 @@
   margin: 0;
 }
 
+// Search container
+.search-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.search-field {
+  width: 100%;
+  
+  ::ng-deep {
+    .mat-mdc-form-field-subscript-wrapper {
+      display: none; // Hide subscript area to save space
+    }
+
+    .mat-mdc-text-field-wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .mat-mdc-form-field-flex {
+      align-items: center;
+      height: 56px; // Match Material select height
+    }
+
+    .mat-mdc-form-field-infix {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      min-height: auto;
+    }
+  }
+}
+
+.search-hint {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+}
+
 .trainers-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
+
+  app-trainer-card {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 // Loading state
@@ -99,7 +155,7 @@
   }
 
   .trainers-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
 }
@@ -110,12 +166,12 @@
   }
 
   .trainers-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 
 @media (min-width: 1200px) {
   .trainers-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
