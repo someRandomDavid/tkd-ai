@@ -1,4 +1,4 @@
-# Specification Quality Checklist: Club Homepage
+﻿# Specification Quality Checklist: Club Homepage
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2026-01-09  
@@ -78,7 +78,7 @@
 
 **Updates from User Feedback**:
 - ✅ Added existing member use case for checking training schedules
-- ✅ Included separate sections for Taekwon-do, Zumba, and deepWORK programs
+- ✅ Included separate sections for Taekwondo, Zumba, and deepWORK programs
 - ✅ Added Downloads section with member registration form
 - ✅ Added International Bodensee Cup registration form (club-organized event)
 - ✅ Expanded navigation to include all program-specific links

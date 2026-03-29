@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 SYNC IMPACT REPORT - Constitution Update
 
 Version Change: NEW → 1.0.0
@@ -24,7 +24,7 @@ Rationale:
   - Focus on simplicity and maintainability for club website context
 -->
 
-# Taekwon-do Ailingen Website Constitution
+# Taekwondo Ailingen Website Constitution
 
 ## Core Principles
 

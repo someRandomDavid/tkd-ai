@@ -1,12 +1,12 @@
 {
   "nav": {
-    "training": "Training",
-    "taekwondo": "Taekwon-do",
+    "training": "Training Schedule",
+    "taekwondo": "Taekwondo",
     "zumba": "Zumba",
     "deepwork": "deepWORK",
     "membership": "Membership",
-    "events": "Events",
-    "downloads": "Downloads",
+    "events": "Events",    "news": "News",
+    "instagram": "Instagram",    "trainers": "Trainer Team",    "downloads": "Downloads",
     "about": "About",
     "contact": "Contact"
   },
@@ -18,11 +18,11 @@
     "changed": "Theme changed to {{theme}}"
   },
   "hero": {
-    "clubName": "Taekwon-do Ailingen e.V.",
+    "clubName": "Taekwondo Ailingen e.V.",
     "tagline": "Traditional martial arts for all ages"
   },
   "welcome": {
-    "title": "Welcome to Taekwon-do Ailingen e.V.",
+    "title": "Welcome to Taekwondo Ailingen e.V.",
     "description": "Club description goes here..."
   },
   "schedule": {
@@ -36,11 +36,11 @@
     "filters": {
       "programType": "Program",
       "all": "All Programs",
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK",
       "search": "Search",
-      "searchPlaceholder": "Search by level, instructor, location...",
+      "searchPlaceholder": "Search by level, day, time...",
       "clearSearch": "Clear search",
       "clearAll": "Reset filters",
       "sessionFound": "session found",
@@ -59,7 +59,7 @@
     },
     "sections": {
       "trainingTitle": "Training Programs",
-      "taekwondoTitle": "Taekwon-do Schedule",
+      "taekwondoTitle": "Taekwondo Schedule",
       "zumbaTitle": "Zumba Schedule",
       "deepworkTitle": "deepWORK Schedule"
     }
@@ -98,6 +98,12 @@
     "noTrainers": "No trainers available",
     "photoAlt": "Photo of {{name}}",
     "programs": "Programs",
+    "search": {
+      "placeholder": "Search trainers",
+      "hint": "Name, program, session, role...",
+      "clearSearch": "Clear search",
+      "tip": "Tip: Use commas to search for multiple terms (AND logic)"
+    },
     "roles": {
       "head-instructor": "Head Instructor",
       "instructor": "Instructor",
@@ -105,7 +111,7 @@
       "youth-protection-officer": "Youth Protection Officer"
     },
     "programTypes": {
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK"
     },
@@ -215,5 +221,12 @@
       "firstPage": "First page",
       "lastPage": "Last page"
     }
+  },
+  "instagram": {
+    "title": "Follow Us on Instagram",
+    "description": "Stay up to date with the latest photos and videos from our training sessions, events, and community.",
+    "loading": "Loading Instagram posts...",
+    "retry": "Try again",
+    "noPosts": "No posts found"
   }
 }

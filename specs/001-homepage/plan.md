@@ -1,11 +1,11 @@
-# Implementation Plan: Club Homepage
+﻿# Implementation Plan: Club Homepage
 
 **Branch**: `001-homepage` | **Date**: 2026-01-12 | **Spec**: [spec.md](./spec.md)  
 **Input**: Feature specification from `/specs/001-homepage/spec.md`
 
 ## Summary
 
-Build a mobile-first, accessible homepage for Taekwon-do Ailingen that showcases three programs (Taekwon-do, Zumba, deepWORK), displays training schedules, provides registration form downloads, and enables prospective members to take action. The homepage will be built using Angular 18+ with Angular Material for UI components, implementing a custom theme with club branding colors (red, black, white), and ngx-translate for German/English i18n support.
+Build a mobile-first, accessible homepage for Taekwondo Ailingen that showcases three programs (Taekwondo, Zumba, deepWORK), displays training schedules, provides registration form downloads, and enables prospective members to take action. The homepage will be built using Angular 18+ with Angular Material for UI components, implementing a custom theme with club branding colors (red, black, white), and ngx-translate for German/English i18n support.
 
 **Technical Approach**: Static-first Angular SPA with pre-rendered content, component-based architecture following Angular Material design patterns, mobile-first responsive breakpoints, and optimized performance targeting 3G networks.
 
@@ -29,7 +29,7 @@ Build a mobile-first, accessible homepage for Taekwon-do Ailingen that showcases
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-Verify compliance with Taekwon-do Ailingen Website Constitution:
+Verify compliance with Taekwondo Ailingen Website Constitution:
 
 - **Mobile-First Design**: [x] Mobile breakpoints designed first (320px base) [x] Touch targets ≥44px (Material Design spec) [x] Mobile testing planned (Playwright mobile viewports)
 - **Minimal Dependencies**: [x] New dependencies justified (Angular Material: accessible components, ngx-translate: i18n standard) [x] Bundle size impact measured (Material: ~150KB, ngx-translate: ~15KB, total within 200KB budget) [x] Angular built-ins preferred (using Angular CDK, Router, Common)

@@ -1,7 +1,7 @@
 {
   "nav": {
-    "training": "Training",
-    "taekwondo": "Taekwon-do",
+    "training": "Training Schedule",
+    "taekwondo": "Taekwondo",
     "zumba": "Zumba",
     "deepwork": "deepWORK",
     "membership": "Membership",
@@ -18,11 +18,11 @@
     "changed": "Theme changed to {{theme}}"
   },
   "hero": {
-    "clubName": "Taekwon-do Ailingen e.V.",
+    "clubName": "Taekwondo Ailingen e.V.",
     "tagline": "Traditional martial arts for all ages"
   },
   "welcome": {
-    "title": "Welcome to Taekwon-do Ailingen e.V.",
+    "title": "Welcome to Taekwondo Ailingen e.V.",
     "description": "Club description goes here..."
   },
   "schedule": {
@@ -36,7 +36,7 @@
     "filters": {
       "programType": "Program",
       "all": "All Programs",
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK",
       "search": "Search",
@@ -59,7 +59,7 @@
     },
     "sections": {
       "trainingTitle": "Training Programs",
-      "taekwondoTitle": "Taekwon-do Schedule",
+      "taekwondoTitle": "Taekwondo Schedule",
       "zumbaTitle": "Zumba Schedule",
       "deepworkTitle": "deepWORK Schedule"
     }
@@ -111,7 +111,7 @@
       "youth-protection-officer": "Youth Protection Officer"
     },
     "programTypes": {
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK"
     },

@@ -1,10 +1,10 @@
-# Quickstart Guide: Club Homepage
+﻿# Quickstart Guide: Club Homepage
 
 **Feature**: Club Homepage  
 **Branch**: `001-homepage`  
 **Created**: 2026-01-12
 
-This guide helps developers set up, run, and verify the Taekwon-do Ailingen club homepage implementation.
+This guide helps developers set up, run, and verify the Taekwondo Ailingen club homepage implementation.
 
 ## Prerequisites
 
@@ -81,10 +81,10 @@ Build at: 2026-01-12T10:00:00.000Z - Hash: abc123 - Time: 5000ms
 Open http://localhost:4200 in browser. You should see:
 
 ✅ **P1 - Essential Info**:
-- Club name "Taekwon-do Ailingen" in hero section
+- Club name "Taekwondo Ailingen" in hero section
 - Tagline/motto with hero image
 - Welcome section with program descriptions
-- Training schedules for Taekwon-do, Zumba, deepWORK
+- Training schedules for Taekwondo, Zumba, deepWORK
 - Footer with contact info
 
 ✅ **P2 - Navigation**:
@@ -188,7 +188,7 @@ npm run lighthouse
 
 ```json
 {
-  "name": "Taekwon-do Ailingen",
+  "name": "Taekwondo Ailingen",
   "tagline": "Your tagline here",
   "description": "Your club description...",
   ...
@@ -296,7 +296,7 @@ After saving, refresh browser - theme updates immediately.
 ```json
 {
   "HERO": {
-    "TITLE": "Taekwon-do Ailingen",
+    "TITLE": "Taekwondo Ailingen",
     "TAGLINE": "Traditionelle Kampfkunst für alle"
   },
   "NAV": {
@@ -314,7 +314,7 @@ After saving, refresh browser - theme updates immediately.
 ```json
 {
   "HERO": {
-    "TITLE": "Taekwon-do Ailingen",
+    "TITLE": "Taekwondo Ailingen",
     "TAGLINE": "Traditional Martial Arts for Everyone"
   },
   "NAV": {
@@ -493,7 +493,7 @@ Use this checklist to verify complete feature implementation:
 
 - [ ] FR-001: Club name + tagline in hero with overlay ✅
 - [ ] FR-002: Welcome section with all programs (max 200 words) ✅
-- [ ] FR-003: Separate schedules for Taekwon-do, Zumba, deepWORK ✅
+- [ ] FR-003: Separate schedules for Taekwondo, Zumba, deepWORK ✅
 - [ ] FR-004: Responsive navigation (hamburger <768px, inline ≥768px) ✅
 - [ ] FR-005: Downloads section with 2 forms ✅
 - [ ] FR-006: CTA buttons (Free Trial, Contact) ✅

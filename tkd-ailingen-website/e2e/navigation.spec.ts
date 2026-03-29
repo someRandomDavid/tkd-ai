@@ -53,8 +53,8 @@ test.describe('User Story 2: Navigation and Training Schedule', () => {
     // Open hamburger menu
     await page.click('button[aria-label="Menu"]');
     
-    // Click on Taekwon-do link
-    await page.click('mat-sidenav a:has-text("Taekwon-do")');
+    // Click on Taekwondo link
+    await page.click('mat-sidenav a:has-text("Taekwondo")');
     
     // Wait for smooth scroll to complete
     await page.waitForTimeout(1000);
@@ -112,11 +112,11 @@ test.describe('User Story 2: Navigation and Training Schedule', () => {
     // Scroll to schedules section
     await page.locator('#training-section').scrollIntoViewIfNeeded();
     
-    // Verify Taekwon-do schedule
+    // Verify Taekwondo schedule
     const taekwondoSection = page.locator('#taekwondo-schedule');
     await expect(taekwondoSection).toBeVisible();
     
-    // Verify at least one Taekwon-do session card with all details
+    // Verify at least one Taekwondo session card with all details
     const taekwondoCards = taekwondoSection.locator('.session-card');
     await expect(taekwondoCards.first()).toBeVisible();
     await expect(taekwondoCards.first()).toContainText(/Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag/);
@@ -140,11 +140,11 @@ test.describe('User Story 2: Navigation and Training Schedule', () => {
   test('AC6: Navigation links jump directly to specific program sections', async ({ page }) => {
     await page.setViewportSize({ width: 1024, height: 768 });
     
-    // Click Taekwon-do navigation link
-    await page.click('.desktop-nav a:has-text("Taekwon-do")');
+    // Click Taekwondo navigation link
+    await page.click('.desktop-nav a:has-text("Taekwondo")');
     await page.waitForTimeout(1000);
     
-    // Verify Taekwon-do section is in viewport
+    // Verify Taekwondo section is in viewport
     const taekwondoSection = page.locator('#taekwondo-schedule');
     await expect(taekwondoSection).toBeInViewport();
     

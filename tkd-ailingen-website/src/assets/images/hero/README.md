@@ -1,6 +1,6 @@
 <!-- Placeholder hero image - Replace with actual club photo -->
 <!-- INSTRUCTIONS: -->
-<!-- 1. Take a professional photo of Taekwon-do training (1920x1080px minimum) -->
+<!-- 1. Take a professional photo of Taekwondo training (1920x1080px minimum) -->
 <!-- 2. Optimize with tools like Squoosh (squoosh.app): -->
 <!--    - Create hero-bg.webp (modern browsers, <150KB target) -->
 <!--    - Create hero-bg.jpg fallback (older browsers, <180KB target) -->

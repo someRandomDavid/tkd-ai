@@ -1,4 +1,4 @@
-# Theme Toggle Technical Research Findings
+﻿# Theme Toggle Technical Research Findings
 
 **Date**: 2026-01-13  
 **Context**: Angular 21 + Material 21 Application
@@ -277,7 +277,7 @@ $primary-red-light: #ef5350; // Use on dark bg: 4.5:1 ✅
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Taekwon-do Ailingen</title>
+  <title>Taekwondo Ailingen</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   

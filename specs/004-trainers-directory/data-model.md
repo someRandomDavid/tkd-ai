@@ -1,4 +1,4 @@
-# Data Model: Trainers Directory
+﻿# Data Model: Trainers Directory
 
 **Feature**: 004-trainers-directory  
 **Date**: 2026-01-13
@@ -142,7 +142,7 @@ export interface TrainersData {
       "specialRoles": ["head-instructor"],
       "email": "hans.mueller@example.com",
       "phone": "+49 123 456789",
-      "bio": "Trainiert seit 1995 Taekwon-do. Mehrfacher deutscher Meister in Formen und Kampf.",
+      "bio": "Trainiert seit 1995 Taekwondo. Mehrfacher deutscher Meister in Formen und Kampf.",
       "certifications": ["dan-5", "instructor-license"],
       "sortKey": "mueller"
     },
@@ -524,7 +524,7 @@ function getDefaultTrainersData(): TrainersData {
 {
   "trainers": {
     "title": "Unsere Trainer",
-    "subtitle": "Erfahrene Instruktoren mit Leidenschaft für Taekwon-do",
+    "subtitle": "Erfahrene Instruktoren mit Leidenschaft für Taekwondo",
     "loadMore": "Mehr laden",
     "contact": "Kontakt",
     "email": "E-Mail",
@@ -587,7 +587,7 @@ function getDefaultTrainersData(): TrainersData {
       "specialRoles": ["head-instructor"],
       "email": "hans.mueller@tkd-ailingen.de",
       "phone": "+49 7541 123456",
-      "bio": "Trainiert seit 1995 Taekwon-do. Mehrfacher deutscher Meister in Formen und Kampf. Leitet das Wettkampfteam.",
+      "bio": "Trainiert seit 1995 Taekwondo. Mehrfacher deutscher Meister in Formen und Kampf. Leitet das Wettkampfteam.",
       "certifications": ["dan-5", "instructor-license", "referee-license"],
       "sortKey": "mueller"
     },
@@ -599,7 +599,7 @@ function getDefaultTrainersData(): TrainersData {
       "programs": ["kids", "forms"],
       "specialRoles": ["forms-specialist"],
       "email": "anna.schmidt@tkd-ailingen.de",
-      "bio": "Spezialisiert auf Kindertraining und Formen. Bringt Kindern spielerisch Taekwon-do bei.",
+      "bio": "Spezialisiert auf Kindertraining und Formen. Bringt Kindern spielerisch Taekwondo bei.",
       "certifications": ["dan-3", "instructor-license"],
       "sortKey": "schmidt"
     },

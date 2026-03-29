@@ -1,11 +1,11 @@
-# Implementation Plan: Training Schedule Filter
+﻿# Implementation Plan: Training Schedule Filter
 
 **Branch**: `003-schedule-filter` | **Date**: 2026-01-13 | **Spec**: [spec.md](./spec.md)
 **Input**: Feature specification from `/specs/003-schedule-filter/spec.md`
 
 ## Summary
 
-Add multi-select filter to training schedule allowing users to filter sessions by level/age group across all three programs (Taekwon-do, Zumba, deepWORK). Filter uses OR logic (match ANY selected filter), persists to localStorage, and features collapsible mobile UI. Generates filter options dynamically from session data. Zero new dependencies - uses Angular Material checkboxes and expansion panel.
+Add multi-select filter to training schedule allowing users to filter sessions by level/age group across all three programs (Taekwondo, Zumba, deepWORK). Filter uses OR logic (match ANY selected filter), persists to localStorage, and features collapsible mobile UI. Generates filter options dynamically from session data. Zero new dependencies - uses Angular Material checkboxes and expansion panel.
 
 ## Technical Context
 
@@ -23,7 +23,7 @@ Add multi-select filter to training schedule allowing users to filter sessions b
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-Verify compliance with Taekwon-do Ailingen Website Constitution:
+Verify compliance with Taekwondo Ailingen Website Constitution:
 
 - **Mobile-First Design**: [x] Mobile breakpoints designed first (collapsible panel, ≥44px touch targets) [x] Touch targets ≥44px [x] Mobile testing planned (E2E tests on mobile viewport)
 - **Minimal Dependencies**: [x] New dependencies justified (NONE - uses existing Material checkbox/expansion panel) [x] Bundle size impact measured (0KB new dependencies) [x] Angular built-ins preferred (native array filter methods, localStorage)

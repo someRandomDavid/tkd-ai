@@ -8,7 +8,7 @@ import { TranslationService } from '@core/services/translation.service';
 
 /**
  * Schedules section component displaying all program schedules
- * Contains schedule for Taekwon-do, Zumba, and deepWORK with filtering
+ * Grouped by day of week with all programs shown together
  */
 @Component({
   selector: 'app-schedules-section',
@@ -20,6 +20,17 @@ export class SchedulesSection {
   @Input() sessions: TrainingSession[] = [];
 
   filters = signal<ScheduleFilters>({ ...DEFAULT_FILTERS });
+  
+  // Define day order for display
+  readonly dayOrder: DayOfWeek[] = [
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday'
+  ];
   
   filteredSessions = computed(() => {
     const allSessions = this.sessions;
@@ -71,15 +82,32 @@ export class SchedulesSection {
     this.filters.set(newFilters);
   }
 
-  get taekwondoSessions(): TrainingSession[] {
-    return this.filteredSessions().filter(s => s.programType === 'taekwondo');
+  // Group sessions by day of week
+  getSessionsByDay(day: DayOfWeek): TrainingSession[] {
+    return this.filteredSessions()
+      .filter(s => s.dayOfWeek === day)
+      .sort((a, b) => a.startTime.localeCompare(b.startTime));
   }
-
-  get zumbaSessions(): TrainingSession[] {
-    return this.filteredSessions().filter(s => s.programType === 'zumba');
+  
+  getDayName(day: DayOfWeek): string {
+    return this.translationService.instant(`schedule.days.${day}`);
   }
-
-  get deepworkSessions(): TrainingSession[] {
-    return this.filteredSessions().filter(s => s.programType === 'deepwork');
+  
+  getProgramDisplayName(programType: string): string {
+    const programMap: Record<string, string> = {
+      'taekwondo': 'Taekwondo',
+      'zumba': 'Zumba',
+      'deepwork': 'deepWORK'
+    };
+    return programMap[programType] || programType;
+  }
+  
+  getProgramIcon(programType: string): string {
+    const iconMap: Record<string, string> = {
+      'taekwondo': 'sports_martial_arts',
+      'zumba': 'music_note',
+      'deepwork': 'fitness_center'
+    };
+    return iconMap[programType] || 'event';
   }
 }

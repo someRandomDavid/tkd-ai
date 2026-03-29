@@ -1,11 +1,14 @@
 {
   "nav": {
-    "training": "Training",
-    "taekwondo": "Taekwon-do",
+    "training": "Trainingszeiten",
+    "taekwondo": "Taekwondo",
     "zumba": "Zumba",
     "deepwork": "deepWORK",
     "membership": "Mitgliedschaft",
     "events": "Veranstaltungen",
+    "news": "Aktuelles und Neuigkeiten",
+    "instagram": "Instagram",
+    "trainers": "Trainerteam",
     "downloads": "Downloads",
     "about": "Über uns",
     "contact": "Kontakt"
@@ -18,11 +21,11 @@
     "changed": "Theme geändert zu {{theme}}"
   },
   "hero": {
-    "clubName": "Taekwon-do Ailingen e.V.",
+    "clubName": "Taekwondo Ailingen e.V.",
     "tagline": "Traditionelle Kampfkunst für alle Altersgruppen"
   },
   "welcome": {
-    "title": "Willkommen bei Taekwon-do Ailingen e.V.",
+    "title": "Willkommen bei Taekwondo Ailingen e.V.",
     "description": "Hier kommt die Club-Beschreibung..."
   },
   "schedule": {
@@ -36,11 +39,11 @@
     "filters": {
       "programType": "Programm",
       "all": "Alle Programme",
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK",
       "search": "Suche",
-      "searchPlaceholder": "Nach Level, Trainer, Ort suchen...",
+      "searchPlaceholder": "Nach Level, Tag, Uhrzeit suchen...",
       "clearSearch": "Suche löschen",
       "clearAll": "Filter zurücksetzen",
       "sessionFound": "Trainingseinheit gefunden",
@@ -59,7 +62,7 @@
     },
     "sections": {
       "trainingTitle": "Trainingsangebot",
-      "taekwondoTitle": "Taekwon-do Trainingszeiten",
+      "taekwondoTitle": "Taekwondo Trainingszeiten",
       "zumbaTitle": "Zumba Trainingszeiten",
       "deepworkTitle": "deepWORK Trainingszeiten"
     }
@@ -98,6 +101,12 @@
     "noTrainers": "Keine Trainer verfügbar",
     "photoAlt": "Foto von {{name}}",
     "programs": "Programme",
+    "search": {
+      "placeholder": "Trainer suchen",
+      "hint": "Name, Programm, Training, Rolle...",
+      "clearSearch": "Suche löschen",
+      "tip": "Tipp: Verwenden Sie Kommas, um nach mehreren Begriffen zu suchen (UND-Verknüpfung)"
+    },
     "roles": {
       "head-instructor": "Cheftrainer",
       "instructor": "Trainer",
@@ -105,7 +114,7 @@
       "youth-protection-officer": "Jugendschutzbeauftragter"
     },
     "programTypes": {
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK"
     },
@@ -215,5 +224,12 @@
       "firstPage": "Erste Seite",
       "lastPage": "Letzte Seite"
     }
+  },
+  "instagram": {
+    "title": "Folge uns auf Instagram",
+    "description": "Bleib auf dem Laufenden mit den neuesten Fotos und Videos aus unserem Training, Events und der Community.",
+    "loading": "Instagram-Posts werden geladen...",
+    "retry": "Erneut versuchen",
+    "noPosts": "Keine Posts gefunden"
   }
 }

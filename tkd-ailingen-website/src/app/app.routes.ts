@@ -10,12 +10,12 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
-    title: 'Taekwon-do Ailingen e.V. - Tradition, Disziplin, Stärke',
+    title: 'Taekwondo Ailingen e.V. - Tradition, Disziplin, Stärke',
   },
   {
     path: 'impressum',
     component: Imprint,
-    title: 'Impressum - Taekwon-do Ailingen e.V.',
+    title: 'Impressum - Taekwondo Ailingen e.V.',
   },
   {
     path: 'imprint',
@@ -25,7 +25,7 @@ export const routes: Routes = [
   {
     path: 'haftungsausschluss',
     component: Disclaimer,
-    title: 'Haftungsausschluss - Taekwon-do Ailingen e.V.',
+    title: 'Haftungsausschluss - Taekwondo Ailingen e.V.',
   },
   {
     path: 'disclaimer',
@@ -35,7 +35,7 @@ export const routes: Routes = [
   {
     path: 'datenschutz',
     component: PrivacyPolicy,
-    title: 'Datenschutzerklärung - Taekwon-do Ailingen e.V.',
+    title: 'Datenschutzerklärung - Taekwondo Ailingen e.V.',
   },
   {
     path: 'privacy',
@@ -45,7 +45,7 @@ export const routes: Routes = [
   {
     path: 'jugendschutz',
     component: YouthProtection,
-    title: 'Jugendschutz - Taekwon-do Ailingen e.V.',
+    title: 'Jugendschutz - Taekwondo Ailingen e.V.',
   },
   {
     path: 'youth-protection',
@@ -55,7 +55,7 @@ export const routes: Routes = [
   {
     path: 'news/:id',
     component: NewsDetail,
-    title: 'News - Taekwon-do Ailingen e.V.',
+    title: 'News - Taekwondo Ailingen e.V.',
   },
   {
     path: '**',

@@ -1,4 +1,4 @@
-# Quickstart Guide: Trainers Directory
+﻿# Quickstart Guide: Trainers Directory
 
 **Feature**: 004-trainers-directory  
 **Date**: 2026-01-13
@@ -38,7 +38,7 @@ Create `src/assets/data/trainers.json`:
       "specialRoles": ["head-instructor"],
       "email": "hans.mueller@tkd-ailingen.de",
       "phone": "+49 7541 123456",
-      "bio": "Trainiert seit 1995 Taekwon-do. Mehrfacher deutscher Meister in Formen und Kampf.",
+      "bio": "Trainiert seit 1995 Taekwondo. Mehrfacher deutscher Meister in Formen und Kampf.",
       "certifications": ["dan-5", "instructor-license"],
       "sortKey": "mueller"
     }
@@ -785,7 +785,7 @@ test.describe('Trainers Directory', () => {
 {
   "trainers": {
     "title": "Unsere Trainer",
-    "subtitle": "Erfahrene Instruktoren mit Leidenschaft für Taekwon-do",
+    "subtitle": "Erfahrene Instruktoren mit Leidenschaft für Taekwondo",
     "noData": "Keine Trainerdaten verfügbar",
     "loadMore": "Mehr laden",
     "contact": "Kontakt",

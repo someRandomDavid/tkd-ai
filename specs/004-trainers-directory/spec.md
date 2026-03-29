@@ -1,4 +1,4 @@
-# Feature Specification: Trainers Directory
+﻿# Feature Specification: Trainers Directory
 
 **Feature Branch**: `004-trainers-directory`  
 **Created**: 2026-01-13  
@@ -7,7 +7,7 @@
 
 ## Constitution Compliance
 
-*(Reference Taekwon-do Ailingen Website Constitution principles)*
+*(Reference Taekwondo Ailingen Website Constitution principles)*
 
 - **Mobile-First Design**: Trainers displayed in single-column card layout on mobile (320px+), expanding to 2-column on tablet (768px+) and 3-4 column grid on desktop (1024px+). Touch-optimized with readable text hierarchy.
 - **Minimal Dependencies**: Zero new dependencies required. Uses existing Angular Material card components and ngx-translate i18n structure. All trainer data managed through static JSON file.
@@ -20,7 +20,7 @@
 
 ### User Story 1 - View Complete Trainer Directory (Priority: P1)
 
-A prospective student or parent wants to know who teaches at Taekwon-do Ailingen to assess instructor qualifications and find instructors for specific programs (Taekwon-do, Zumba, deepWORK).
+A prospective student or parent wants to know who teaches at Taekwondo Ailingen to assess instructor qualifications and find instructors for specific programs (Taekwondo, Zumba, deepWORK).
 
 **Why this priority**: Primary use case - builds trust and transparency. Prospective members want to know who will be teaching them or their children before joining.
 
@@ -29,8 +29,8 @@ A prospective student or parent wants to know who teaches at Taekwon-do Ailingen
 **Acceptance Scenarios**:
 
 1. **Given** a user navigates to the trainers section, **When** the page loads, **Then** they see a grid of trainer cards organized alphabetically by last name
-2. **Given** a user views a trainer card on mobile, **When** reading the card, **Then** they see the trainer's photo, full name, programs they teach (Taekwon-do/Zumba/deepWORK), and any special roles (e.g., Youth Protection Officer)
-3. **Given** a user wants to find trainers for a specific program, **When** scanning the directory, **Then** they can identify which trainers teach Taekwon-do, Zumba, or deepWORK through clear program labels
+2. **Given** a user views a trainer card on mobile, **When** reading the card, **Then** they see the trainer's photo, full name, programs they teach (Taekwondo/Zumba/deepWORK), and any special roles (e.g., Youth Protection Officer)
+3. **Given** a user wants to find trainers for a specific program, **When** scanning the directory, **Then** they can identify which trainers teach Taekwondo, Zumba, or deepWORK through clear program labels
 4. **Given** a user is on desktop, **When** viewing the directory, **Then** trainers are displayed in a multi-column grid (3-4 columns) for efficient scanning
 5. **Given** a user wants to identify special roles, **When** viewing trainer cards, **Then** special roles like "Youth Protection Officer" are visually distinguished from regular programs
 
@@ -87,7 +87,7 @@ Users with assistive technologies (screen readers, keyboard navigation) or slow 
 ### Functional Requirements
 
 - **FR-001**: Trainers directory MUST display approximately 20 trainer profiles in alphabetically sorted order by last name
-- **FR-002**: Each trainer card MUST display: profile photo, full name, list of programs taught (Taekwon-do/Zumba/deepWORK), and any special roles (e.g., Youth Protection Officer)
+- **FR-002**: Each trainer card MUST display: profile photo, full name, list of programs taught (Taekwondo/Zumba/deepWORK), and any special roles (e.g., Youth Protection Officer)
 - **FR-003**: Trainer cards MUST be organized in responsive grid: 1 column on mobile (<768px), 2 columns on tablet (768px-1023px), 3-4 columns on desktop (≥1024px)
 - **FR-004**: Program labels MUST be visually distinct (e.g., badges or tags) to quickly identify which trainers teach which programs
 - **FR-005**: Special roles (Youth Protection Officer, etc.) MUST be visually distinguished from program labels with different styling
@@ -144,7 +144,7 @@ See data-model.md for complete TypeScript interfaces and validation rules.
 
 ### Measurable Outcomes
 
-- **SC-001**: Users can identify all trainers for a specific program (e.g., Taekwon-do) within 10 seconds
+- **SC-001**: Users can identify all trainers for a specific program (e.g., Taekwondo) within 10 seconds
 - **SC-002**: Trainer directory section loads and displays text/layout within 1 second on 3G connection (excluding images)
 - **SC-003**: All trainer photos lazy-load as user scrolls, reducing initial page load by at least 80% (load 4-6 visible trainers first)
 - **SC-004**: 100% of trainer cards are keyboard accessible with visible focus indicators

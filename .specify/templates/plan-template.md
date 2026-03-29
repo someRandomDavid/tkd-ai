@@ -1,4 +1,4 @@
-# Implementation Plan: [FEATURE]
+﻿# Implementation Plan: [FEATURE]
 
 **Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
@@ -31,7 +31,7 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-Verify compliance with Taekwon-do Ailingen Website Constitution:
+Verify compliance with Taekwondo Ailingen Website Constitution:
 
 - **Mobile-First Design**: [ ] Mobile breakpoints designed first? [ ] Touch targets ≥44px? [ ] Mobile testing planned?
 - **Minimal Dependencies**: [ ] New dependencies justified? [ ] Bundle size impact measured? [ ] Angular built-ins preferred?

@@ -1,4 +1,4 @@
-# Feature Specification: Dark/Light Theme Toggle
+﻿# Feature Specification: Dark/Light Theme Toggle
 
 **Feature Branch**: `002-theme-toggle`  
 **Created**: 2026-01-13  
@@ -7,7 +7,7 @@
 
 ## Constitution Compliance
 
-*(Reference Taekwon-do Ailingen Website Constitution principles)*
+*(Reference Taekwondo Ailingen Website Constitution principles)*
 
 - **Mobile-First Design**: Theme toggle accessible on mobile via icon button in header/footer. Touch target ≥44px. Visual feedback on tap. Both themes optimized for mobile viewing with appropriate contrast for outdoor/bright light conditions.
 - **Minimal Dependencies**: No new dependencies required. Uses Angular Material theming system already in place. localStorage is native browser API (no library needed).

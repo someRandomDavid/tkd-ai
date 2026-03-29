@@ -1,4 +1,4 @@
-# Data Model: Club Homepage
+﻿# Data Model: Club Homepage
 
 **Feature**: Club Homepage  
 **Branch**: `001-homepage`  
@@ -18,7 +18,7 @@ Represents core club information displayed in hero section and throughout the si
 
 ```typescript
 interface ClubInfo {
-  name: string;                    // Club name: "Taekwon-do Ailingen"
+  name: string;                    // Club name: "Taekwondo Ailingen"
   tagline: string;                 // Hero section tagline/motto
   description: string;             // Welcome section text (max 200 words)
   foundingYear: number;            // e.g., 1995
@@ -28,7 +28,7 @@ interface ClubInfo {
 }
 
 interface ProgramInfo {
-  name: string;                    // "Taekwon-do" | "Zumba" | "deepWORK"
+  name: string;                    // "Taekwondo" | "Zumba" | "deepWORK"
   description: string;             // Brief program description
   icon?: string;                   // Optional icon name/path
 }
@@ -48,13 +48,13 @@ interface ContactInfo {
 **Example**:
 ```json
 {
-  "name": "Taekwon-do Ailingen",
+  "name": "Taekwondo Ailingen",
   "tagline": "Traditionelle Kampfkunst für alle Altersgruppen",
-  "description": "Herzlich willkommen bei Taekwon-do Ailingen...",
+  "description": "Herzlich willkommen bei Taekwondo Ailingen...",
   "foundingYear": 1995,
   "programs": [
     {
-      "name": "Taekwon-do",
+      "name": "Taekwondo",
       "description": "Traditionelle koreanische Kampfkunst",
       "icon": "martial-arts"
     },
@@ -388,7 +388,7 @@ interface Navigation {
     },
     {
       "id": "taekwondo",
-      "label": "Taekwon-do",
+      "label": "Taekwondo",
       "routeOrAnchor": "#taekwondo-schedule",
       "order": 2
     },

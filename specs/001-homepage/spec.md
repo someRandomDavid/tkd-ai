@@ -1,9 +1,9 @@
-# Feature Specification: Club Homepage
+﻿# Feature Specification: Club Homepage
 
 **Feature Branch**: `001-homepage`  
 **Created**: 2026-01-09  
 **Status**: Draft  
-**Input**: User description: "build a perfectly designed homepage for my taekwon-do Club 'Taekwon-do Ailingen'"
+**Input**: User description: "build a perfectly designed homepage for my Taekwondo Club 'Taekwondo Ailingen'"
 
 ## Clarifications
 
@@ -15,7 +15,7 @@
 
 ## Constitution Compliance
 
-*(Reference Taekwon-do Ailingen Website Constitution principles)*
+*(Reference Taekwondo Ailingen Website Constitution principles)*
 
 - **Mobile-First Design**: Homepage designed with mobile viewport (320px+) as primary experience. Hero section, navigation, and content sections optimized for touch interaction and vertical scrolling.
 - **Minimal Dependencies**: Two new dependencies justified: Angular Material (~150KB, provides WCAG AA-compliant components and mobile-first design patterns) and ngx-translate (~15KB, runtime i18n for German/English). Total bundle within 200KB budget. See [plan.md](./plan.md) for detailed justification.
@@ -28,7 +28,7 @@
 
 ### User Story 1 - View Essential Club Information (Priority: P1)
 
-A prospective student or parent visits the homepage on their smartphone to learn what Taekwon-do Ailingen offers (Taekwon-do, Zumba, deepWORK) and where/when training occurs.
+A prospective student or parent visits the homepage on their smartphone to learn what Taekwondo Ailingen offers (Taekwondo, Zumba, deepWORK) and where/when training occurs.
 
 **Why this priority**: This is the primary use case - attracting new members. Without this, the website fails its core purpose.
 
@@ -36,20 +36,20 @@ A prospective student or parent visits the homepage on their smartphone to learn
 
 **Acceptance Scenarios**:
 
-1. **Given** a user visits the homepage URL on mobile, **When** the page loads, **Then** club name "Taekwon-do Ailingen" is prominently displayed in the hero section
-2. **Given** a user scrolls past the hero, **When** they view the welcome section, **Then** they see a brief description of what the club offers including Taekwon-do, Zumba, and deepWORK programs
-3. **Given** a user wants to find training times, **When** they scroll down, **Then** they see schedules for Taekwon-do, Zumba, and deepWORK with days and times clearly separated
+1. **Given** a user visits the homepage URL on mobile, **When** the page loads, **Then** club name "Taekwondo Ailingen" is prominently displayed in the hero section
+2. **Given** a user scrolls past the hero, **When** they view the welcome section, **Then** they see a brief description of what the club offers including Taekwondo, Zumba, and deepWORK programs
+3. **Given** a user wants to find training times, **When** they scroll down, **Then** they see schedules for Taekwondo, Zumba, and deepWORK with days and times clearly separated
 4. **Given** a user wants to know location, **When** they view the footer, **Then** they see the club address and contact information
 
 ---
 
 ### User Story 2 - Navigate to Key Sections and Check Training Schedule (Priority: P2)
 
-An existing member or prospective student wants to quickly find specific training times for Taekwon-do, Zumba, or deepWORK, or access other sections (membership, events, downloads, contact) without scrolling through the entire page.
+An existing member or prospective student wants to quickly find specific training times for Taekwondo, Zumba, or deepWORK, or access other sections (membership, events, downloads, contact) without scrolling through the entire page.
 
 **Why this priority**: Essential for existing members who regularly check training schedules and for users wanting direct access to specific programs. Return visitors need fast navigation to frequently accessed information.
 
-**Independent Test**: Can be tested by tapping navigation menu items and verifying immediate navigation to correct sections or pages, and by viewing the training schedule to confirm all programs (Taekwon-do, Zumba, deepWORK) are clearly displayed with times and locations.
+**Independent Test**: Can be tested by tapping navigation menu items and verifying immediate navigation to correct sections or pages, and by viewing the training schedule to confirm all programs (Taekwondo, Zumba, deepWORK) are clearly displayed with times and locations.
 
 **Acceptance Scenarios**:
 
@@ -57,7 +57,7 @@ An existing member or prospective student wants to quickly find specific trainin
 2. **Given** a user has the menu open, **When** they tap a menu item, **Then** they navigate to that section or page
 3. **Given** a user is on desktop, **When** they view the header, **Then** navigation links are visible inline without a menu icon
 4. **Given** a user taps a navigation link, **When** the navigation completes, **Then** the menu closes automatically (mobile)
-5. **Given** an existing member wants to check training times, **When** they view the training schedule section, **Then** they see separate schedules for Taekwon-do, Zumba, and deepWORK with day, time, and location for each
+5. **Given** an existing member wants to check training times, **When** they view the training schedule section, **Then** they see separate schedules for Taekwondo, Zumba, and deepWORK with day, time, and location for each
 6. **Given** a user is interested in a specific program, **When** they tap on "Training" or program name in navigation, **Then** they jump directly to that program's schedule section
 
 ---
@@ -110,15 +110,15 @@ A prospective member is interested and wants to take the next step: attend a tri
 
 ### Functional Requirements
 
-- **FR-001**: Homepage MUST display club name "Taekwon-do Ailingen" and tagline/motto prominently in hero section with hero image and subtle overlay for text readability
-- **FR-002**: Homepage MUST include a welcome section explaining what Taekwon-do is and what the club offers, including mention of additional programs (Zumba, deepWORK) (max 200 words counted by whitespace separation, or approximately 1200 characters for German text, to ensure mobile readability)
-- **FR-003**: Homepage MUST display separate training schedule sections for each program: Taekwon-do, Zumba, and deepWORK, with all sessions grouped by program showing day, time, location, and level/age group indicators for each session
+- **FR-001**: Homepage MUST display club name "Taekwondo Ailingen" and tagline/motto prominently in hero section with hero image and subtle overlay for text readability
+- **FR-002**: Homepage MUST include a welcome section explaining what Taekwondo is and what the club offers, including mention of additional programs (Zumba, deepWORK) (max 200 words counted by whitespace separation, or approximately 1200 characters for German text, to ensure mobile readability)
+- **FR-003**: Homepage MUST display separate training schedule sections for each program: Taekwondo, Zumba, and deepWORK, with all sessions grouped by program showing day, time, location, and level/age group indicators for each session
 - **FR-004**: Homepage MUST include responsive navigation that adapts to screen size (hamburger menu <768px, inline navigation ≥768px) with links to: Training, Zumba, deepWORK, Membership, Events, Downloads, About, Contact
 - **FR-005**: Homepage MUST include a Downloads section with accessible registration forms (member registration, International Bodensee Cup registration)
 - **FR-006**: Homepage MUST include call-to-action buttons for "Free Trial Class" and "Contact Us"
 - **FR-007**: Each download link MUST display file name, description, and file type/size
 - **FR-008**: Downloads MUST be accessible as PDF files that can be viewed or saved
-- **FR-009**: Homepage MUST display hero image or visual representing Taekwon-do/martial arts
+- **FR-009**: Homepage MUST display hero image or visual representing Taekwondo/martial arts
 - **FR-010**: Homepage MUST include footer with club address, contact phone, email, and social media links (Facebook and Instagram)
 - **FR-011**: All interactive elements MUST have minimum 44x44px touch targets
 - **FR-012**: Homepage MUST use semantic HTML5 structure (header, main, nav, section, footer)
@@ -158,7 +158,7 @@ See [data-model.md](./data-model.md) for complete TypeScript interfaces, JSON ex
 ## Assumptions
 
 - Club branding (colors, logo) already exists or will be provided separately
-- Training schedules for all programs (Taekwon-do, Zumba, deepWORK) are relatively stable (updates weekly/monthly, not real-time)
+- Training schedules for all programs (Taekwondo, Zumba, deepWORK) are relatively stable (updates weekly/monthly, not real-time)
 - Content is in German language (primary), with i18n structure for future English support
 - Hero image will be provided by club (high-quality photo of members training)
 - Club has existing social media accounts (Facebook and Instagram) to link to
@@ -166,7 +166,7 @@ See [data-model.md](./data-model.md) for complete TypeScript interfaces, JSON ex
 - No user authentication required for homepage viewing
 - Registration forms (member registration, International Bodensee Cup) already exist as PDF files or will be provided
 - Downloads are static PDF files hosted in assets, not generated dynamically
-- International Bodensee Cup is an annual event organized by Taekwon-do Ailingen
+- International Bodensee Cup is an annual event organized by Taekwondo Ailingen
 - Analytics/tracking handled separately (not in scope for this feature)
 
 ## Out of Scope
@@ -187,7 +187,7 @@ See [data-model.md](./data-model.md) for complete TypeScript interfaces, JSON ex
 - Angular project initialization (completed or part of setup)
 - Branding guidelines and assets (logo, colors, fonts)
 - Hero image and any additional imagery
-- Training schedule data for all programs (Taekwon-do, Zumba, deepWORK)
+- Training schedule data for all programs (Taekwondo, Zumba, deepWORK)
 - Registration form PDFs (member registration, International Bodensee Cup registration)
 - Club contact information
 - Social media account URLs (Facebook and Instagram)

@@ -8,37 +8,45 @@
     <!-- Filter Component -->
     <app-schedule-filter (filtersChange)="onFiltersChange($event)" />
 
-    <!-- Taekwon-do Schedule -->
-    @if (taekwondoSessions.length > 0) {
-      <div id="taekwondo-schedule" class="schedule-block">
-        <app-program-schedule
-          [sessions]="taekwondoSessions"
-          programType="taekwondo"
-          programName="Taekwon-do"
-        />
-      </div>
-    }
+    <!-- Schedules grouped by Day of Week -->
+    @for (day of dayOrder; track day) {
+      @let daySessions = getSessionsByDay(day);
+      @if (daySessions.length > 0) {
+        <div class="day-schedule-block" [id]="day + '-schedule'">
+          <h3 class="day-title">
+            <mat-icon>event</mat-icon>
+            {{ getDayName(day) }}
+          </h3>
+          
+          <div class="sessions-grid">
+            @for (session of daySessions; track session.id) {
+              <mat-card class="session-card" [attr.data-program]="session.programType">
+                <mat-card-content>
+                  <!-- Program Badge -->
+                  <div class="program-badge" [attr.data-program]="session.programType">
+                    <mat-icon>{{ getProgramIcon(session.programType) }}</mat-icon>
+                    <span>{{ getProgramDisplayName(session.programType) }}</span>
+                  </div>
+                  
+                  <!-- Time -->
+                  <div class="session-row">
+                    <mat-icon class="session-icon">schedule</mat-icon>
+                    <div class="session-details">
+                      <span class="session-value">{{ session.startTime }} - {{ session.endTime }}</span>
+                    </div>
+                  </div>
 
-    <!-- Zumba Schedule -->
-    @if (zumbaSessions.length > 0) {
-      <div id="zumba-schedule" class="schedule-block">
-        <app-program-schedule
-          [sessions]="zumbaSessions"
-          programType="zumba"
-          programName="Zumba"
-        />
-      </div>
-    }
-
-    <!-- deepWORK Schedule -->
-    @if (deepworkSessions.length > 0) {
-      <div id="deepwork-schedule" class="schedule-block">
-        <app-program-schedule
-          [sessions]="deepworkSessions"
-          programType="deepwork"
-          programName="deepWORK"
-        />
-      </div>
+                  <!-- Level/Age Group -->
+                  <div class="session-level">
+                    <mat-icon>info</mat-icon>
+                    <span>{{ session.levelAgeGroup }}</span>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            }
+          </div>
+        </div>
+      }
     }
 
     <!-- No Results Message -->

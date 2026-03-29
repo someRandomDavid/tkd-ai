@@ -1,4 +1,4 @@
-# Implementation Plan: Trainers Directory
+﻿# Implementation Plan: Trainers Directory
 
 **Branch**: `004-trainers-directory` | **Date**: 2026-01-13 | **Spec**: [spec.md](./spec.md)
 **Input**: Feature specification from `/specs/004-trainers-directory/spec.md`
@@ -23,7 +23,7 @@ Display directory of ~20 trainers with profile photos, names, programs taught, a
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-Verify compliance with Taekwon-do Ailingen Website Constitution:
+Verify compliance with Taekwondo Ailingen Website Constitution:
 
 - **Mobile-First Design**: [x] Mobile breakpoints designed first (single-column cards, responsive grid) [x] Touch targets ≥44px (N/A - cards are view-only, no interactions) [x] Mobile testing planned (E2E tests on mobile viewport)
 - **Minimal Dependencies**: [x] New dependencies justified (NONE - uses existing Material card, ngx-translate, native lazy loading) [x] Bundle size impact measured (0KB new dependencies) [x] Angular built-ins preferred (native loading="lazy", Array.sort)

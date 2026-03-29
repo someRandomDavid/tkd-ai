@@ -1,4 +1,4 @@
-# Feature Specification: [FEATURE NAME]
+﻿# Feature Specification: [FEATURE NAME]
 
 **Feature Branch**: `[###-feature-name]`  
 **Created**: [DATE]  
@@ -7,7 +7,7 @@
 
 ## Constitution Compliance
 
-*(Reference Taekwon-do Ailingen Website Constitution principles)*
+*(Reference Taekwondo Ailingen Website Constitution principles)*
 
 - **Mobile-First Design**: [Describe how this feature prioritizes mobile experience]
 - **Minimal Dependencies**: [List any new dependencies and justification, or state "No new dependencies"]

@@ -2,9 +2,9 @@
   "items": [
     {
       "id": "training",
-      "label": "Training",
+      "label": "nav.training",
       "routeOrAnchor": "#training-section",
-      "icon": "fitness_center",
+      "icon": "schedule",
       "order": 1
     },
     {

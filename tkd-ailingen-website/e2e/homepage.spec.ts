@@ -17,7 +17,7 @@ test.describe('Homepage - User Story 1 (MVP)', () => {
   });
 
   /**
-   * T045: Test AC1 - Club name "Taekwon-do Ailingen" displayed in hero on mobile load
+   * T045: Test AC1 - Club name "Taekwondo Ailingen" displayed in hero on mobile load
    */
   test('should display club name in hero section on mobile', async ({ page }) => {
     // Verify hero section is visible
@@ -25,7 +25,7 @@ test.describe('Homepage - User Story 1 (MVP)', () => {
     await expect(heroSection).toBeVisible();
 
     // Verify club name is displayed
-    await expectHeading(page, /Taekwon-do Ailingen/i, 1);
+    await expectHeading(page, /Taekwondo Ailingen/i, 1);
 
     // Verify tagline is visible
     await expectVisibleText(page, /Tradition|Disziplin|Stärke/i);
@@ -46,7 +46,7 @@ test.describe('Homepage - User Story 1 (MVP)', () => {
     await expectHeading(page, /Willkommen/i);
 
     // Verify all 3 programs are displayed
-    await expectVisibleText(page, /Taekwon-do/i);
+    await expectVisibleText(page, /Taekwondo/i);
     await expectVisibleText(page, /Zumba/i);
     await expectVisibleText(page, /deepWORK/i);
 

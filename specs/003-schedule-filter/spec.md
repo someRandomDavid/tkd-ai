@@ -1,13 +1,13 @@
-# Feature Specification: Training Schedule Filter
+﻿# Feature Specification: Training Schedule Filter
 
 **Feature Branch**: `003-schedule-filter`  
 **Created**: 2026-01-13  
 **Status**: Draft  
-**Input**: User description: "Add a multi-select filter to the training schedule section allowing users to filter sessions by level and age group (e.g., 'Bambini Anfänger 4-6', 'Kinder Fortgeschrittene 7-10'). Users can select multiple filters simultaneously to view only relevant sessions. Filter selections are saved to localStorage and persist across visits. The filter should work across all three programs (Taekwon-do, Zumba, deepWORK)."
+**Input**: User description: "Add a multi-select filter to the training schedule section allowing users to filter sessions by level and age group (e.g., 'Bambini Anfänger 4-6', 'Kinder Fortgeschrittene 7-10'). Users can select multiple filters simultaneously to view only relevant sessions. Filter selections are saved to localStorage and persist across visits. The filter should work across all three programs (Taekwondo, Zumba, deepWORK)."
 
 ## Constitution Compliance
 
-*(Reference Taekwon-do Ailingen Website Constitution principles)*
+*(Reference Taekwondo Ailingen Website Constitution principles)*
 
 - **Mobile-First Design**: Filter UI optimized for mobile with collapsible filter panel, large touch targets (≥44px) for checkboxes, clear visual feedback. Filter toggles via accordion/expansion panel to save vertical space. Filtered results display immediately below filter controls.
 - **Minimal Dependencies**: No new dependencies required. Uses Angular Material's checkbox and expansion panel components (already installed). localStorage is native browser API.
@@ -90,7 +90,7 @@ A mobile user wants to easily access and manipulate filters without the UI takin
 - **FR-001**: System MUST provide multi-select checkboxes to filter training sessions by level/age group
 - **FR-002**: System MUST dynamically generate filter options from available level/age values in training session data
 - **FR-003**: System MUST apply OR logic when multiple filters are selected (show sessions matching ANY selected filter)
-- **FR-004**: System MUST filter sessions across all three programs (Taekwon-do, Zumba, deepWORK) simultaneously
+- **FR-004**: System MUST filter sessions across all three programs (Taekwondo, Zumba, deepWORK) simultaneously
 - **FR-005**: System MUST display visible indicator when filters are active (e.g., "2 filters active, showing 5 of 12 sessions")
 - **FR-006**: System MUST provide "Clear all filters" button to reset all selections
 - **FR-007**: System MUST save filter selections to localStorage and persist across browser sessions
@@ -115,7 +115,7 @@ A mobile user wants to easily access and manipulate filters without the UI takin
 - **SC-001**: Users can apply a filter and see filtered results in under 3 seconds (select + view)
 - **SC-002**: Filter state persists across 100% of page reloads and browser sessions
 - **SC-003**: Filter response time is under 100ms from checkbox toggle to UI update (perceivable as instant)
-- **SC-004**: Filter works correctly across all three programs (Taekwon-do, Zumba, deepWORK) with 100% accuracy
+- **SC-004**: Filter works correctly across all three programs (Taekwondo, Zumba, deepWORK) with 100% accuracy
 - **SC-005**: All filter controls are keyboard accessible with 100% success rate (Tab + Space)
 - **SC-006**: Filter panel collapses/expands smoothly on mobile with <300ms transition
 - **SC-007**: Touch targets meet 44x44px minimum on mobile (100% compliance)

@@ -1,4 +1,4 @@
-# Research: Dark/Light Theme Toggle
+﻿# Research: Dark/Light Theme Toggle
 
 **Feature**: 002-theme-toggle  
 **Date**: 2026-01-13  
@@ -227,7 +227,7 @@ test('theme contrast compliance', async ({ page }) => {
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Taekwon-do Ailingen</title>
+  <title>Taekwondo Ailingen</title>
   <base href="/">
   
   <!-- CRITICAL: Load theme before anything else -->

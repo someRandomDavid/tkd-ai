@@ -1,10 +1,10 @@
-# Taekwon-do Ailingen Website (TKD-AI)
+# Taekwondo Ailingen Website (TKD-AI)
 
-Official website for Taekwon-do Ailingen martial arts club. A static, mobile-first Angular application designed for easy maintenance and optimal performance.
+Official website for Taekwondo Ailingen martial arts club. A static, mobile-first Angular application designed for easy maintenance and optimal performance.
 
 ## Project Overview
 
-Modern, accessible website for the Taekwon-do Ailingen club, built with Angular to showcase club information, training schedules, events, and facilitate member communication.
+Modern, accessible website for the Taekwondo Ailingen club, built with Angular to showcase club information, training schedules, events, and facilitate member communication.
 
 ### Core Values
 
@@ -101,5 +101,5 @@ All development must adhere to these [core principles](.specify/memory/constitut
 
 ## Contact
 
-Taekwon-do Ailingen  
+Taekwondo Ailingen  
 [Club contact information]

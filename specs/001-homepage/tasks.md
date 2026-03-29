@@ -1,4 +1,4 @@
-# Tasks: Club Homepage
+﻿# Tasks: Club Homepage
 
 **Feature Branch**: `001-homepage`  
 **Date**: 2026-01-12  
@@ -68,7 +68,7 @@
 
 ## Phase 3: User Story 1 - View Essential Club Information (Priority: P1) 🎯 MVP
 
-**Goal**: Prospective students can view club name, programs offered (Taekwon-do, Zumba, deepWORK), and essential information on mobile within 3 seconds
+**Goal**: Prospective students can view club name, programs offered (Taekwondo, Zumba, deepWORK), and essential information on mobile within 3 seconds
 
 **Independent Test**: Load homepage on mobile (320px viewport) and verify club name, welcome message with all 3 programs, and contact info are visible and readable
 
@@ -92,7 +92,7 @@
 - [X] T032 [P] Add @Input() contact: ContactInfo and @Input() socialMedia: SocialMediaLink[] to Footer component
 - [X] T033 Create HomePage container with `ng generate component pages/home`
 - [X] T034 Create welcome section component with `ng generate component pages/home/sections/welcome-section`
-- [X] T035 Implement welcome section template showing club description and 3 programs (Taekwon-do, Zumba, deepWORK)
+- [X] T035 Implement welcome section template showing club description and 3 programs (Taekwondo, Zumba, deepWORK)
 - [X] T036 Style welcome section for mobile-first design with max 200 words content
 - [X] T037 Create club-info.json in src/assets/data/ with club name, tagline, description, programs, and contact info per data-model.md
 - [X] T038 Load club-info.json in ContentService and provide getClubInfo() method
@@ -105,7 +105,7 @@
 ### E2E Tests for User Story 1
 
 - [X] T044 Create homepage.e2e-spec.ts in e2e/src/ for User Story 1 acceptance scenarios
-- [X] T045 Test AC1: Club name "Taekwon-do Ailingen" displayed in hero on mobile load
+- [X] T045 Test AC1: Club name "Taekwondo Ailingen" displayed in hero on mobile load
 - [X] T046 Test AC2: Welcome section shows description including all 3 programs after scrolling
 - [X] T047 Test AC3: Footer displays club address and contact info
 - [X] T048 Test accessibility: Run axe-core on homepage, verify 0 violations
@@ -123,7 +123,7 @@
 
 ## Phase 4: User Story 2 - Navigate to Key Sections and Check Training Schedule (Priority: P2)
 
-**Goal**: Existing members can quickly navigate to specific program schedules (Taekwon-do, Zumba, deepWORK) and check training times without scrolling
+**Goal**: Existing members can quickly navigate to specific program schedules (Taekwondo, Zumba, deepWORK) and check training times without scrolling
 
 **Independent Test**: Tap navigation menu, verify all program links work, view schedule section to confirm all 3 programs display with times/locations
 
@@ -148,7 +148,7 @@
 - [X] T058 [P] [US2] Style ProgramSchedule for mobile-first responsive layout with level/age indicators
 - [X] T059 [P] [US2] Add @Input() sessions: TrainingSession[] and @Input() programType: string to ProgramSchedule
 - [X] T060 [US2] Create schedules section component with `ng generate component pages/home/sections/schedules-section`
-- [X] T061 [US2] Implement schedules section template with 3 ProgramSchedule instances (Taekwon-do, Zumba, deepWORK)
+- [X] T061 [US2] Implement schedules section template with 3 ProgramSchedule instances (Taekwondo, Zumba, deepWORK)
 - [X] T062 [US2] Add section anchors for navigation (#training-section, #taekwondo-schedule, #zumba-schedule, #deepwork-schedule)
 - [X] T063 [P] [US2] Create training-sessions.json in src/assets/data/ with sample schedules for all 3 programs per data-model.md
 - [X] T064 [P] [US2] Create navigation.json in src/assets/data/ with menu items (Training, Zumba, deepWORK, Membership, Events, Downloads, About, Contact) per data-model.md

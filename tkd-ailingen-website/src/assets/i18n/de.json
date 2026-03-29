@@ -1,7 +1,7 @@
 {
   "nav": {
-    "training": "Training",
-    "taekwondo": "Taekwon-do",
+    "training": "Trainingszeiten",
+    "taekwondo": "Taekwondo",
     "zumba": "Zumba",
     "deepwork": "deepWORK",
     "membership": "Mitgliedschaft",
@@ -21,11 +21,11 @@
     "changed": "Theme geändert zu {{theme}}"
   },
   "hero": {
-    "clubName": "Taekwon-do Ailingen e.V.",
+    "clubName": "Taekwondo Ailingen e.V.",
     "tagline": "Traditionelle Kampfkunst für alle Altersgruppen"
   },
   "welcome": {
-    "title": "Willkommen bei Taekwon-do Ailingen e.V.",
+    "title": "Willkommen bei Taekwondo Ailingen e.V.",
     "description": "Hier kommt die Club-Beschreibung..."
   },
   "schedule": {
@@ -39,7 +39,7 @@
     "filters": {
       "programType": "Programm",
       "all": "Alle Programme",
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK",
       "search": "Suche",
@@ -62,7 +62,7 @@
     },
     "sections": {
       "trainingTitle": "Trainingsangebot",
-      "taekwondoTitle": "Taekwon-do Trainingszeiten",
+      "taekwondoTitle": "Taekwondo Trainingszeiten",
       "zumbaTitle": "Zumba Trainingszeiten",
       "deepworkTitle": "deepWORK Trainingszeiten"
     }
@@ -114,7 +114,7 @@
       "youth-protection-officer": "Jugendschutzbeauftragter"
     },
     "programTypes": {
-      "taekwondo": "Taekwon-do",
+      "taekwondo": "Taekwondo",
       "zumba": "Zumba",
       "deepwork": "deepWORK"
     },

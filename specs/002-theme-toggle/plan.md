@@ -1,4 +1,4 @@
-# Implementation Plan: Dark/Light Theme Toggle
+﻿# Implementation Plan: Dark/Light Theme Toggle
 
 **Branch**: `002-theme-toggle` | **Date**: 2026-01-13 | **Spec**: [spec.md](./spec.md)
 **Input**: Feature specification from `/specs/002-theme-toggle/spec.md`
@@ -23,7 +23,7 @@ Add dark/light theme toggle to website with dark mode as default. Users can swit
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-Verify compliance with Taekwon-do Ailingen Website Constitution:
+Verify compliance with Taekwondo Ailingen Website Constitution:
 
 - **Mobile-First Design**: [x] Mobile breakpoints designed first (toggle in header, ≥44px touch target) [x] Touch targets ≥44px [x] Mobile testing planned (E2E tests)
 - **Minimal Dependencies**: [x] New dependencies justified (NONE - uses existing Material + native localStorage) [x] Bundle size impact measured (0KB new dependencies) [x] Angular built-ins preferred (native localStorage, CSS custom properties)
