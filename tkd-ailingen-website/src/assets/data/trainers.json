@@ -85,7 +85,7 @@
     "role": "Chef Trainer",
     "programs": ["taekwondo"],
     "sessions": ["Wettkampf"],
-    "specialRoles": ["youth-protection-officer", "competition-judge"],
+    "specialRoles": ["youth-protection-officer", "competition-judge", "vice-board-member"],
     "bio": "5. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/giuseppe_pistillo.JPG",
     "sortKey": "pistillo giuseppe"
