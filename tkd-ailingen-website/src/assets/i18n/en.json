@@ -118,7 +118,9 @@
     "specialRoles": {
       "youth-protection-officer": "Youth Protection Officer",
       "first-aid-certified": "First Aid Certified",
-      "competition-judge": "Competition Judge"
+      "competition-judge": "Competition Judge",
+      "treasurer": "Treasurer",
+      "board-member": "Board Member"
     }
   },
   "common": {

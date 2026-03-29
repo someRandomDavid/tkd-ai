@@ -121,7 +121,9 @@
     "specialRoles": {
       "youth-protection-officer": "Jugendschutzbeauftragter",
       "first-aid-certified": "Erste-Hilfe zertifiziert",
-      "competition-judge": "Wettkampfrichter"
+      "competition-judge": "Wettkampfrichter",
+      "treasurer": "Kassenwart",
+      "board-member": "Vorstand"
     }
   },
   "common": {
