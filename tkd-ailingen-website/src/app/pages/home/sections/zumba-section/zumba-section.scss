@@ -87,29 +87,6 @@
   }
 }
 
-.highlight-box {
-  display: flex;
-  gap: 16px;
-  padding: 16px;
-  background-color: rgba(245, 124, 0, 0.08);
-  border-left: 4px solid #f57c00;
-  border-radius: 8px;
-  margin: var(--spacing-6) 0;
-  
-  @include mixins.tablet {
-    padding: 20px;
-  }
-  
-  mat-icon {
-    color: #f57c00;
-    flex-shrink: 0;
-  }
-  
-  .dark-theme & {
-    background-color: rgba(245, 124, 0, 0.12);
-  }
-}
-
 .instructor-box {
   padding: 16px;
   background: linear-gradient(135deg, rgba(245, 124, 0, 0.1) 0%, rgba(245, 124, 0, 0.05) 100%);
@@ -130,6 +107,7 @@
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+    object-position: top center;
     aspect-ratio: 1 / 1;
     
     @include mixins.tablet {
@@ -202,10 +180,6 @@
   h3 {
     margin-top: 0;
     color: #f57c00;
-  }
-  
-  p {
-    margin-bottom: var(--spacing-4);
   }
   
   .final-message {

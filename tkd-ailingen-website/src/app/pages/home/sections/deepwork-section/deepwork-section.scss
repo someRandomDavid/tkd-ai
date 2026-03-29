@@ -87,17 +87,6 @@
     margin-bottom: var(--spacing-4);
   }
 
-  .standout {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
-    color: #7b1fa2;
-    margin: var(--spacing-6) 0;
-
-    .dark-theme & {
-      color: #ab47bc;
-    }
-  }
-
   h3 {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
@@ -167,22 +156,6 @@
 
   p {
     margin: 0;
-  }
-
-  .motivation-text {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
-    color: var(--text-primary);
-    line-height: 1.8;
-  }
-
-  .motivation-tagline {
-    font-size: var(--font-size-xl);
-    color: #7b1fa2;
-
-    .dark-theme & {
-      color: #ab47bc;
-    }
   }
 
   .dark-theme & {
