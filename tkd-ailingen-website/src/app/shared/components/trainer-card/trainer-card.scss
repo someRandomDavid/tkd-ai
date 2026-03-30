@@ -57,12 +57,12 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 
-  .trainer-photo + & {
+  .trainer-photo+& {
     opacity: 0;
   }
 
   // Show when image fails or is loading
-  .trainer-photo[style*="display: none"] + & {
+  .trainer-photo[style*="display: none"]+& {
     opacity: 1;
   }
 }
@@ -110,7 +110,7 @@
     font-size: 0.75rem;
     padding: 0.25rem 0.625rem;
     height: auto;
-    
+
     &[data-program="taekwondo"] {
       background: #dc143c15;
       color: #dc143c;
@@ -160,6 +160,14 @@
     display: flex;
     align-items: center;
     gap: 0.25rem;
+
+    .mat-mdc-chip-action-label {
+      display: flex;
+
+      >* {
+        align-self: center;
+      }
+    }
 
     .role-icon {
       font-size: 1rem;
