@@ -186,9 +186,9 @@
       "title": "Löschung bzw. Sperrung der Daten",
       "content": "Wir halten uns an die Grundsätze der Datenvermeidung und Datensparsamkeit. Wir speichern Ihre personenbezogenen Daten daher nur so lange, wie dies zur Erreichung der hier genannten Zwecke erforderlich ist oder wie es die vom Gesetzgeber vorgesehenen vielfältigen Speicherfristen vorsehen. Nach Fortfall des jeweiligen Zweckes bzw. Ablauf dieser Fristen werden die entsprechenden Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht."
     },
-    "cookies": {
-      "title": "Cookies",
-      "content": "Wie viele andere Webseiten verwenden wir auch so genannte Cookies. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet. Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen."
+    "localStorage": {
+      "title": "Browser-Speicher (Local Storage)",
+      "content": "Diese Website verwendet den Browser-Speicher (Local Storage) ausschließlich für technisch notwendige Funktionen. Folgende Daten werden lokal in Ihrem Browser gespeichert: Ihre gewählte Farbschema-Einstellung (Hell- oder Dunkelmodus), Ihre Filtereinstellungen für Trainingszeiten und Trainer-Suche. Diese Daten verbleiben ausschließlich auf Ihrem Gerät, werden nicht an uns oder Dritte übertragen und können jederzeit durch Löschen Ihrer Browser-Daten entfernt werden. Es werden keine Cookies, Analytics-Tools oder Tracking-Dienste eingesetzt."
     },
     "contact": {
       "title": "Kontaktformular",

@@ -183,9 +183,9 @@
       "title": "Deletion or Blocking of Data",
       "content": "We adhere to the principles of data avoidance and data economy. We therefore only store your personal data for as long as is necessary to achieve the purposes stated here or as required by the various storage periods provided for by law. After the respective purpose ceases to apply or after these periods expire, the corresponding data is routinely blocked or deleted in accordance with statutory regulations."
     },
-    "cookies": {
-      "title": "Cookies",
-      "content": "Like many other websites, we also use so-called cookies. Cookies are small text files that are transferred from a website server to your hard drive. This automatically provides us with certain data such as IP address, browser used, operating system and your connection to the Internet. Cookies cannot be used to launch programs or transfer viruses to a computer."
+    "localStorage": {
+      "title": "Browser Storage (Local Storage)",
+      "content": "This website uses browser storage (Local Storage) exclusively for technically necessary functions. The following data is stored locally in your browser: your chosen color scheme setting (light or dark mode), your filter settings for training schedules and trainer search. This data remains exclusively on your device, is not transmitted to us or third parties, and can be removed at any time by clearing your browser data. We do not use cookies, analytics tools, or tracking services."
     },
     "contact": {
       "title": "Contact Form",
