@@ -11,7 +11,7 @@ const TRAINER_SEARCH_STORAGE_KEY = 'trainer-search-query';
 
 /**
  * Trainers section component
- * Displays directory of trainers with alphabetical sorting
+ * Displays directory of trainers sorted by belt level (Dan/Kup)
  */
 @Component({
   selector: 'app-trainers-section',
@@ -82,7 +82,7 @@ export class TrainersSection implements OnInit {
   }
 
   /**
-   * Load trainers from JSON file and sort alphabetically
+   * Load trainers from JSON file and sort by belt level
    */
   private loadTrainers(): void {
     this.loading.set(true);
@@ -103,12 +103,52 @@ export class TrainersSection implements OnInit {
   }
 
   /**
-   * Sort trainers alphabetically by last name using German locale
+   * Sort trainers by belt level (Dan/Kup)
+   * Order: 4. Dan, 3. Dan, 2. Dan, 1. Dan, 9. Kup, 8. Kup, 7. Kup, etc.
    */
   private sortTrainers(trainers: Trainer[]): Trainer[] {
     return [...trainers].sort((a, b) => {
+      const rankA = this.extractBeltRank(a.bio);
+      const rankB = this.extractBeltRank(b.bio);
+      
+      // Compare by type first (Dan > Kup > None)
+      if (rankA.type !== rankB.type) {
+        if (rankA.type === 'dan') return -1;
+        if (rankB.type === 'dan') return 1;
+        if (rankA.type === 'kup') return -1;
+        if (rankB.type === 'kup') return 1;
+      }
+      
+      // Same type: higher number comes first
+      if (rankA.level !== rankB.level) {
+        return rankB.level - rankA.level;
+      }
+      
+      // Same belt level: alphabetically by sortKey
       return a.sortKey.localeCompare(b.sortKey, 'de-DE');
     });
+  }
+
+  /**
+   * Extract belt rank information from bio field
+   */
+  private extractBeltRank(bio: string | undefined): { type: 'dan' | 'kup' | 'none'; level: number } {
+    if (!bio) {
+      return { type: 'none', level: 0 };
+    }
+    
+    // Match patterns like "4. Dan" or "9. Kup"
+    const danMatch = bio.match(/(\d+)\.\s*Dan/i);
+    if (danMatch) {
+      return { type: 'dan', level: parseInt(danMatch[1], 10) };
+    }
+    
+    const kupMatch = bio.match(/(\d+)\.\s*Kup/i);
+    if (kupMatch) {
+      return { type: 'kup', level: parseInt(kupMatch[1], 10) };
+    }
+    
+    return { type: 'none', level: 0 };
   }
 
   /**

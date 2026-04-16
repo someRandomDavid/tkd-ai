@@ -86,7 +86,7 @@
     "programs": ["taekwondo"],
     "sessions": ["Wettkampf"],
     "specialRoles": ["vice-board-member"],
-    "bio": "5. Dan Taekwondo",
+    "bio": "4. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/giuseppe_pistillo.JPG",
     "sortKey": "pistillo giuseppe"
   },
@@ -112,7 +112,7 @@
     "programs": ["taekwondo"],
     "sessions": ["Wettkampf"],
     "specialRoles": [],
-    "bio": "1. Dan Taekwondo",
+    "bio": "2. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/jessica_dick.JPG",
     "sortKey": "dick jessica"
   },
@@ -208,17 +208,17 @@
     "sortKey": "scharr sabine"
   },
   {
-    "id": "emely-tress",
+    "id": "emely-kadriu",
     "firstName": "Emely",
-    "lastName": "Tress",
-    "fullName": "Emely Tress",
+    "lastName": "Kadriu",
+    "fullName": "Emely Kadriu",
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Kinder 7-11 Anfänger"],
     "specialRoles": [],
     "bio": "1. Kup Taekwondo",
-    "photoUrl": "/assets/images/trainers/emely_tress.JPG",
-    "sortKey": "tress emely"
+    "photoUrl": "/assets/images/trainers/emely_kadriu.JPG",
+    "sortKey": "kadriu emely"
   },
   {
     "id": "sabrina-zechel",

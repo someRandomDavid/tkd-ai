@@ -2,6 +2,15 @@
   "lastUpdated": "2026-01-15",
   "sessions": [
     {
+      "id": "tkd-mon-competitors",
+      "programType": "taekwondo",
+      "dayOfWeek": "monday",
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "levelAgeGroup": "Wettkämpfer",
+      "maxParticipants": 25
+    },
+    {
       "id": "tkd-tue-kids-beginners",
       "programType": "taekwondo",
       "dayOfWeek": "tuesday",
@@ -34,7 +43,7 @@
       "dayOfWeek": "wednesday",
       "startTime": "17:00",
       "endTime": "18:00",
-      "levelAgeGroup": "Jugend 11-15 Anfänger",
+      "levelAgeGroup": "Jugend 11-16 Anfänger",
       "maxParticipants": 20
     },
     {
@@ -43,7 +52,7 @@
       "dayOfWeek": "wednesday",
       "startTime": "18:00",
       "endTime": "19:00",
-      "levelAgeGroup": "Jugend 11-15 Fortgeschritten",
+      "levelAgeGroup": "Jugend 11-16 Fortgeschritten",
       "maxParticipants": 20
     },
     {
@@ -133,7 +142,7 @@
       "dayOfWeek": "monday",
       "startTime": "20:00",
       "endTime": "21:00",
-      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "levelAgeGroup": "Erwachsene",
       "maxParticipants": 25
     },
     {
@@ -142,7 +151,7 @@
       "dayOfWeek": "tuesday",
       "startTime": "20:00",
       "endTime": "21:00",
-      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "levelAgeGroup": "Erwachsene",
       "maxParticipants": 30
     },
     {
@@ -151,7 +160,7 @@
       "dayOfWeek": "thursday",
       "startTime": "20:00",
       "endTime": "21:00",
-      "levelAgeGroup": "Erwachsene, Alle Fitnesslevel",
+      "levelAgeGroup": "Erwachsene",
       "maxParticipants": 30
     }
   ]

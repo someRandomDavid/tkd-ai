@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/tkd-ailingen-website/browser",
+  "framework": "angular",
+  "installCommand": "npm install"
+}

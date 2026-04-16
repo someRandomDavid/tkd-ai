@@ -4,7 +4,7 @@
       "id": "free-trial",
       "label": "Kostenloses Probetraining",
       "actionType": "mailto",
-      "destination": "mailto:info@tkd-ailingen.de?subject=Probetraining%20Anfrage",
+      "destination": "mailto:info@taekwondoailingen.de?subject=Probetraining%20Anfrage",
       "buttonStyle": "primary",
       "priority": 1,
       "icon": "sports_martial_arts",
