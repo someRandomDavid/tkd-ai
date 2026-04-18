@@ -121,7 +121,11 @@
       "competition-judge": "Competition Judge",
       "treasurer": "Treasurer",
       "board-member": "Board Member",
-      "vice-board-member": "Vice Board Member"
+      "vice-board-member": "Vice Board Member",
+      "trainer-c": "Trainer C License",
+      "trainer-b": "Trainer B License",
+      "auditor": "Auditor License",
+      "assistant-instructor": "Assistant Instructor"
     }
   },
   "common": {

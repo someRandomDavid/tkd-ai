@@ -124,7 +124,11 @@
       "competition-judge": "Wettkampfrichter",
       "treasurer": "Kassenwart",
       "board-member": "Vorstand",
-      "vice-board-member": "2. Vorstand"
+      "vice-board-member": "2. Vorstand",
+      "trainer-c": "Trainer-C Lizenz",
+      "trainer-b": "Trainer-B Lizenz",
+      "auditor": "Prüfer Lizenz",
+      "assistant-instructor": "Assistenztrainer"
     }
   },
   "common": {

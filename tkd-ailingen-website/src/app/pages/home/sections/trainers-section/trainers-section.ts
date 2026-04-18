@@ -103,8 +103,9 @@ export class TrainersSection implements OnInit {
   }
 
   /**
-   * Sort trainers by belt level (Dan/Kup)
+   * Sort trainers by belt level (Dan/Kup) and session
    * Order: 4. Dan, 3. Dan, 2. Dan, 1. Dan, 9. Kup, 8. Kup, 7. Kup, etc.
+   * Then by session (age groups), then alphabetically
    */
   private sortTrainers(trainers: Trainer[]): Trainer[] {
     return [...trainers].sort((a, b) => {
@@ -124,7 +125,17 @@ export class TrainersSection implements OnInit {
         return rankB.level - rankA.level;
       }
       
-      // Same belt level: alphabetically by sortKey
+      // Same belt level: sort by session (first session if multiple)
+      const sessionA = a.sessions && a.sessions.length > 0 ? a.sessions[0] : '';
+      const sessionB = b.sessions && b.sessions.length > 0 ? b.sessions[0] : '';
+      const sessionPriorityA = this.getSessionPriority(sessionA);
+      const sessionPriorityB = this.getSessionPriority(sessionB);
+      
+      if (sessionPriorityA !== sessionPriorityB) {
+        return sessionPriorityA - sessionPriorityB;
+      }
+      
+      // Same belt level and session: alphabetically by sortKey
       return a.sortKey.localeCompare(b.sortKey, 'de-DE');
     });
   }
@@ -149,6 +160,26 @@ export class TrainersSection implements OnInit {
     }
     
     return { type: 'none', level: 0 };
+  }
+
+  /**
+   * Get priority for session sorting (lower = earlier in list)
+   * Sessions are ordered by age group, from youngest to oldest
+   */
+  private getSessionPriority(session: string): number {
+    const sessionOrder: Record<string, number> = {
+      'Bambinis 4-7 Anfänger': 1,
+      'Bambinis 4-7 Fortgeschritten': 2,
+      'Kinder 7-11 Anfänger': 3,
+      'Kinder 7-11 Fortgeschritten': 4,
+      'Jugend 11-16 Anfänger': 5,
+      'Jugend 11-16 Fortgeschritten': 6,
+      'Jugend ab 16 / Erwachsene': 7,
+      'Erwachsene': 8,
+      'Wettkampf': 9,
+    };
+    
+    return sessionOrder[session] ?? 999; // Unknown sessions go to the end
   }
 
   /**

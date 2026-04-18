@@ -85,7 +85,7 @@
     "role": "Chef Trainer",
     "programs": ["taekwondo"],
     "sessions": ["Wettkampf"],
-    "specialRoles": ["vice-board-member"],
+    "specialRoles": ["vice-board-member", "trainer-c", "trainer-b", "auditor"],
     "bio": "4. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/giuseppe_pistillo.JPG",
     "sortKey": "pistillo giuseppe"
@@ -150,7 +150,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Jugend ab 16 / Erwachsene"],
-    "specialRoles": [],
+    "specialRoles": ["assistant-instructor"],
     "bio": "1. Kup Taekwondo",
     "photoUrl": "/assets/images/trainers/markus_tress.JPG",
     "sortKey": "tress markus"
@@ -163,7 +163,7 @@
     "role": "",
     "programs": ["taekwondo", "deepwork"],
     "sessions": ["Kinder 7-11 Anfänger", "Erwachsene"],
-    "specialRoles": [],
+    "specialRoles": ["trainer-c"],
     "bio": "1. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/claudia_tagmann.JPG",
     "sortKey": "tagmann claudia"
@@ -215,7 +215,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Kinder 7-11 Anfänger"],
-    "specialRoles": [],
+    "specialRoles": ["assistant-instructor"],
     "bio": "1. Kup Taekwondo",
     "photoUrl": "/assets/images/trainers/emely_kadriu.JPG",
     "sortKey": "kadriu emely"
@@ -267,7 +267,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Kinder 7-11 Anfänger"],
-    "specialRoles": [],
+    "specialRoles": ["assistant-instructor"],
     "bio": "6. Kup Taekwondo",
     "photoUrl": "/assets/images/trainers/sarah_appel.JPG",
     "sortKey": "appel sarah"
