@@ -1,7 +1,6 @@
 import { Component, Input, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@shared/material.module';
-import { ProgramSchedule } from '@app/shared/components/program-schedule/program-schedule';
 import { ScheduleFilter } from '@app/shared/components/schedule-filter/schedule-filter';
 import { TrainingSession, ScheduleFilters, DEFAULT_FILTERS, DayOfWeek } from '@shared/models';
 import { TranslationService } from '@core/services/translation.service';
@@ -12,7 +11,7 @@ import { TranslationService } from '@core/services/translation.service';
  */
 @Component({
   selector: 'app-schedules-section',
-  imports: [CommonModule, MaterialModule, ProgramSchedule, ScheduleFilter],
+  imports: [CommonModule, MaterialModule, ScheduleFilter],
   templateUrl: './schedules-section.html',
   styleUrl: './schedules-section.scss',
 })

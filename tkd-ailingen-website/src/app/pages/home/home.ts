@@ -7,7 +7,7 @@ import { WelcomeSection } from './sections/welcome-section/welcome-section';
 import { ZumbaSection } from './sections/zumba-section/zumba-section';
 import { DeepworkSection } from './sections/deepwork-section/deepwork-section';
 import { SchedulesSection } from './sections/schedules-section/schedules-section';
-import { NewsSection } from './sections/news-section/news-section';
+// import { NewsSection } from './sections/news-section/news-section'; // TODO: Temporarily removed - add back when needed
 import { TrainersSection } from './sections/trainers-section/trainers-section';
 import { DownloadsSection } from './sections/downloads-section/downloads-section';
 import { Footer } from '@app/shared/components/footer/footer';
@@ -22,7 +22,7 @@ import { ClubInfo, NavigationItem, TrainingSession, DownloadableForm } from '@sh
  */
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, NavigationHeader, HeroSection, WelcomeSection, ZumbaSection, DeepworkSection, SchedulesSection, NewsSection, TrainersSection, DownloadsSection, Footer],
+  imports: [CommonModule, NavigationHeader, HeroSection, WelcomeSection, ZumbaSection, DeepworkSection, SchedulesSection, /* NewsSection, */ TrainersSection, DownloadsSection, Footer],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
