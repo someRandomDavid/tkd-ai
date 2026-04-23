@@ -33,7 +33,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Kinder 7-11 Anfänger", "Kinder 7-11 Fortgeschritten"],
-    "specialRoles": [],
+    "specialRoles": ["trainer-c"],
     "bio": "2. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/vanessa_hoge_natale.JPG",
     "sortKey": "hoge-natale vanessa"
@@ -189,7 +189,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Kinder 7-11 Anfänger"],
-    "specialRoles": ["youth-protection-officer"],
+    "specialRoles": ["youth-protection-officer", "trainer-c"],
     "bio": "1. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/sabine_scharr.JPG",
     "sortKey": "scharr sabine"
@@ -215,7 +215,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Kinder 7-11 Anfänger", "Kinder 7-11 Fortgeschritten"],
-    "specialRoles": [],
+    "specialRoles": ["trainer-c", "auditor"],
     "bio": "3. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/sabrina_zechel.JPG",
     "sortKey": "zechel sabrina"
