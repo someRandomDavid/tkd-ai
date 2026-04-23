@@ -161,12 +161,10 @@
     align-items: center;
     gap: 0.25rem;
 
-    .mat-mdc-chip-action-label {
+    ::ng-deep span.mat-mdc-chip-action-label {
       display: flex;
-
-      >* {
-        align-self: center;
-      }
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .role-icon {

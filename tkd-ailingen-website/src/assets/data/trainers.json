@@ -52,19 +52,6 @@
     "sortKey": "pistillo sandra"
   },
   {
-    "id": "elisa-wurstl",
-    "firstName": "Elisa",
-    "lastName": "Wurstl",
-    "fullName": "Elisa Wurstl",
-    "role": "",
-    "programs": ["taekwondo"],
-    "sessions": [],
-    "specialRoles": ["board-member"],
-    "bio": "1. Dan Taekwondo",
-    "photoUrl": "/assets/images/trainers/elisa_wurstl.JPG",
-    "sortKey": "wurstl elisa"
-  },
-  {
     "id": "lilia-ben-amor",
     "firstName": "Lilia",
     "lastName": "Ben Amor",
@@ -72,7 +59,7 @@
     "role": "",
     "programs": ["taekwondo"],
     "sessions": ["Wettkampf"],
-    "specialRoles": [],
+    "specialRoles": ["board-member"],
     "bio": "1. Dan Taekwondo",
     "photoUrl": "/assets/images/trainers/lilia_ben_amor.JPG",
     "sortKey": "ben amor lilia"
